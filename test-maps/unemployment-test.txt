@@ -1,0 +1,52 @@
+State	date	unemployment rate (april 2020)
+                        Alabama	2020 M04	13.2
+                        Alaska	2020 M04	11.8
+                        Arizona	2020 M04	14.2
+                        Arkansas	2020 M04	10
+                        California	2020 M04	16
+                        Colorado	2020 M04	12.1
+                        Connecticut	2020 M04	8.6
+                        Delaware	2020 M04	13.4
+                        District of Columbia	2020 M04	11.1
+                        Florida	2020 M04	14
+                        Georgia	2020 M04	12.5
+                        Hawaii	2020 M04	21.9
+                        Idaho	2020 M04	11.6
+                        Illinois	2020 M04	16.5
+                        Indiana	2020 M04	16.9
+                        Iowa	2020 M04	11.1
+                        Kansas	2020 M04	12.6
+                        Kentucky	2020 M04	16.9
+                        Louisiana	2020 M04	13.1
+                        Maine	2020 M04	9.1
+                        Maryland	2020 M04	9
+                        Massachusetts	2020 M04	16.4
+                        Michigan	2020 M04	23.6
+                        Minnesota	2020 M04	9
+                        Mississippi	2020 M04	15.7
+                        Missouri	2020 M04	12.5
+                        Montana	2020 M04	11.9
+                        Nebraska	2020 M04	7.4
+                        Nevada	2020 M04	29.5
+                        New Hampshire	2020 M04	16
+                        New Jersey	2020 M04	16.6
+                        New Mexico	2020 M04	10
+                        New York	2020 M04	16.2
+                        North Carolina	2020 M04	13.5
+                        North Dakota	2020 M04	8.7
+                        Ohio	2020 M04	16.4
+                        Oklahoma	2020 M04	13
+                        Oregon	2020 M04	13.2
+                        Pennsylvania	2020 M04	16.2
+                        Rhode Island	2020 M04	17.4
+                        South Carolina	2020 M04	11.5
+                        South Dakota	2020 M04	9.2
+                        Tennessee	2020 M04	15.8
+                        Texas	2020 M04	12.9
+                        Utah	2020 M04	10.1
+                        Vermont	2020 M04	14.8
+                        Virginia	2020 M04	11.3
+                        Washington	2020 M04	16.3
+                        West Virginia	2020 M04	15.6
+                        Wisconsin	2020 M04	14.8
+                        Wyoming	2020 M04	5.5

@@ -1,0 +1,2631 @@
+        Mine name	Coal or metal?	Mine type	Mine status	State	LONGITUDE	LATITUDE
+        O'Neal Quarry & Mill	M	Surface	Active	AL	85.753333	38.256389
+        Brierfield Quarry	M	Surface	Active	AL	86.963333	33.038056
+        Auburn Quarry	M	Surface	Active	AL	85.470556	32.530556
+        Landmark Plant	M	Surface	Active	AL	86.657568	33.351176
+        Dolcito Quarry	M	Surface	Active	AL	86.763333	33.586388
+        Rockwood Mine	M	Underground	Active	AL	87.728611	34.507778
+        Imerys Sylacauga Operations	M	Surface	Active	AL	86.333056	33.240278
+        Ohatchee Quarry 	M	Surface	Active	AL	85.928056	33.783611
+        C A Langford Co Inc	M	Surface	Active	AL	86.369167	34.338333
+        Demopolis Plant Cemex Inc	M	Facility	Active	AL	87.8125	32.510277
+        HUNTSVILLE NORTH QUARRY	M	Surface	Active	AL	86.625	34.778611
+        NATIONAL CEMENT COMPANY	M	Facility	Active	AL	86.155833	33.744444
+        Fort Payne Quarry	M	Surface	Active	AL	85.735833	34.423333
+        Tuscumbia Quarry	M	Surface	Active	AL	87.634167	34.675
+        Livingston Plant #1672	M	Surface	Active	AL	88.196667	32.565
+        Cherokee Quarry 	M	Surface	Active	AL	87.971389	34.755556
+        CHILDERSBURG QUARRY	M	Surface	Active	AL	86.355	33.278056
+        Trinity Quarry 	M	Surface	Active	AL	87.047222	34.618611
+        Montevallo Quarry & Mill	M	Surface	Active	AL	86.626944	33.165556
+        Leeds Plant	M	Facility	Active	AL	86.546944	33.540833
+        TUSCUMBIA QUARRY	M	Surface	Active	AL	87.657377	34.730073
+        GLENCOE QUARRY	M	Surface	Active	AL	85.940833	33.962778
+        Calera Quarry 	M	Surface	Active	AL	86.753611	33.102777
+        Wade Sand & Gravel Co., Inc.	M	Surface	Active	AL	86.852778	33.5225
+        Sandy Ridge Mill	M	Surface	Active	AL	86.431111	32.053333
+        Bessemer Shale Mine	M	Surface	Active	AL	86.963611	33.339444
+        BORAL CLAY PITS	M	Surface	Active	AL	85.186389	32.456944
+        Cordova Loading	C	Facility	Abandoned	AL	87.3267	33.8014
+        Ragland 	M	Surface	Active	AL	86.155833	33.744444
+        Scottsboro Quarry	M	Surface	Active	AL	86.088611	34.623333
+        Arkadelphia 	C	Surface	Abandoned	AL	86.971944	33.910555
+        Highwall Mine	C	Underground	Abandoned and Sealed	AL	86.7292	33.8092
+        Wolf Hollow 3	C	Underground	Abandoned and Sealed	AL	1.0169	0.1694
+        Y F Young No 2 Mine	C	Underground	Abandoned and Sealed	AL	86.7928	33.8072
+        Riverside No 9	C	Underground	Abandoned and Sealed	AL	86.7936	33.8094
+        Natural Bridge-738 Mine	C	Surface	Abandoned	AL	87.6317	34.0975
+        Maxine Mine	C	Underground	Abandoned and Sealed	AL	87.1569	33.5844
+        Chetopa	C	Surface	Abandoned	AL	86.9483	33.6683
+        Flat Top	C	Facility	Abandoned	AL	87.022777	33.665277
+        Bessie Mine	C	Facility	Abandoned and Sealed	AL	87.035555	33.636111
+        Oak Grove Preparation Plant	C	Facility	Active	AL	87.037222	33.453889
+        Mulga Mine	C	Facility	Abandoned	AL	86.9939	33.5606
+        Creek Pit 5	C	Surface	Abandoned	AL	87.3736	33.2436
+        Lanco	C	Surface	Abandoned	AL	87.3375	33.3217
+        Gorgas #7 Preparation Plant	C	Facility	Abandoned	AL	87.265556	33.646389
+        Bankhead Mine	C	Surface	Abandoned	AL	87.1994	33.6625
+        Choctaw Mine	C	Surface	Active	AL	87.278611	33.706667
+        Childers No 5 Mine	C	Underground	Abandoned and Sealed	AL	1.0169	0.1694
+        LONGVIEW OPERATION	M	Surface	Active	AL	86.791944	33.216111
+        Fabius Strip Mine	C	Surface	Abandoned	AL	85.7069	34.7936
+        Beltona Mine	C	Surface	Abandoned	AL	86.853888	33.802777
+        County Line Strip Pit	C	Surface	Abandoned	AL	86.715	33.8347
+        Ebs Construction Inc Bradford Mine	C	Facility	Abandoned	AL	86.7075	33.7486
+        Mary Lee # 1 Mine	C	Facility	NonProducing	AL	87.254167	33.655278
+        HELENA QUARRY	M	Surface	Active	AL	86.755833	33.106667
+        Mark Donnell Sand Company	M	Surface	Active	AL	85.775	31.188333
+        Boothton Strip Operations	C	Surface	Abandoned	AL	87.0483	33.1358
+        East Brookwood Pit	C	Surface	Abandoned	AL	87.3706	33.2925
+        Kellerman Modular	C	Facility	Abandoned	AL	87.2769	33.2853
+        Kellerman Mine 1570-1	C	Surface	Abandoned	AL	87.315	33.3689
+        Kellerman Prep Plant	C	Surface	Abandoned	AL	87.413889	33.334722
+        Bellwood Sand Plant	M	Surface	Active	AL	85.789167	31.175
+        Hurtsboro Plant	M	Surface	Active	AL	85.41665	32.24785
+        Jemison Mine And Plant	M	Surface	Abandoned	AL	86.746667	32.959722
+        Corona Mine	C	Surface	Abandoned	AL	87.415	33.7456
+        Flat Top Mine	C	Surface	Active	AL	87.203056	33.696389
+        ARGOS ROBERTA PLANT	M	Facility	Active	AL	86.623056	33.165833
+        Maylene Plant & Quarry	M	Surface	Active	AL	86.859444	33.193889
+        Cosby #1 Pit	M	Surface	Active	AL	86.990833	32.399444
+        Tuscaloosa Plant	M	Surface	Active	AL	87.563611	33.141111
+        Shannon Washer Facility	C	Facility	Abandoned	AL	87.1589	33.3203
+        Hope-Galloway-Saragossa Prospect	C	Surface	Abandoned	AL	87.5328	33.89
+        Johns Washer Prep Plant	C	Facility	Abandoned	AL	87.0819	33.3481
+        Gurley Strip Pit	C	Surface	Abandoned	AL	86.7136	33.8442
+        Short Creek 8750	C	Facility	Temporarily Idled	AL	87.080555	33.569444
+        No. 3 Mine	C	Facility	NonProducing	AL	87.111111	33.368889
+        North River Mine	C	Facility	NonProducing	AL	87.608333	33.611944
+        Morris Mine	C	Surface	Abandoned	AL	86.8258	33.7483
+        27-Henry Brick-2	M	Surface	Active	AL	87.021111	32.407222
+        No 1 Pit Strip	C	Surface	Abandoned	AL	86.5469	34.0086
+        Rosa Mine	C	Facility	Temporarily Idled	AL	86.566111	33.961944
+        Empire Town Creek Mine	C	Surface	Abandoned	AL	87.0375	33.790277
+        Liberty Hill Mine	C	Surface	Abandoned	AL	87.306111	33.706111
+        Mary Lee No 2 Mine	C	Underground	Abandoned and Sealed	AL	87.2086	33.6706
+        Pit No 1	C	Surface	Abandoned	AL	86.8606	33.5822
+        Oak Grove Mine	C	Underground	Active	AL	87.140556	33.495278
+        Lacon Quarry 	M	Surface	Active	AL	86.889167	34.338889
+        Jefferson Mine	C	Surface	Abandoned	AL	87.1861	33.4597
+        Knob Strip Mine	C	Surface	Abandoned	AL	86.981111	33.724444
+        Kellerman Mine 1570-2	C	Surface	Abandoned	AL	87.3367	33.3244
+        Mulvehill No 1	C	Surface	Abandoned	AL	86.7836	33.8403
+        Arkadelphia Pit 66	C	Surface	Abandoned	AL	87.0103	33.9139
+        RIVERSIDE PIT & PLANT	M	Surface	Intermittent	AL	86.245556	33.59
+        Scott Pit	M	Surface	Active	AL	86.339722	32.576667
+        No 4 Mine	C	Underground	Active	AL	87.331389	33.328611
+        Gorgas Pit	C	Surface	Abandoned	AL	87.2308	33.6528
+        No 1 Strip	C	Surface	Abandoned	AL	86.9997	33.8175
+        Sayre Prep Plant	C	Facility	Abandoned	AL	86.971388	33.708055
+        Bryan Loading	C	Facility	Abandoned	AL	87.0103	33.6947
+        Alabaster Plant	M	Facility	Active	AL	86.820556	33.244167
+        Nebo Mine	C	Underground	Abandoned and Sealed	AL	86.9367	33.6644
+        Kellerman 650 Mine	C	Surface	Abandoned	AL	87.3244	33.3733
+        Cedrum Mine	C	Surface	Abandoned	AL	87.426666	33.837777
+        Bledsoe Mine No 3	C	Underground	Abandoned and Sealed	AL	85.845	34.955277
+        No 5 Mine	C	Underground	Abandoned and Sealed	AL	87.306388	33.279444
+        Manchester Mine	C	Surface	Abandoned	AL	87.304444	33.9225
+        Rock City Pit No 5	C	Surface	Abandoned	AL	87.7239	33.9942
+        No 7 Mine	C	Underground	Active	AL	87.213611	33.374167
+        Rock Castle No 1 Strip	C	Surface	Abandoned	AL	85.833333	34.183333
+        Wilburn Prep Plant	C	Facility	Abandoned	AL	87.0461	33.8853
+        Peterson Pit	C	Surface	Abandoned	AL	87.4361	33.2292
+        No 1 Strip	C	Surface	Abandoned	AL	85.7403	34.8922
+        Dora Pit No 1	C	Surface	Abandoned	AL	87.083333	33.716667
+        Roberta Plant	M	Facility	Abandoned	AL	86.753611	33.102778
+        Barbour County Mines 	M	Surface	Active	AL	85.246667	31.789444
+        Piney Woods	C	Surface	Abandoned	AL	87.4417	33.3042
+        Project No 1	C	Surface	Abandoned	AL	86.9811	33.5058
+        Gibbs No 2	C	Surface	Abandoned	AL	85.725	34.7294
+        White Oak Washer	C	Surface	Abandoned	AL	87.083333	33.816667
+        Turkey Creek Mine	C	Surface	Abandoned	AL	86.8125	33.7375
+        Howard Mine	C	Surface	Abandoned	AL	87.5792	33.75
+        Wilson Bend	C	Surface	Abandoned	AL	87.14	34.0189
+        Boone No 2	C	Underground	Abandoned and Sealed	AL	86.9736	33.1808
+        Pit #1	C	Surface	Abandoned	AL	87.6039	34.3275
+        Curry Pit	C	Surface	Abandoned	AL	87.2436	34.0014
+        Turkey Creek Mine	C	Surface	Abandoned	AL	87.5153	33.4208
+        Tweedy Pit	C	Surface	Abandoned	AL	87.6083	34.3
+        Acmar No 1	C	Underground	Abandoned and Sealed	AL	1.0169	0.1694
+        H And H Construction Company	C	Surface	Abandoned	AL	86.7692	33.8008
+        Pettis Pit	M	Surface	Abandoned	AL	93.526944	38.540556
+        Little Dice	C	Surface	Abandoned	AL	87.6011	34.3378
+        Dixie Springs	C	Surface	Abandoned	AL	87.426666	33.837777
+        Sealy Ann Mountain Mine	C	Surface	Abandoned	AL	87.1933	33.3719
+        Ryan Creek	C	Surface	Abandoned	AL	87.0419	34.0114
+        Summiton Pit	C	Surface	Abandoned	AL	87.0417	33.7719
+        Ridell Strip	C	Surface	Abandoned	AL	87.7458	33.8458
+        Walkers Gap Mine	C	Surface	Abandoned	AL	86.4092	33.8639
+        No 1 Strip	C	Surface	Abandoned	AL	87.0667	33.775
+        No 8 Margaret Mine 59-3	C	Surface	Abandoned	AL	86.4333	30.7042
+        Poplar Springs Strip	C	Surface	Abandoned	AL	87.3833	34.025
+        French Pit	C	Surface	Abandoned	AL	86.2256	34.0667
+        Warhurst Pit 8	C	Surface	Abandoned	AL	87.3819	34.2031
+        Powhatan Mine	C	Surface	Abandoned	AL	87.1	33.5917
+        Glen Allen Plant	C	Facility	Abandoned	AL	87.4447	33.55
+        Coalite Pit W-2000	C	Surface	Abandoned	AL	87.6417	34.0267
+        Pete Mine	C	Surface	Abandoned	AL	87.7664	34.2914
+        Pit No 1	C	Surface	Abandoned	AL	85.6556	34.8542
+        Pit No 7	C	Surface	Abandoned	AL	87.0208	33.8819
+        Ashbank #1	C	Surface	Abandoned	AL	87.4667	34.0394
+        Smith Sand Company Inc	M	Surface	Active	AL	88.194722	30.836944
+        Cedrum Mine No 2	C	Surface	Abandoned	AL	87.4661	33.8508
+        Mill Creek Mine	C	Surface	Abandoned	AL	87.1636	33.9553
+        Gilmore Mine	C	Facility	Abandoned	AL	0.0003	0.0003
+        Johnson Pit #1	C	Surface	Abandoned	AL	86.8792	33.7653
+        Oakman No 1	C	Surface	Abandoned	AL	87.4042	33.6889
+        Star Branch Ii	C	Surface	Abandoned	AL	87.6125	33.7208
+        Black Creek No 1	C	Underground	Abandoned and Sealed	AL	86.715277	33.834722
+        Moulton Quarry	M	Surface	Abandoned	AL	87.381667	34.451389
+        Allsboro Quarry & Mill	M	Surface	Active	AL	88.116944	34.726111
+        No 1 Mine	C	Underground	Abandoned and Sealed	AL	86.783333	33.783333
+        Tucker Hollow Pit	C	Surface	Abandoned	AL	87.0861	33.7625
+        Sumiton Pit No 1	C	Surface	Abandoned	AL	87.0667	33.7694
+        Marengo	C	Surface	Abandoned	AL	86.9792	32.2514
+        Marengo	C	Surface	Abandoned	AL	87.8347	32.2875
+        Choctaw	C	Surface	Abandoned	AL	88.2514	32.4819
+        Choctaw	C	Surface	Abandoned	AL	88.1708	32.0875
+        No 1	C	Underground	Abandoned and Sealed	AL	87.7447	33.9847
+        Fern Springs	C	Underground	Abandoned and Sealed	AL	87.6658	33.9669
+        Sharit Shoal Mine	C	Surface	Abandoned	AL	86.85	33.7903
+        Pit No 1	C	Surface	Abandoned	AL	86.7917	33.1817
+        Mine No 14	C	Surface	Abandoned	AL	86.5	33.6417
+        Inland Pit	C	Surface	Abandoned	AL	86.5619	33.8031
+        Mill Creek Mine	C	Underground	Abandoned and Sealed	AL	87.3106	33.5639
+        Andrews Pit No 1	C	Surface	Abandoned	AL	87.6667	34.3083
+        Cold Springs	C	Surface	Abandoned	AL	87.0208	33.9822
+        Floyd Mining Company Sayre No 4	C	Surface	Abandoned	AL	87.9953	33.7075
+        Robbins Pit No 2	C	Surface	Abandoned	AL	86.3492	34.0053
+        ROCK PRODUCTS QUARRY	M	Surface	Abandoned	AL	86.384167	33.163333
+        Cypress Pit	M	Surface	Active	AL	87.696667	32.962222
+        Davis Creek Mine	C	Surface	Abandoned	AL	87.325	33.4803
+        Pit No 3	C	Surface	Abandoned	AL	85.6767	34.8142
+        Dixs Mine	C	Surface	Abandoned	AL	85.7667	34.6361
+        Carpet Rock	C	Surface	Abandoned	AL	87.25	33.8
+        Argo Pit	C	Surface	Abandoned	AL	87.125	33.7819
+        Sewanee Pit No 1	C	Surface	Abandoned	AL	87.5592	33.8128
+        Wilson Mine	C	Surface	Abandoned	AL	87.75	34.0242
+        Mine No 4	C	Surface	Abandoned	AL	87.3306	33.2278
+        Coaling Mine	C	Surface	Abandoned	AL	87.266667	33.266667
+        Mason Mine No 1	C	Surface	Abandoned	AL	85.7167	34.7292
+        Fairfield Plant	C	Facility	Abandoned	AL	86.9278	33.5
+        Wade No 1	C	Surface	Abandoned	AL	85.6083	34.845
+        Gas Branch Mine No 1	C	Surface	Abandoned	AL	87.675	34.675
+        Burnwell Pit	C	Surface	Abandoned	AL	87.125	33.725
+        Alexander City	M	Surface	Active	AL	85.953889	32.943889
+        Mc Collum Pit No 2	C	Surface	Abandoned	AL	87.1933	33.3719
+        Holly Grove Mine No 1	C	Surface	Abandoned	AL	87.3556	33.8639
+        Bull City Mine	C	Surface	Abandoned	AL	87.4958	33.6222
+        Benoit No 1	C	Surface	Abandoned	AL	87.1458	33.7486
+        Oakman Pit No 3	C	Surface	Abandoned	AL	87.2333	33.4133
+        Carpet Rock No 2	C	Surface	Abandoned	AL	85.01	37.435
+        Dime Preparation Plant	C	Facility	Abandoned	AL	87.4242	34.2258
+        Acmar	C	Surface	Abandoned	AL	86.5617	33.6081
+        No 1 Mine	C	Underground	Abandoned and Sealed	AL	87.695	33.0097
+        Mine No 3	C	Surface	Abandoned	AL	87.2917	33.2625
+        Mine No 1	C	Surface	Abandoned	AL	85.8667	34.3944
+        Fern Springs Pit No 1	C	Surface	Abandoned	AL	87.6333	33.9792
+        H & H Construction Blount No 3	C	Surface	Abandoned	AL	86.4522	34.1403
+        Grove Oak No I	C	Surface	Abandoned	AL	86.0125	34.4986
+        North River Surface	C	Surface	Abandoned	AL	87.3381	33.2769
+        Emily No 3 Mine	C	Surface	Abandoned	AL	87.483333	33.5
+        Yellow Creek No 1	C	Underground	Abandoned	AL	1.0169	0.1694
+        Gayosa Pit	C	Surface	Abandoned	AL	87.3208	33.7153
+        Buttahatchee Mine No 1	C	Surface	Abandoned	AL	87.7083	34.0958
+        No 2	C	Underground	Abandoned and Sealed	AL	85.8431	34.9458
+        Acmar Mine No 1	C	Surface	Abandoned	AL	86.5042	33.6292
+        M E No 8	C	Surface	Abandoned	AL	86.3669	34.2222
+        Oakman No 4	C	Surface	Abandoned	AL	87.2356	33.4056
+        Bachlor Pit	C	Surface	Abandoned	AL	87.6181	34.1708
+        Robison Mine & Mill	M	Surface	Intermittent	AL	88.127222	34.0375
+        Black Pond	C	Surface	Abandoned	AL	87.3008	34.0375
+        Briceston	C	Surface	Abandoned	AL	87.0181	33.7972
+        Lacks Pit No 1	C	Surface	Abandoned	AL	86.2503	34.1125
+        French Pit No 1	C	Surface	Abandoned	AL	86.4481	34.1278
+        Oswayo #9	C	Surface	Abandoned	AL	87.0886	33.3342
+        Lehigh Mine	C	Surface	Abandoned	AL	86.6806	33.8417
+        Whitaker Pit 1	C	Surface	Abandoned	AL	85.5944	35.6806
+        Berry Pit #1	C	Surface	Abandoned	AL	85.6697	34.7875
+        Big Ridge Mine	C	Surface	Abandoned	AL	87.2294	33.7386
+        Nauvoo Mine No 1	C	Surface	Abandoned	AL	87.2517	33.5739
+        Hicks Mine	C	Surface	Abandoned	AL	86.385	33.8811
+        Harvey Mine	C	Surface	Abandoned	AL	86.4408	33.8411
+        Nickel Plate Mine No 19	C	Surface	Abandoned	AL	86.8531	33.6039
+        Nickel Plate Mine No 20	C	Surface	Abandoned	AL	86.8425	33.6031
+        Gibson Hill	C	Surface	Abandoned	AL	87.45	33.6917
+        Daniel Payne	C	Facility	Abandoned	AL	86.8617	30.5428
+        Hull Mine	C	Surface	Abandoned	AL	87.0564	33.8042
+        Maddox  Pit	M	Surface	Active	AL	86.313055	32.4375
+        Bankhead Mine	C	Surface	Abandoned	AL	87.2131	33.875
+        Murphy Pit	C	Surface	Abandoned	AL	87.1011	33.3078
+        Mine No 1	C	Surface	Abandoned	AL	87.6639	33.5264
+        Key Coal Company	C	Underground	Abandoned and Sealed	AL	87.6875	34.0153
+        Sunny Home Pit	C	Surface	Abandoned	AL	87.666667	34.05
+        Dekalb No 2	C	Surface	Abandoned	AL	85.8669	34.38
+        St Clair No 1	C	Surface	Abandoned	AL	86.5056	33.6136
+        Huff Mine No 1	C	Surface	Abandoned	AL	87.6675	33.4672
+        Tri-State Energy No 1	C	Surface	Abandoned	AL	85.8411	34.3792
+        Reclamation Projct No 1	C	Facility	Abandoned	AL	87.6019	33.0833
+        Cullman Pit No 1	C	Surface	Abandoned	AL	87.083333	34.033333
+        Nichols Construction Mine No 1	C	Facility	Abandoned	AL	87.083333	33.1
+        Powell-Wade Pit No 1	C	Surface	Abandoned	AL	85.683333	34.816667
+        Mine No 2	C	Surface	Abandoned	AL	87.6	33.7417
+        Western No 1	C	Facility	Abandoned	AL	87.0042	33.8036
+        Flatwood Mine No 1	C	Surface	Abandoned	AL	87.4989	33.6228
+        Gold Mine	C	Surface	Abandoned	AL	87.75	34.0389
+        Casgar Pit	C	Surface	Abandoned	AL	85.6481	34.3897
+        Bryants Creek	C	Surface	Abandoned	AL	87.2786	33.7419
+        Riverside Mine	C	Surface	Abandoned	AL	87.2083	33.5589
+        Marion South Mine	C	Underground	Abandoned and Sealed	AL	88.7144	33.9808
+        Carbon Hill Mine No 1	C	Surface	Abandoned	AL	87.5708	34.9428
+        Omega No 1	C	Facility	Abandoned	AL	87.0572	33.8122
+        Strickland Pit	C	Surface	Abandoned	AL	87.7703	34.3042
+        Mccarne Mountain Mine	C	Surface	Abandoned	AL	86.9792	33.8536
+        Mine No 1	C	Surface	Abandoned	AL	87.766667	34.283333
+        Davis Pit	C	Surface	Abandoned	AL	87.4778	33.6208
+        Compliance 8-2	C	Surface	Abandoned	AL	86.5542	33.9261
+        Barnett Pit No 1	C	Surface	Abandoned	AL	84.4508	34.1319
+        Propst Mountain Mine	C	Surface	Abandoned	AL	87.3917	33.725
+        Bullock Mine No 1	C	Surface	Abandoned	AL	87.6078	34.1006
+        Franklin Pit	C	Surface	Abandoned	AL	87.5939	34.3397
+        Mine No 1	C	Surface	Abandoned	AL	87.0956	33.1328
+        Thoman Mine No 1	C	Underground	Abandoned and Sealed	AL	86.6922	33.4958
+        Hulsey Pit No 1	C	Surface	Abandoned	AL	87.6411	34.1397
+        Mine No 5	C	Surface	Abandoned	AL	87.4917	33.5375
+        Batchelor Pit	C	Surface	Abandoned	AL	87.6181	34.1708
+        Warrior No 1	C	Surface	Abandoned	AL	86.8192	33.8219
+        Eldridge #1	C	Surface	Abandoned	AL	87.6083	33.0631
+        Snowtown	C	Surface	Abandoned	AL	87.0333	33.6542
+        Runyan Wst Jefferson Pit	C	Surface	Abandoned	AL	87.0486	33.6375
+        Taits Gap Mine	C	Surface	Abandoned	AL	86.383333	33.966667
+        Barn Creek Pit	C	Surface	Abandoned	AL	87.8083	34.1333
+        Blossburg Mine	C	Surface	Abandoned	AL	86.9375	33.625
+        Coal Valley Mine No 1	C	Facility	Abandoned	AL	87.4339	33.7353
+        Riley Mine	C	Surface	Abandoned	AL	87.5708	34.3347
+        Bryant No 1	C	Surface	Abandoned	AL	85.6483	34.8614
+        No 1	C	Underground	Abandoned and Sealed	AL	85.8419	34.9603
+        Rutledge Pit	C	Surface	Abandoned	AL	87.605	34.3011
+        Stimpson	C	Surface	Abandoned	AL	86.7103	34.7375
+        Burton Mine No 1	C	Surface	Abandoned	AL	85.5567	34.6472
+        No 3	C	Underground	Abandoned and Sealed	AL	85.8456	34.9558
+        Cash Mines No 1	C	Underground	Abandoned	AL	85.55	34.479166
+        Cherokee Pit No 1	C	Surface	Abandoned	AL	85.5528	34.4611
+        Mccormick Pit No 1	C	Surface	Abandoned	AL	86.2125	34.0056
+        Dogwood Hills Mine	C	Surface	Abandoned	AL	85.6142	34.0325
+        Mine No 7	C	Surface	Abandoned	AL	87.325	33.225
+        Toltec No 2	C	Surface	Abandoned	AL	87.65	34.2917
+        P & P No 1	C	Surface	Abandoned	AL	87.5522	33.7153
+        Cedrum Mine	C	Surface	Abandoned	AL	87.4075	33.8481
+        Black Gold No 2	C	Surface	Abandoned	AL	86.4167	34.1917
+        Prospect Loading	C	Facility	Abandoned	AL	87.9497	33.9344
+        Tri State Mine No 2	C	Surface	Abandoned	AL	86.0092	34.5092
+        East Texas Mine No 5	C	Surface	Abandoned	AL	89.6653	36.78
+        Highpoint Pit No 1	C	Surface	Abandoned	AL	85.6933	34.0458
+        Wheeler Hollow No 2	C	Underground	Abandoned and Sealed	AL	87.3989	33.7025
+        Mcbryar Pit	C	Surface	Abandoned	AL	85.6206	34.8653
+        Pit No 1	C	Surface	Abandoned	AL	87.3672	33.1833
+        Theodore Plant	M	Facility	Active	AL	88.160833	30.554722
+        Bachlor Pit No 2	C	Surface	Abandoned	AL	87.6181	34.1708
+        M E No 11	C	Surface	Abandoned	AL	86.0561	34.5333
+        Mt Hebron Mine	C	Surface	Abandoned	AL	86.2842	34.1175
+        Ace Pit No 1	C	Surface	Abandoned	AL	87.6131	34.3364
+        Eubanks Pit	C	Surface	Abandoned	AL	85.6383	34.7089
+        Wolf Creek Mine	C	Surface	Abandoned	AL	86.3153	33.6442
+        Praco No 7	C	Surface	Abandoned	AL	87.1333	33.6083
+        Macedonia No 5	C	Surface	Abandoned	AL	87.3542	33.925
+        Gem Coal No 2	C	Surface	Abandoned	AL	87.75	34
+        Lindbergh	C	Surface	Abandoned	AL	87.032222	33.626944
+        Brimer	C	Surface	Abandoned	AL	87.6458	34.3
+        Cat Hollow Mine	C	Surface	Abandoned	AL	87.7375	34.3167
+        Gurley Creek Mine	C	Surface	Abandoned	AL	86.7661	33.8067
+        Henryellen #1	C	Surface	Abandoned	AL	86.5953	33.5619
+        Higdon Pit	C	Surface	Abandoned	AL	85.6217	34.8417
+        Gibbs Chapel Pit	C	Surface	Abandoned	AL	86.4742	34.1164
+        Pit No 1	C	Surface	Abandoned	AL	87.0936	33.9417
+        Bright Star Pit No 1	C	Surface	Abandoned	AL	86.4317	34.1608
+        Mine No 2	C	Surface	Abandoned	AL	87.7375	34.3042
+        Andrews Pit	C	Surface	Abandoned	AL	87.7542	34.275
+        Brookwood No 1	C	Surface	Abandoned	AL	87.366667	33.233333
+        Miller Creek Mine	C	Surface	Abandoned	AL	85.6086	34.805
+        Cluster Springs	C	Surface	Abandoned	AL	86.8294	33.6358
+        MARION COUNTY ROCK	M	Surface	Active	AL	87.691388	33.999722
+        Curley Mine	C	Surface	Abandoned	AL	87.5583	34.1222
+        Nickel Plate No 22	C	Surface	Abandoned	AL	86.8428	33.9483
+        Nickel Plate No 23	C	Surface	Abandoned	AL	87.4131	33.4433
+        Hychetown	C	Surface	Abandoned	AL	87.3	33.4092
+        G L T No 1	C	Underground	Abandoned and Sealed	AL	1.0169	0.1694
+        Tucker Hollow #1	C	Surface	Abandoned	AL	87.0417	33.7833
+        County Line Pit	C	Surface	Abandoned	AL	86.6978	33.7919
+        Glenwood Mine	C	Surface	Abandoned	AL	86.7486	33.7183
+        Pit #1	C	Surface	Abandoned	AL	87.2003	33.35
+        Royal Pit #1	C	Surface	Abandoned	AL	86.5144	34.0867
+        Studhorse No 1	C	Surface	Abandoned	AL	87.75	33.866667
+        Peterson Pit #1	C	Surface	Abandoned	AL	87.4336	33.2417
+        Acmar Washer	C	Facility	Abandoned	AL	86.5278	33.6111
+        Coal City Mine	C	Surface	Abandoned	AL	86.26	33.6878
+        Acmar	C	Surface	Abandoned	AL	86.26	33.6878
+        Gamel Mine	C	Surface	Abandoned	AL	87.2131	33.875
+        Mine #1	C	Surface	Abandoned	AL	85.7658	34.5494
+        Austin	C	Surface	Abandoned	AL	85.6422	34.7856
+        Mine No 1	C	Surface	Abandoned	AL	87.7139	34
+        Calumet Mine	C	Surface	Abandoned	AL	87.3111	33.7994
+        Parker Branch	C	Surface	Abandoned	AL	87.083333	33.933333
+        M A C Pit #2	C	Surface	Abandoned	AL	86.9694	33.8628
+        Mine #1	C	Underground	Abandoned and Sealed	AL	87.5497	34.0064
+        Fairview Pit	C	Surface	Abandoned	AL	86.2117	33.7417
+        Wheeler Hollow No 3 Mine	C	Underground	Abandoned and Sealed	AL	1.0169	0.1694
+        Pit #5	C	Surface	Abandoned	AL	87.4169	33.2336
+        Henry Ellen No 2	C	Surface	Abandoned	AL	86.6031	33.5394
+        Texas Mine	C	Underground	Abandoned and Sealed	AL	87.6836	34.8992
+        Mine #8	C	Surface	Abandoned	AL	87.366667	33.2
+        Crooked Creek Mine	C	Surface	Abandoned	AL	87.666667	34.05
+        Pit #3	C	Surface	Abandoned	AL	87.2681	33.3669
+        Grayhill-Nunnally	C	Surface	Abandoned	AL	81	33.2083
+        Black Pond Mine	C	Surface	Abandoned	AL	87.3472	34.0392
+        West Blocton No 116	C	Surface	Abandoned	AL	87.033333	33.166667
+        No 1	C	Underground	Abandoned and Sealed	AL	85.5567	34.6472
+        Pit #1	C	Surface	Abandoned	AL	87.3208	33.6833
+        Mine #1	C	Surface	Abandoned	AL	87.1719	33.635
+        Tide Coal Co Inc Pit #1	C	Surface	Abandoned	AL	87.3653	33.9444
+        Lynn Pit	C	Surface	Abandoned	AL	87.5342	34.0133
+        Sandtown Mine	C	Surface	Abandoned	AL	87.4778	33.61
+        Williams Pit	C	Surface	Abandoned	AL	85.6833	34.8417
+        Swader Mine	C	Surface	Abandoned	AL	85.7031	34.5622
+        Boothton No 115	C	Surface	Abandoned	AL	87.0208	33.1728
+        Hurricane Creek Pit	C	Surface	Abandoned	AL	86.4878	34.8528
+        Norwood Mine	C	Surface	Abandoned	AL	85.725	34.775
+        Center Point Pit	C	Surface	Abandoned	AL	86.2814	34.1958
+        Natural Bridge #1	C	Surface	Abandoned	AL	87.5694	34.0958
+        Scott Road Mine	C	Surface	Abandoned	AL	86.4742	34.1164
+        Mine No 1	C	Surface	Abandoned	AL	87.4881	34.0667
+        Pit 14-20	C	Surface	Abandoned	AL	87.033333	33.15
+        Cole Mine	C	Surface	Abandoned	AL	85.8692	34.1972
+        Wolf Mountain	C	Surface	Abandoned	AL	87.4633	33.7958
+        Royal Pit #3	C	Surface	Abandoned	AL	86.4917	34.0864
+        Douglas	C	Surface	Abandoned	AL	86.2583	34.1819
+        Empire Mine	C	Surface	Abandoned	AL	86.9872	33.8283
+        Kaiser Rose	C	Surface	Abandoned	AL	87.4492	34.0269
+        Day Mine	C	Surface	Abandoned	AL	87.3583	33.3417
+        Bobo Pit	C	Surface	Abandoned	AL	85.8364	34.195
+        Mine No 1	C	Underground	Abandoned and Sealed	AL	87.733333	34.5
+        Pit 1	C	Surface	Abandoned	AL	87.6167	34.3458
+        Star Branch Mine	C	Surface	Abandoned	AL	87.625	33.7167
+        Bennett	C	Surface	Abandoned	AL	86.4683	33.8861
+        Pit #4	C	Surface	Abandoned	AL	87.2625	33.3917
+        Mine No 3	C	Surface	Abandoned	AL	87.6	34.3
+        Triple T Coal Co Inc Toltec No 2	C	Surface	Abandoned	AL	87.65	34.2917
+        Blocton #9 Washer	C	Facility	Abandoned	AL	87.0961	33.1133
+        Arnold Mine	C	Surface	Abandoned	AL	86.8083	33.8083
+        Montevallo Mine	C	Surface	Abandoned	AL	86.8958	33.2419
+        Margaret	C	Surface	Abandoned	AL	86.4708	33.6583
+        Cherokee County Pit #1	C	Surface	Abandoned	AL	85.8369	34.1972
+        Blue Creek Mine	C	Surface	Abandoned	AL	87.4944	33.5031
+        Sunny Home Mine	C	Surface	Abandoned	AL	87.675	34.0833
+        Mine No 2	C	Surface	Abandoned	AL	87.75	34.0103
+        Mt Hope Mine	C	Surface	Abandoned	AL	87.0522	33.8892
+        Empire Mine	C	Surface	Abandoned	AL	87.0333	33.77
+        Crane Hill	C	Surface	Abandoned	AL	87.0833	34.0389
+        #2 Pit	C	Surface	Abandoned	AL	86.9375	33.1806
+        Nickel Pit #1	C	Surface	Abandoned	AL	87.566667	34.05
+        East Texas #6	C	Surface	Abandoned	AL	86.2517	34.1756
+        Sylvania Mine	C	Surface	Abandoned	AL	85.866667	34.616667
+        Berry	C	Surface	Abandoned	AL	85.7228	34.7336
+        Wade Pit	C	Surface	Abandoned	AL	85.6	34.85
+        Pisgah No 2	C	Surface	Abandoned	AL	85.7228	34.7336
+        Nyota Mine	C	Underground	Abandoned and Sealed	AL	86.7472	33.8597
+        East Pecker Wood	C	Underground	Abandoned and Sealed	AL	86.7583	33.875
+        Long Branch Mine	C	Underground	Abandoned and Sealed	AL	86.7139	33.8444
+        Sugar Creek Pit (1 & 2)	C	Surface	Abandoned	AL	86.7003	33.9517
+        Eagle Mine	C	Underground	Abandoned and Sealed	AL	87.4542	33.2667
+        Dogwood Mine	C	Underground	Abandoned and Sealed	AL	87.383333	33.2
+        Vantage Mine No 3	C	Underground	Abandoned and Sealed	AL	87.7458	34.0083
+        Vantage Mine No 2	C	Underground	Abandoned and Sealed	AL	87.7333	34.0083
+        Trojan No 1	C	Underground	Abandoned and Sealed	AL	86.7583	33.65
+        Black Creek #1 Hopewell	C	Underground	Abandoned and Sealed	AL	86.675	33.7922
+        Ridale Mine	C	Underground	Abandoned and Sealed	AL	86.7583	33.8764
+        Pit #6	C	Surface	Abandoned	AL	87.3694	33.3
+        Creek Pit #3	C	Surface	Abandoned	AL	87.3697	33.25
+        Riverside	C	Surface	Abandoned	AL	87.24	33.5625
+        #2	C	Underground	Abandoned and Sealed	AL	87.6542	33.925
+        Flagnagan Mine	C	Underground	Abandoned and Sealed	AL	87.625	34.3417
+        Debter	C	Surface	Abandoned	AL	85.7806	34.5514
+        Black Pond #1	C	Surface	Abandoned	AL	87.325	34.0375
+        Coaldale Pit	C	Surface	Abandoned	AL	86.7775	33.8322
+        Bailey Mine	C	Surface	Abandoned	AL	86.8364	33.5625
+        Sides Pit	C	Surface	Abandoned	AL	87.2531	34.0078
+        Ace #4	C	Surface	Abandoned	AL	87.6083	34.2986
+        Pearidge Mine	C	Surface	Abandoned	AL	87.5594	33.7158
+        Kaiser Bottom Pit	C	Surface	Abandoned	AL	87.4881	34.0342
+        Beech Grove #1	C	Surface	Abandoned	AL	87.6097	34.205
+        Cordell Creek	C	Surface	Abandoned	AL	87.0625	33.7917
+        Myers Pit	C	Surface	Abandoned	AL	87.0333	33.77
+        Black Diamond Getmore Mine	C	Surface	Abandoned	AL	87.0675	33.3747
+        Praco	C	Facility	Abandoned	AL	87.1181	33.5861
+        Gurley Creek Mine	C	Underground	Abandoned and Sealed	AL	86.7617	33.8111
+        Watkins	C	Surface	Abandoned	AL	85.705	34.7394
+        Central Shop	C	Facility	Abandoned	AL	87.293889	33.2925
+        Macedonia	C	Surface	Abandoned	AL	86.0194	34.4867
+        Manchester Mine	C	Surface	Abandoned	AL	87.3169	33.9194
+        Flatwood Mine	C	Surface	Abandoned	AL	87.5203	33.6103
+        Guntersville LS Quarry	M	Surface	Active	AL	86.258056	34.4425
+        Capricorn Mine	C	Underground	Abandoned and Sealed	AL	86.85	33.783333
+        Atmore Sand and Gravel	M	Surface	Abandoned	AL	87.538888	31.092777
+        Hard Rock #1	C	Underground	Abandoned and Sealed	AL	86.7583	33.6458
+        Mckenzie	C	Surface	Abandoned	AL	87.6556	34.7944
+        Oak Grove	C	Surface	Abandoned	AL	87.1444	33.4664
+        Oakman Mine #2	C	Surface	Abandoned	AL	87.44	33.7825
+        Pit 23 Triple L Pit #1	C	Surface	Abandoned	AL	87.4131	33.4433
+        Cordova Mine	C	Surface	Abandoned	AL	87.2167	33.7889
+        Pinhook Mine	C	Surface	Abandoned	AL	87.0417	33.77
+        Dekalb No 3	C	Surface	Abandoned	AL	85.885	34.3531
+        Coalmont Pit	C	Surface	Abandoned	AL		35.4244
+        Pea Ridge No 1	C	Surface	Abandoned	AL	87.5592	33.7175
+        Blue Creek	C	Surface	Abandoned	AL	87.4944	33.5031
+        Cherokee Mine	C	Underground	Abandoned and Sealed	AL	85.5375	34.4733
+        Sandtown Mine	C	Surface	Abandoned	AL	87.4778	33.61
+        Crooked Creek Mine	C	Surface	Abandoned	AL	87.0853	34.0456
+        Hendrix Mine	C	Surface	Abandoned	AL	86.4678	34.0303
+        North River Emily #3r Mine	C	Surface	Abandoned	AL	87.4833	33.475
+        Faulkner Energy Corp	C	Surface	Abandoned	AL	87.3072	33.8156
+        Warco	C	Surface	Abandoned	AL	87.3686	33.1833
+        Wilson Mine	C	Surface	Abandoned	AL	87.6583	34.3444
+        Winfield Yard	M	Surface	Abandoned	AL	87.775277	33.948888
+        Stevenson #1	C	Surface	Abandoned	AL	85.845	34.9611
+        Oak Grove #1	C	Surface	Abandoned	AL	87.125	33.3917
+        Tuscaloosa Pit #1	C	Surface	Abandoned	AL	87.2083	33.3314
+        Pit 29/Triple L Pit #2	C	Surface	Abandoned	AL	87.4144	33.4372
+        West Blocton #1	C	Facility	Abandoned	AL	87.0931	33.1119
+        Kaizer Bottom	C	Surface	Abandoned	AL	87.48	34.0317
+        Masseyline Mine	C	Underground	Abandoned and Sealed	AL	86.7031	33.7786
+        Poplar Springs	C	Surface	Abandoned	AL	87.4083	34.0583
+        Herborn Pit	C	Surface	Abandoned	AL	87.2592	33.1808
+        Mccollum Mine	C	Surface	Abandoned	AL	87.3306	33.8047
+        Piney Ridge	C	Surface	Abandoned	AL	87.2083	34.0417
+        Black Pond	C	Surface	Abandoned	AL	87.35	34.0083
+        Beech Grove	C	Surface	Abandoned	AL	87.6167	34.1917
+        Poplar Springs Mine No 1	C	Surface	Abandoned	AL	87.3933	34.0667
+        Sayre #8	C	Surface	Abandoned	AL	86.9867	33.7175
+        Byrum #1	C	Surface	Abandoned	AL	85.7781	34.5547
+        Delmar Mine	C	Surface	Abandoned	AL	87.6083	34.1714
+        Holly Grove Mine	C	Surface	Abandoned	AL	87.4164	33.8933
+        Scott Callen Sand & Gravel	M	Surface	Abandoned	AL	88.743333	32.350833
+        Warco Pit #1	C	Surface	Abandoned	AL	87.3744	33.2703
+        Love Mine	C	Surface	Abandoned	AL	85.7842	34.4708
+        Turkey Creek West Mine	C	Surface	Abandoned	AL	86.8208	33.7364
+        J & G Mine #3	C	Surface	Abandoned	AL	87.6019	34.3039
+        Casgar #1 Mine	C	Surface	Abandoned	AL	86.7731	33.7731
+        Jagger No 1	C	Underground	Abandoned and Sealed	AL	87.0667	33.3569
+        Nyota Mine	C	Surface	Abandoned	AL	86.7481	33.8561
+        Shelby #1	C	Underground	Abandoned and Sealed	AL	86.9033	33.2736
+        Little Black Water Mine	C	Surface	Abandoned	AL	87.4633	33.9889
+        Langston Mine	C	Surface	Abandoned	AL	86.0356	34.5556
+        Lively Branch Mine	C	Surface	Abandoned	AL	85.6383	34.8925
+        Dora Pit	C	Surface	Abandoned	AL	87.0772	33.7083
+        Black Pond #6 Mine	C	Surface	Abandoned	AL	87.3542	34.0417
+        Bullock Mine #1	C	Surface	Abandoned	AL	87.5833	34.0917
+        B & B Mine No 1	C	Surface	Abandoned	AL	86.5592	34.3728
+        COGLE PIT	M	Surface	Active	AL	87.059167	32.346944
+        Dolin Mine	C	Surface	Abandoned	AL	87.7914	34.0139
+        Margaret-Sanie	C	Surface	Abandoned	AL	86.416667	33.7
+        Bledsoe Mine No 2	C	Underground	Abandoned	AL	85.846944	34.960833
+        Mine #3	C	Surface	Abandoned	AL	87.4772	33.8861
+        Supreme Mine	C	Surface	Abandoned	AL	87.4217	33.8125
+        Bear Creek Rail	C	Facility	Abandoned	AL	87.6925	34.2878
+        Marietta Mine	C	Surface	Abandoned	AL	87.3981	33.7033
+        Eldridge Mine	C	Surface	Abandoned	AL	87.6022	33.9328
+        Lost Creek-Pit No. 21	C	Surface	Abandoned	AL	87.791389	34.013889
+        Mine #1	C	Underground	Abandoned and Sealed	AL	86.8228	33.8167
+        Central Mining Inc	C	Surface	Abandoned	AL	87.4167	34.0417
+        Oak Grove #2	C	Surface	Abandoned	AL	87.1036	33.4919
+        Saragossa Rail Siding	C	Facility	Abandoned	AL	87.4222	33.9167
+        Sylvania	C	Surface	Abandoned	AL	85.7539	34.5761
+        Black Star Mine	C	Underground	Abandoned and Sealed	AL	87.055	33.3597
+        Nauvoo Rail Site	C	Facility	Abandoned	AL	87.4897	33.9897
+        Five Points Mine	C	Surface	Abandoned	AL	86.5722	34.0167
+        Pit 32	C	Surface	Abandoned	AL	87.4225	33.3819
+        Port Seminole Washer	C	Facility	Abandoned	AL	87.4144	33.4372
+        Mccarne Mountain Mine	C	Surface	Abandoned	AL	87.0728	33.7647
+        Weller Mine	C	Surface	Abandoned	AL	87.0758	33.3281
+        Hoggle Ridge Mine	C	Surface	Abandoned	AL	87.6339	34.1872
+        Long'S Branch Mine	C	Surface	Abandoned	AL	86.7181	33.8347
+        Three Forks Mine	C	Surface	Abandoned	AL	87.3378	33.5478
+        Blue Creek #2	C	Surface	Abandoned	AL	87.5853	33.9278
+        Pit No 2	C	Surface	Abandoned	AL	87.1972	38.7875
+        Wooldridge Mine #1	C	Surface	Abandoned	AL	87.8411	34.1797
+        Gibson Hill #2 Mine	C	Surface	Abandoned	AL	87.425	33.7
+        Woodstock Pit #1	C	Surface	Abandoned	AL	87.0417	33.1833
+        Hickory Grove	C	Surface	Abandoned	AL	87.322222	34.044444
+        Day Mine No 2	C	Surface	Abandoned	AL	87.3261	33.3528
+        St Vernon Mine #1	C	Underground	Abandoned and Sealed	AL	1.0169	1.0169
+        Pit No 6	C	Surface	Abandoned	AL	87.2186	33.7611
+        Bull City Mine	C	Surface	Abandoned	AL	87.2083	33.3314
+        Viking Energy Group Inc	C	Facility	Abandoned	AL	86.9764	33.5514
+        Briceton Mine	C	Surface	Abandoned	AL	87.0319	33.7917
+        Lucus #1	C	Surface	Abandoned	AL	88.0225	34.0561
+        Bull City	C	Surface	Abandoned	AL	87.2708	33.4333
+        Nauvoo Mine #3	C	Surface	Abandoned	AL	87.4417	33.9792
+        Poplar Springs Mine	C	Surface	Abandoned	AL	87.7278	33.9917
+        Morris No 1 Mine	C	Underground	Abandoned and Sealed	AL	86.8122	33.7328
+        Blue Springs Pit	C	Surface	Abandoned	AL	86.5736	34.0833
+        Cordell Creek Mine	C	Surface	Abandoned	AL	87.1264	34.9956
+        Hope Galloway	C	Surface	Abandoned	AL	87.5583	33.9417
+        Addison Rail Siding	C	Facility	Abandoned	AL	87.2511	33.8022
+        North Huntsville Quarry & Mill	M	Surface	Active	AL	86.643333	34.778611
+        Pit No 1	C	Surface	Abandoned	AL	33.6908	87.6886
+        Overton Pit	C	Surface	Abandoned	AL	86.6922	33.5
+        Mcculley Mine	C	Surface	Abandoned	AL	87.1036	33.1378
+        Dry Creek Pit	C	Surface	Abandoned	AL	86.9086	34.0689
+        Trinity Mine	C	Surface	Abandoned	AL	87.5708	33.8756
+        Moccasin Branch Mine	C	Surface	Abandoned	AL	87.3892	34.0322
+        Warco Pit #3	C	Surface	Abandoned	AL	87.5017	33.4133
+        Primitive Ridge	C	Surface	Abandoned	AL	87.12	33.1056
+        Port Walker	C	Facility	Abandoned	AL	87.1344	33.7844
+        Steep Creek Iii	C	Surface	Abandoned	AL	87.3311	33.5692
+        Alston Mine	C	Surface	Abandoned	AL	87.4222	33.2219
+        Ringer #1	C	Surface	Abandoned	AL	85.6014	34.8875
+        St Clair Mine #1	C	Surface	Abandoned	AL	86.4819	33.6339
+        East Brookwood It	C	Surface	Abandoned	AL	87.2911	33.2861
+        Parkland Mine	C	Surface	Abandoned	AL	87.5164	33.9033
+        Tpt Alabama #1	C	Facility	Abandoned	AL	87.95	30.166667
+        Eufaula Plant	M	Surface	Intermittent	AL	85.157222	31.878056
+        Marigold Mine	C	Facility	Abandoned	AL	87.3103	33.9419
+        Chambers Mine	C	Surface	Abandoned	AL	85.6933	34.5686
+        Davis Creek	C	Surface	Abandoned	AL	87.3639	27.4444
+        America Highwall	C	Underground	Abandoned and Sealed	AL	87.2072	33.6894
+        Whites Chapel Mine	C	Surface	Abandoned	AL	86.5278	32.5625
+        Taylor #1	C	Surface	Abandoned	AL	85.6575	34.7803
+        Birmingport Facility	C	Facility	Abandoned	AL	87.1122	33.5756
+        Stephen Black #1	C	Surface	Abandoned	AL	85.875	34.4022
+        Files Bottom	C	Surface	Abandoned	AL	87.5231	33.8794
+        Pleasant Grove #20	C	Surface	Abandoned	AL	87.3619	33.7914
+        Mary Lee No 1	C	Surface	Abandoned	AL	87.5256	33.9014
+        West Blocton Test Pit	C	Surface	Abandoned	AL	87.116667	33.116667
+        Cooks Mine	C	Surface	Abandoned	AL	86.5689	33.8333
+        Pit #3	C	Surface	Abandoned	AL	87.0944	33.1361
+        Black Creek	C	Facility	Abandoned	AL	86.4083	33.7
+        Mccarne Mountain	C	Surface	Abandoned	AL	87.9786	33.8561
+        Pinegar Mine	C	Surface	Abandoned	AL	87.19	33.3339
+        Masseyline Mine	C	Surface	Abandoned	AL	86.6981	33.7833
+        Mine No 1	C	Underground	Abandoned and Sealed	AL	86.7958	33.8153
+        Black Creek Mine	C	Surface	Abandoned	AL	87.7369	35.0167
+        Fabius Washer Facility	C	Facility	Abandoned	AL	85.7983	34.7917
+        Cedar Cove Mine 2	C	Surface	Abandoned	AL	87.375	33.2
+        Holly Grove	C	Surface	Abandoned	AL	87.4	33.8603
+        H & H Minerals Inc	C	Surface	Abandoned	AL	86.9022	33.6422
+        Averytown Pit	C	Surface	Abandoned	AL	87.3242	33.2664
+        Gurnee Mine	C	Surface	Abandoned	AL	87.9583	33.1792
+        Warco Pit #4	C	Surface	Abandoned	AL	87.3328	33.1958
+        Early Ridge Mine	C	Surface	Abandoned	AL	87.0475	33.8497
+        Casgar Mine	C	Surface	Abandoned	AL	86.7917	33.7692
+        Serle Mine	C	Surface	Abandoned	AL	87.3917	33.3583
+        West Alabama Sand & Gravel	M	Surface	Active	AL	87.790277	33.758333
+        D & S Excavating Co Inc	C	Surface	Abandoned	AL	88.4272	33.6908
+        Summit LS Quarry	M	Surface	Active	AL	86.472778	34.204444
+        Pit #1 Brookside	C	Surface	Abandoned	AL	86.8528	33.6042
+        East Brookwood Loading Facility	C	Facility	Abandoned	AL	87.2764	33.2833
+        Stovall-Files	C	Surface	Abandoned	AL	87.55	33.85
+        Howton Mine	C	Surface	Abandoned	AL	87.3653	33.2639
+        Gorgas Recovery Project	C	Facility	Abandoned	AL	87.225	33.65
+        Fabius Slurry Recovery Project	C	Facility	Abandoned	AL	85.8	34.7781
+        Plaster Mine	M	Surface	Abandoned	AL	86.663056	32.443889
+        Bkw-River King Mine	C	Surface	Abandoned	AL	87.1331	33.5222
+        Merritt Rogers Mine	C	Surface	Abandoned	AL	86.918888	33.753055
+        Rice Mine	C	Surface	Abandoned	AL	87.0222	33.7764
+        Locust Fork Mine	C	Surface	Abandoned	AL	86.8153	33.8192
+        Davis Creek Mine	C	Surface	Abandoned	AL	87.2956	33.4086
+        Liberty Mine	C	Surface	Abandoned	AL	87.1917	33.3375
+        Bkw-Empire Town Creek South	C	Surface	Abandoned	AL	87.0511	33.8019
+        Cahaba Mine	C	Underground	Abandoned and Sealed	AL	87.9583	33.1792
+        Warrior Mine	C	Surface	Abandoned	AL	86.7939	33.8125
+        Overton Facility	C	Facility	Abandoned	AL	86.6708	33.5458
+        Holly Grove #1	C	Surface	Abandoned	AL	87.3083	33.8306
+        Friday'S Crossing	C	Surface	Abandoned	AL	86.4383	34.0642
+        Ground Hog Mine	C	Surface	Abandoned	AL	87.25	33.366667
+        Clarke Mine	C	Surface	Abandoned	AL	87.575	33.9056
+        Peterson Kar-Bon Mining Company	C	Surface	Abandoned	AL	87.4181	33.2417
+        Kepple Creek Mine	C	Surface	Abandoned	AL	87.375	33.2083
+        Bibby Mine	C	Underground	Abandoned and Sealed	AL	87.0136	33.6853
+        Ferry Pit	C	Facility	Abandoned	AL	87.0406	33.5381
+        Jolly Pit	C	Surface	Abandoned	AL	86.8583	32.875
+        Mineraltec Mine No 3	C	Underground	Abandoned and Sealed	AL	87.7222	34.0181
+        Parkland	C	Surface	Abandoned	AL	87.5164	33.9033
+        Alston Mine	C	Surface	Abandoned	AL	87.425	33.2167
+        Peacock Mine	C	Surface	Abandoned	AL	86.5833	33.575
+        Town Creek West	C	Surface	Abandoned	AL	87.0461	33.8094
+        Herd Bull Mine	C	Surface	Abandoned	AL	87.71	34.0417
+        Pinegar Mine	C	Surface	Abandoned	AL	87.19	33.3339
+        Burton Bend	C	Surface	Abandoned	AL	87.0872	33.4731
+        Gurnee	C	Underground	Abandoned and Sealed	AL	86.9597	33.1811
+        Blue Springs Mine #2	C	Surface	Abandoned	AL	86.5861	34.0836
+        Straight Mountain Mine	C	Surface	Abandoned	AL	86.375	33.8536
+        Pit #35	C	Surface	Abandoned	AL	87.6972	34.0281
+        Boe Road Pit	M	Surface	Active	AL	88.255	30.508333
+        Aldridge Mine No 1	C	Surface	Abandoned	AL	87.2347	33.7278
+        Brookwood Pit No 1	C	Surface	Abandoned	AL	87.3247	33.2369
+        Big Bear	C	Surface	Abandoned	AL	87.3003	34.0725
+        Justice	C	Surface	Abandoned	AL	87.3725	33.8628
+        Coal Creek Mine	C	Surface	Abandoned	AL	87.2408	33.6611
+        Mine #89	C	Facility	Abandoned	AL	87.1583	33.5861
+        Willett Clay-Briceton	C	Surface	Abandoned	AL	87.0292	33.7889
+        Berry-Barnes Mine	C	Surface	Abandoned	AL	87.6342	33.6886
+        Mine No 6	C	Surface	Abandoned	AL	87.0231	33.6636
+        OAKMULGEE  CRUSHER	M	Surface	Active	AL	87.099722	32.399722
+        Skelton Creek	C	Facility	Abandoned	AL	87.1297	33.5978
+        Fern Springs	C	Surface	Abandoned	AL	87.6183	33.97
+        Higdon Mine	C	Surface	Abandoned	AL	85.6333	34.8619
+        Phenix City Mine	M	Surface	NonProducing	AL	84.999722	32.409722
+        Eagle Mining #1	C	Surface	Abandoned	AL	86.7825	33.6278
+        Ground Hog Mine	C	Surface	Abandoned	AL	87.225	33.4083
+        Dogtown Mine	C	Surface	Abandoned	AL	87.583333	34.958333
+        Straight Mountain Mine #2	C	Surface	Abandoned	AL	86.4208	33.8408
+        Pit 4	C	Surface	Abandoned	AL	86.75	33.8347
+        P & R Mining	M	Surface	Active	AL	87.496389	31.110556
+        Howard Mine	C	Surface	Abandoned	AL	87.5722	33.8572
+        Warrior Pit	C	Surface	Abandoned	AL	86.7917	33.8417
+        Black Creek No 2 Mine	C	Underground	Abandoned and Sealed	AL	86.9769	33.7194
+        Kimberly Pit	C	Surface	Abandoned	AL	86.7961	33.5892
+        Lehigh	C	Surface	Abandoned	AL	86.675	33.8583
+        Helms Mine	C	Surface	Abandoned	AL	86.4008	33.8572
+        Bradley Town	C	Surface	Abandoned	AL	87.2494	33.6933
+        Crane Hill	C	Surface	Abandoned	AL	87.9128	34.0083
+        Pit #5	C	Surface	Abandoned	AL	86.75	37.7931
+        Hebron Mine	C	Surface	Abandoned	AL	87.083333	33.175
+        West Blocton Pit	C	Surface	Abandoned	AL	87.0678	33.1678
+        Brookwood Mine	C	Surface	Abandoned	AL	87.3144	33.2389
+        Trinity Mine	C	Surface	Abandoned	AL	87.5603	34.9358
+        Coalburg #1	C	Surface	Abandoned	AL	86.8578	33.5817
+        Browns Creek Mine	C	Surface	Abandoned	AL	86.4669	34.0364
+        Hanna Mill Mine	C	Surface	Abandoned	AL	87.2603	33.3311
+        Stone Ridge Mine No 1	C	Surface	Abandoned	AL	87.4097	33.3922
+        Wolf Creek	C	Surface	Abandoned	AL	87.375	33.675
+        Natural Bridge Mine	C	Surface	Abandoned	AL	87.4947	33.9853
+        Shorter Plant	M	Surface	Abandoned	AL	85.9625	32.411388
+        Blue Creek	C	Surface	Abandoned	AL	87.695	34.9708
+        Armory Mine No 1	C	Surface	Abandoned	AL	1.0169	1.0169
+        Parkland Mine	C	Underground	Abandoned and Sealed	AL	87.5194	33.9028
+        Oswayo #5	C	Surface	Abandoned	AL	87.0806	33.3444
+        Steep Creek	C	Surface	Abandoned	AL	87.3311	33.5692
+        Mine No 5	C	Surface	Abandoned	AL	87.4353	34.9386
+        Mattie Ridge Mine	C	Surface	Abandoned	AL	87.5867	34.04
+        Hatt Mine	C	Surface	Abandoned	AL	87.2686	0.1694
+        Poplar Springs	C	Surface	Abandoned	AL	87.333333	33.416667
+        Chapel Hill	C	Surface	Abandoned	AL	87.205	33.8192
+        Tysonville Plant	M	Surface	Abandoned	AL	86.004444	32.389444
+        Flatwood Mine	C	Surface	Abandoned	AL	87.5111	33.9556
+        Black Creek #22	C	Surface	Abandoned	AL	86.9958	33.7139
+        Yeshic	C	Surface	Abandoned	AL	87.0833	33.1028
+        Pit #2	M	Surface	Abandoned	AL	87.466389	31.495833
+        Five Mile Creek	C	Surface	Abandoned	AL	86.8367	33.8375
+        Mine #6	C	Surface	Abandoned	AL	87.6192	33.9703
+        Clark Hollow Mine	C	Surface	Abandoned and Sealed	AL	87.0514	33.8544
+        Magbee Bend No 1 Mine	C	Underground	Abandoned and Sealed	AL	87.0767	33.8092
+        Warco #7	C	Surface	Abandoned	AL	87.1111	33.1
+        Warco #8	C	Surface	Abandoned	AL	87.3583	33.1833
+        Area #6 Mine	C	Surface	Abandoned	AL	87.16	33.3139
+        Watson Mine	C	Surface	Abandoned	AL	86.8825	33.6461
+        North Goodwin Creek Mine	C	Surface	Abandoned	AL	87.6553	33.9853
+        Knight Pit	M	Surface	Active	AL	87.325721	31.539239
+        Cane Creek Mine	C	Surface	Abandoned	AL	87.5456	33.7181
+        North Pratt Mine	C	Underground	Abandoned and Sealed	AL	87.9944	33.6178
+        Joshua Mine	C	Surface	Abandoned	AL	87.2019	33.6272
+        South Goodwin Creek	C	Surface	Abandoned	AL	87.6481	33.9861
+        Sipsey Mine	C	Surface	Abandoned	AL	86.3556	33.9875
+        Freeman Branch	C	Surface	Abandoned	AL	87.6178	33.9511
+        Southern Red Rock, LLC	M	Surface	Active	AL	86.978719	33.50191
+        Howton Mine	C	Surface	Abandoned	AL	87.3625	33.2667
+        Coal Creek Mine	C	Surface	Abandoned	AL	87.0136	33.6219
+        Lockhart	C	Surface	Abandoned	AL	87.4947	33.7631
+        East Branch Mine	C	Surface	Abandoned	AL	87.7825	33.0131
+        Pit No 64-17	C	Surface	Abandoned	AL	87.3	33.7981
+        Sharon Heights Church Site	C	Surface	Abandoned	AL	87.925	33.625
+        Shoal Creek Mine	C	Underground	Active	AL	87.303889	33.519444
+        Yellow Creek Mine	C	Underground	Abandoned and Sealed	AL	87.4333	33.5889
+        Captain D	C	Surface	Abandoned	AL	87.0222	33.7917
+        Eldridge Mine	C	Surface	Abandoned	AL	87.6167	33.9378
+        Pinhook Mine	C	Surface	Abandoned	AL	87.0222	33.7889
+        Gholson Mine No.1	C	Surface	Abandoned	AL	86.9425	33.199167
+        Whiteoak Mine	C	Surface	Abandoned	AL	87.2925	33.4303
+        Locust Fork Mine #1	C	Surface	Abandoned	AL	86.7828	33.9064
+        River Ramp Mine	C	Surface	Abandoned	AL	87.4125	33.2667
+        Prospect Mine-Pit #26	C	Surface	Abandoned	AL	87.4828	33.9167
+        Har Gal Mining	M	Surface	Abandoned	AL	85.463888	33.923611
+        Baker Mine	C	Surface	Abandoned	AL	87.37	33.8567
+        Mine No 9	C	Surface	Abandoned	AL	87.5003	33.9689
+        Mine #8	C	Surface	Abandoned	AL	87.4633	33.9675
+        Mine No 7	C	Surface	Abandoned	AL	87.4714	33.9272
+        Shady Grove Mine	C	Surface	Abandoned	AL	87.0647	33.3992
+        Nauvoo Black Creek Mine	C	Surface	Abandoned	AL	87.4947	33.9853
+        Kansas Mine	C	Surface	Abandoned	AL	87.5972	33.9178
+        Rockhouse	C	Surface	Abandoned	AL	87.2814	33.3828
+        Linton Job	C	Surface	Abandoned	AL	86.8031	33.8322
+        Mine No 2	C	Surface	Temporarily Idled	AL	85.687778	34.789444
+        Wheat-Ardell Mine	C	Surface	Abandoned	AL	87.1031	34.0347
+        PIT JACKSON	M	Facility	Abandoned	AL	88.060833	30.731944
+        Woodstock-2	M	Surface	Abandoned	AL	87.0825	33.291944
+        Providence Mine	C	Surface	Abandoned	AL	87.3417	33.7167
+        Universal #1	C	Facility	Abandoned	AL	87.1125	33.5917
+        Grace Chapel	C	Surface	Abandoned	AL	87.3581	33.8194
+        Mossboro	C	Surface	Abandoned	AL	86.8931	33.2583
+        Mine No 10	C	Surface	Abandoned	AL	87.475	33.8
+        Crimson Stone	M	Facility	Active	AL	87.054167	33.408889
+        Lehigh Mine	C	Surface	Abandoned	AL	86.5944	33.7528
+        Sylacauga Marble, Mine #1	M	Surface	Active	AL	86.385	33.139167
+        Mobile Abrasives, Inc.	M	Surface	Abandoned	AL	88.0325	30.693611
+        Majestic Mine No. 2	C	Surface	Abandoned	AL	86.776944	33.754722
+        T & L Mine	C	Surface	Abandoned	AL	87.0753	33.7914
+        Crescent Valley	C	Surface	Abandoned	AL	87.5456	33.8889
+        Mine #2	C	Surface	Abandoned	AL	85.6375	34.85
+        Speedway Quarry	M	Surface	Active	AL	86.040556	33.557222
+        K-Lee Processing Inc	C	Facility	Abandoned	AL	87.041667	33.45
+        Jackson Creek Sand	M	Surface	Abandoned	AL	88.128333	30.939167
+        Howton Mine	C	Surface	Abandoned	AL	87.3733	33.2708
+        Environmental Improvement Mine	C	Surface	Abandoned	AL	87.2136	33.9969
+        Crossroad	C	Surface	Abandoned	AL	87.5886	34.0375
+        Cluster Springs Mine	C	Surface	Abandoned	AL	86.8278	33.6261
+        Brilliant Coal Washer	C	Facility	Abandoned	AL	86.776666	33.836111
+        Mercy Bridge Mine	C	Surface	Abandoned	AL	87.4244	33.6914
+        Peel Creek Mine	C	Surface	Abandoned	AL	86.9061	33.2417
+        Pocahontas	C	Surface	Abandoned	AL	87.4836	33.8711
+        Pinhook Mine	C	Surface	Abandoned	AL	87.0456	0.1694
+        Cane Creek Mine	C	Surface	Abandoned	AL	87.5467	33.7139
+        Piney Woods Preparation Plant	C	Facility	Temporarily Idled	AL	86.975833	33.185833
+        Antioch Mine	C	Surface	Abandoned	AL	87.2975	33.3714
+        Warco #9	C	Surface	Abandoned	AL	87.475	33.4167
+        Ninna V Mine	C	Surface	Abandoned	AL	87.529166	33.988055
+        Coal Creek #2	C	Surface	Abandoned	AL	87.2408	33.6611
+        Altoona Mine	C	Surface	Abandoned	AL	86.3556	33.9875
+        Omya Alabama Plant	M	Facility	Active	AL	86.308611	33.160556
+        Warco #10	C	Surface	Abandoned	AL	87.3708	33.6344
+        Knight Mine	C	Surface	Abandoned	AL	1.0167	1.0169
+        Patterson Town	C	Surface	Abandoned	AL	87.2306	33.3083
+        Gilmore	C	Surface	Abandoned	AL	87.1461	33.5317
+        Dogtown	C	Surface	Abandoned	AL	86.8847	33.6314
+        Sherijen Mine	C	Surface	Abandoned	AL	87.77	33.7925
+        Lehigh Mine	C	Surface	Abandoned	AL	87.6961	33.8386
+        Jap Creek Mine	C	Surface	NonProducing	AL	87.232222	33.698889
+        Peterson	C	Surface	Abandoned	AL	87.4319	33.2425
+        Holt Mine	C	Surface	Abandoned	AL	87.4733	33.2178
+        Frost Creek Mine	C	Surface	Abandoned	AL	87.5203	33.7156
+        Corinth Mine	C	Underground	Abandoned and Sealed	AL	87.203055	33.696388
+        JENKINS PIT	M	Facility	Active	AL	86.304444	32.359444
+        Miner Hollow Mine #2	C	Surface	Abandoned	AL	87.369444	33.633333
+        Rabbit Creek Pit	M	Surface	Active	AL	87.894444	31.509052
+        Bledsoe #1	C	Underground	Abandoned	AL	85.846944	34.960833
+        Mine No 10	C	Surface	Abandoned	AL	87.6583	33.9667
+        Frost	C	Surface	Abandoned	AL	87.4497	33.8694
+        Mary Lee Mine	C	Surface	Abandoned	AL	87.1881	33.7814
+        Kellerman-Peterson Mine	C	Surface	Abandoned	AL	87.3725	33.2456
+        Dixie Springs	C	Surface	Abandoned	AL	87.3519	33.6886
+        Wolf Creek North	C	Surface	Abandoned	AL	87.361944	33.6875
+        Wolf Creek Mine #2	C	Surface	Abandoned	AL	87.355833	33.696388
+        Goose Creek Coal Transportation Fac	C	Facility	Abandoned	AL	86.3344	33.3569
+        Hillard Yard	C	Facility	Abandoned	AL	1.0169	0.1694
+        Surface Mine #1	C	Surface	Temporarily Idled	AL	87.359166	33.857777
+        South Goodwin Creek Mine	C	Surface	Abandoned	AL	87.6186	34.995
+        Mine No 3	C	Surface	Abandoned	AL	85.7092	34.7956
+        VANCE QUARRY	M	Surface	Active	AL	87.219722	33.181389
+        Kivette Mine	C	Surface	Abandoned	AL	87.7786	34.0339
+        DUDLEY RED #1	M	Surface	Active	AL	87.130833	33.250556
+        Altoona Mine	C	Surface	Abandoned	AL	86.3503	33.99
+        Sunbelt-Altoona Mine	C	Surface	Abandoned	AL	86.3556	33.9875
+        Warco #8	C	Surface	Abandoned	AL	87.3542	33.1894
+        Natural Bridge Mine	C	Surface	Abandoned	AL	87.6069	34.0083
+        Three Forks Mine	C	Surface	Abandoned	AL	87.3394	33.5514
+        North Johns	C	Facility	Abandoned	AL	87.106944	33.360277
+        Caffee Creek Mine	C	Surface	Abandoned	AL	87.1161	33.1389
+        Copeland	C	Surface	Abandoned	AL	87.279166	33.7925
+        Frost Creek Mine	C	Surface	Abandoned	AL	87.5206	33.7164
+        Blue Ridge	C	Surface	Abandoned	AL	87.323888	33.692777
+        Corinth Mine (Surface)	C	Surface	Abandoned	AL	87.2172	33.7
+        Turkey Creek Sand and Gravel Inc	M	Surface	Active	AL	87.743081	34.03133
+        Blount Springs Sand Plant	M	Surface	Active	AL	86.780277	33.945833
+        Mine No 11	C	Surface	Abandoned	AL	87.5417	33.9361
+        Aldridge Mine No 3	C	Surface	Abandoned	AL	87.2206	33.7222
+        Hogsick Mine	C	Surface	Abandoned	AL	87.245	33.335277
+        Horse Creek Mine	C	Surface	Abandoned	AL	87.2917	33.7917
+        Bessemer Quarry	M	Surface	Active	AL	87.010277	33.368333
+        Cane Creek Mine	C	Surface	Abandoned	AL	87.209722	33.771666
+        County Line Washer	C	Facility	Abandoned	AL	1.0169	0.1694
+        Burton Bend Mine	C	Surface	Abandoned	AL	87.0969	33.7958
+        Frontier Processing Inc	C	Facility	Abandoned	AL	87.0708	33.8153
+        Fancy Lump Mine	C	Surface	Abandoned	AL	87.3183	33.8167
+        D & W Mine #1	C	Surface	Abandoned	AL	87.9917	33.9217
+        River Road Screen Llc	C	Facility	Abandoned	AL	87.158055	33.775833
+        Mine No 7	C	Surface	Abandoned	AL	87.7083	34.0692
+        Universal #1	C	Facility	Abandoned	AL	87.1125	33.5917
+        Kodiak Mine #2	C	Underground	Abandoned	AL	86.975833	33.185833
+        Alabaster Quarry	M	Surface	Abandoned	AL	86.810833	33.215
+        Blaylock Mine	C	Surface	Abandoned	AL	87.75	34.066666
+        Ford Mine	C	Surface	Abandoned	AL	87.769722	34.295833
+        Gilmore Mine No 2	C	Surface	Abandoned	AL	87.1925	33.5408
+        Northbrook Mine	C	Surface	Abandoned	AL	87.2125	33.7083
+        Nauvoo Mine	C	Surface	Abandoned	AL	87.51	33.9578
+        Flat Wood	C	Surface	Abandoned	AL	87.5111	33.9556
+        O'Neal Quarry	M	Surface	Active	AL	85.753333	38.256389
+        J Seam Mine	C	Underground	Abandoned	AL	87.063333	33.362222
+        Elk River Mine	C	Surface	Abandoned	AL	87.35	33.933333
+        Rices Chapel Mine	C	Surface	Abandoned	AL	87.0633	33.8672
+        Mine No 1	C	Surface	Abandoned	AL	87.045555	33.875
+        Corte Pit	M	Surface	Active	AL	87.903611	30.603611
+        Opelika Quarry	M	Surface	Abandoned	AL	85.338611	32.578333
+        City Pit	M	Surface	Active	AL	86.155184	32.412579
+        Wheeler Mine #1	C	Surface	Abandoned	AL	87.3189	33.8006
+        BENCHMARK	M	Surface	Abandoned	AL	86.868056	33.001667
+        TUSCALOOSA QUARRY	M	Surface	Active	AL	87.162222	32.9825
+        Lost Creek	C	Surface	Abandoned	AL	87.4831	33.8744
+        Poarch Pit	M	Surface	Abandoned	AL	87.446666	31.011944
+        Mccollum Mine	C	Surface	Abandoned	AL	87.3328	33.8203
+        Flatcreek Mine	C	Surface	Abandoned	AL	87.1011	33.6411
+        Yacht Club Mine	C	Surface	Abandoned	AL	87.43	33.3544
+        Mt Hope Quarry	M	Surface	Active	AL	87.523056	34.521389
+        Mine #1	C	Surface	Abandoned	AL	87.0525	34.005556
+        Waugh Pit	M	Surface	Abandoned	AL	86.013333	32.370556
+        Red Bluff-Waugh Plant	M	Surface	Abandoned	AL	86.050555	32.36
+        Battleground Rock Quarry	M	Surface	Active	AL	86.993611	34.339722
+        Pratt No. 1 Mine	C	Facility	Active	AL	86.982222	33.630278
+        Pratt No. 1 Mine	C	Underground	Abandoned	AL	86.991944	33.616389
+        POPE PIT	M	Surface	Abandoned	AL	87.68	31.648333
+        Panther Mine	C	Surface	Abandoned	AL	86.990555	33.153611
+        No 9 Mine	C	Underground	Abandoned	AL	86.9414	33.1983
+        Gayosa	C	Surface	Abandoned	AL	87.307777	33.691388
+        Fancy Lump Mine No 2	C	Surface	Abandoned	AL	87.173333	33.916666
+        Oak Mountain Preparation Plant	C	Facility	Abandoned	AL	86.9744	33.1875
+        Ghm #3 Auger	C	Surface	Abandoned	AL	86.9775	33.1872
+        Mine #1	C	Surface	Abandoned	AL	87.4222	33.3783
+        Sis Mine	C	Surface	Abandoned	AL	87.5256	33.935
+        Wheeler Mine #2	C	Surface	Abandoned	AL	86.3181	33.7964
+        L Massey Mine	C	Surface	Abandoned	AL	87.658333	33.95
+        Mine #2	C	Surface	Temporarily Idled	AL	87.023611	33.8925
+        Searles Mine	C	Surface	Abandoned	AL	87.310833	33.331111
+        Herron Mine	C	Surface	Abandoned	AL	87.2353	33.7653
+        Blanton Pit	M	Surface	Abandoned	AL	86.902222	32.318333
+        Lois Lane Pit	M	Surface	Abandoned	AL	87.526667	31.106667
+        Pit 28 Mine	C	Surface	Abandoned	AL	87.1608	33.3219
+        Spring Branch Mine	C	Surface	Abandoned	AL	87.601666	34.01
+        Dilworth Mine	C	Surface	Abandoned	AL	87.046388	33.805
+        B & R Sand & Gravel	M	Surface	Active	AL	86.277222	32.431666
+        Dixie Mine	C	Surface	Abandoned	AL	87.3367	33.8125
+        Coldwater Quarry	M	Surface	Active	AL	85.875833	33.6025
+        Cooper Mine	C	Surface	Abandoned	AL	87.023611	33.623055
+        Auger Machine #51	C	Surface	Abandoned	AL	87.083333	33.175
+        Eco-12	C	Facility	Abandoned	AL	87.1608	33.3219
+        South Russellville Quarry 	M	Surface	Active	AL	87.556944	34.48
+        Brookwood	C	Facility	Abandoned	AL	87.290833	33.295555
+        Pumpkin Center Plant	C	Facility	Abandoned	AL	87.150278	33.619167
+        Birmingport Plant	C	Facility	Abandoned	AL	87.103333	33.587777
+        NASAG PIT 2	M	Surface	Active	AL	87.6475	34.284722
+        Littleton Mine	C	Surface	Abandoned	AL	86.993333	33.689722
+        Coal Creek Mine	C	Surface	Abandoned	AL	87.131944	33.616666
+        Summit Sand Plant	M	Surface	Active	AL	86.453333	34.042222
+        Corinth Prep Plant	C	Facility	Active	AL	87.203056	33.696389
+        Groundhog Mine	C	Surface	Abandoned	AL	87.1828	33.4081
+        Wiregrass Construction Skyline Quarry	M	Surface	Active	AL	86.100278	34.8475
+        Rueggs Pit	M	Surface	Active	AL	87.717222	30.420278
+        Guthrie Creek Mine	C	Surface	Abandoned	AL	87.330555	33.7575
+        Carter Mine	C	Surface	Abandoned and Sealed	AL	87.472777	33.413888
+        PRIDE QUARRY	M	Surface	Active	AL	87.761111	34.709722
+        Pecan Grove Plant	M	Surface	Abandoned	AL	86.191388	32.460277
+        Bankston Mine	M	Surface	Active	AL	87.660278	33.5775
+        Searles Mine No. 2, 3, 4, 5, 6, 7, 8 & 9	C	Surface	Active	AL	87.339722	33.329167
+        Alabaster Mill	M	Facility	Active	AL	86.6575	33.351111
+        Limestone County Quarry	M	Surface	Abandoned	AL	87.0025	34.935833
+        Alabama Fuel Products	C	Facility	Abandoned	AL	87.103333	33.587777
+        Fleetwood Mine No 1	C	Surface	Abandoned	AL	87.395	33.228333
+        Sloan Mountain Mine	C	Surface	Abandoned	AL	86.904167	33.758333
+        Anderson Road Materials LLC	M	Surface	Abandoned	AL	86.236111	32.458611
+        Fishtrap	C	Surface	NonProducing	AL	87.06	33.588333
+        Henager	C	Surface	Abandoned	AL	85.89	34.686666
+        Berry Mine	C	Surface	Abandoned	AL	87.625555	33.671944
+        WILBURN PIT	M	Surface	Abandoned	AL	87.031666	33.899166
+        Gorgas Pond Project	C	Facility	Abandoned	AL	87.222777	33.654166
+        AWS PIT #1	M	Surface	Active	AL	86.362222	33.834167
+        Dozier Mine	M	Surface	Abandoned	AL	86.108611	32.399166
+        Central Supply	C	Facility	Abandoned	AL	87.293889	33.2925
+        Lick Creek Mine	C	Surface	Abandoned	AL	86.966666	33.196388
+        Mccollum/Sparks Branch Mine	C	Surface	NonProducing	AL	87.374167	33.83
+        East Brookwood Mine	C	Surface	Temporarily Idled	AL	87.331111	33.305556
+        Wegra Mine	C	Surface	Abandoned	AL	87.11	33.633333
+        Phillips Pit	M	Surface	Intermittent	AL	87.902778	33.32
+        Collinsville Rock Quarry	M	Surface	Abandoned	AL	85.921944	34.192222
+        Culpepper Chert Pit	M	Surface	Intermittent	AL	85.556944	34.268333
+        Paul Pit	M	Surface	Abandoned	AL	87.759444	31.602222
+        Alliance Mine No 1	C	Surface	Abandoned	AL	86.937777	33.177777
+        Mine No 1	C	Surface	Abandoned	AL	85.851111	32.618889
+        Crossroads	C	Surface	Abandoned	AL	87.598333	34.021666
+        Mann'S Head Mine	C	Surface	Abandoned	AL	85.678611	34.793888
+        Burgess Refuse Area #2	C	Surface	Abandoned	AL	86.984166	33.178611
+        Blaylock #2	C	Surface	Abandoned	AL	87.759722	34.048056
+        Hollywood Quarry	M	Surface	Active	AL	85.952778	34.716111
+        Coke Mine No 1	C	Underground	Temporarily Idled	AL	86.975833	33.185833
+        Swasher #1	C	Surface	Temporarily Idled	AL	87.768056	33.591667
+        White City Plant	M	Surface	Active	AL	86.902222	32.318333
+        CALERA	M	Facility	Abandoned	AL	86.753611	33.102778
+        Brierfield Mine	M	Surface	Intermittent	AL	86.952222	33.014444
+        Ensley Central Services	M	Facility	Abandoned	AL	86.892222	33.523056
+        Mississippi Lime Company	M	Facility	Active	AL	86.796389	33.093889
+        Preparation Plant	C	Facility	Temporarily Idled	AL	85.749722	34.748889
+        Independence Pit	M	Surface	Abandoned	AL	86.702222	32.531388
+        Ashville Rock Quarry	M	Surface	Active	AL	86.338611	33.878889
+        Bryant's Creek	C	Surface	Abandoned	AL	87.275	33.708333
+        Searles Mine No. 4, 5 & 6	C	Surface	Abandoned	AL	87.331944	33.341944
+        Eufaula Plant	M	Facility	Active	AL	85.145556	31.891389
+        Sand Mountain Materials	M	Surface	Abandoned	AL	85.601666	34.699722
+        Panther Mine No. 3	C	Surface	Abandoned	AL	87.311666	33.256666
+        Little Hawk Mining, LLC	M	Surface	Active	AL	87.325863	31.472709
+        Thompson Mine No 1 	C	Underground	Abandoned	AL	86.847777	33.181666
+        Bear Creek	C	Surface	Temporarily Idled	AL	87.608333	34.325
+        Burgess Reclamation Site	C	Facility	Abandoned	AL	86.986388	33.1675
+        Jackson Plant 713	M	Surface	Active	AL	86.923611	34.78
+        Centreville Mine	M	Surface	Abandoned	AL	87.254722	30.497222
+        King Quarry	M	Surface	Abandoned	AL	86.461111	34.048333
+        Lamb Stone Plant/Quarry	M	Surface	Abandoned	AL	86.472777	33.948055
+        Tuscaloosa Quarry/Howton Pit	M	Surface	Active	AL	87.271389	33.271944
+        Micaville  #1 Mine	M	Surface	Abandoned	AL	85.547222	33.496111
+        Howton Mine	C	Surface	Abandoned	AL	87.308333	33.247777
+        Notasulga Quarry	M	Surface	Active	AL	85.602222	32.599444
+        Waste Recovery Site No 1	C	Surface	Abandoned	AL	87.091944	33.118611
+        Wedowee Quarry	M	Surface	Active	AL	85.476111	33.331389
+        Lakeshore Quarry	M	Surface	Active	AL	86.87444	33.449379
+        Praco Mine	C	Surface	Temporarily Idled	AL	87.1075	33.626667
+        Red Bluff Pit	M	Surface	Active	AL	86.421944	32.435278
+        Rare Red Rock	M	Surface	Abandoned	AL	87.018889	33.658333
+        Plant No 1	M	Surface	Active	AL	86.229167	31.033611
+        BRC Alabama No. 3 LLC	C	Surface	Abandoned	AL	87.124167	33.386944
+        Burleson North Mine	C	Surface	Abandoned	AL	87.693055	34.105
+        Saragossa Mine	C	Surface	Abandoned	AL	87.395833	33.883333
+        Narley Mine	C	Surface	Active	AL	86.910833	33.724167
+        Reed Pit #5101	M	Surface	Abandoned	AL	87.239166	31.409166
+        Redstar	C	Surface	Abandoned	AL	87.124166	33.691388
+        Dulin Mine	C	Surface	Abandoned	AL	87.8	34.002222
+        Seymour Mine	C	Surface	Abandoned	AL	87.007778	33.125833
+        Little Goodwin Creek	C	Surface	Abandoned	AL	87.647222	33.974722
+        Horse Creek	C	Surface	Abandoned	AL	87.132777	33.723333
+        Pit Number 2	C	Surface	Temporarily Idled	AL	85.723056	34.763056
+        Sardine South Pit #5100	M	Surface	Abandoned	AL	87.3775	31.150556
+        Shannon Mine 	C	Surface	Temporarily Idled	AL	87.136111	33.330833
+        Quinton	C	Surface	Abandoned	AL	87.089722	33.683055
+        Blue Creek Mine	C	Surface	Abandoned	AL	87.583333	33.928888
+        Bailey Stone Co #1	M	Facility	Abandoned	AL	86.449444	34.011111
+        Cherokee Site	M	Surface	Abandoned	AL	85.439166	34.056666
+        Shepherd Bend	C	Surface	New Mine	AL	87.142777	33.686944
+        Mims Pit	M	Surface	Active	AL	86.665833	32.636944
+        Nicholas Mine	C	Surface	Abandoned	AL	87.330555	33.7575
+        Davis Creek Mine	C	Surface	Abandoned	AL	87.37	33.420833
+        Poplar Springs	C	Surface	Abandoned	AL	87.401389	34.0075
+        Pleasant Grove South	C	Surface	Abandoned	AL	87.357222	33.785277
+        Deerlick Mine	C	Surface	Abandoned	AL	87.430556	33.313611
+        Baldwin Sand & Gravel, LLC.	M	Surface	Active	AL	87.7425	30.3475
+        Roberts Store Mine #1	C	Surface	Abandoned	AL	33.913888	87.0125
+        Coosa Plant	M	Surface	Active	AL	85.839722	34.041111
+        Foley Pit	M	Surface	Abandoned	AL	87.683611	30.406666
+        Jackson Pit #2	M	Surface	Abandoned	AL	86.923611	34.78
+        Landsdown	M	Surface	NonProducing	AL	86.608889	32.330556
+        Powhatan Mine	C	Surface	Temporarily Idled	AL	87.103611	33.591389
+        Deatsville Pit	M	Surface	Abandoned	AL	86.391389	32.600278
+        Segco/Toby Mine	C	Surface	Abandoned	AL	86.951944	33.203611
+        Thompson South Mine	C	Surface	Abandoned	AL	87.119722	33.092222
+        Sugar Town Mine	C	Surface	Abandoned	AL	87.390555	33.808055
+        Gooden Creek	C	Surface	Temporarily Idled	AL	87.605278	34.001667
+        Mallards Creek Mine	C	Surface	Abandoned	AL	87.643888	33.940833
+        Cordova	C	Surface	Abandoned	AL	87.2	33.758055
+        Reese's Branch Mine	C	Surface	NonProducing	AL	87.2725	33.670833
+        Cooper Pit	M	Surface	Active	AL	87.398611	31.353056
+        North Birmingham Quarry	M	Surface	Abandoned	AL	86.791111	33.576111
+        Hard Rock Hill	M	Surface	Active	AL	86.269722	32.734444
+        Smith Mine	M	Surface	Active	AL	86.5925	32.745278
+        Jordan Plant	M	Surface	Active	AL	86.516111	33.5475
+        Lacey's Spring	M	Surface	Active	AL	86.577222	34.558333
+        Phenix City Plant II	M	Surface	Active	AL	84.992778	32.433889
+        Old Union	C	Surface	Temporarily Idled	AL	87.488056	34.008056
+        Livingston Aggregate Mine	M	Surface	Active	AL	87.598611	33.052222
+        Kodiak Plant #1	C	Facility	Temporarily Idled	AL	86.975833	33.186388
+        Cold Springs West Mine	C	Surface	Temporarily Idled	AL	87.085278	33.935556
+        BRC Alabama No. 4 LLC	C	Facility	Abandoned	AL	87.322222	33.336944
+        Lambert Materials	M	Surface	Active	AL	85.989166	32.395555
+        BRC Alabama No. 7 LLC	C	Surface	Temporarily Idled	AL	87.249722	33.304722
+        BRC Alabama No. 5 LLC	C	Surface	Abandoned	AL	87.306389	33.279444
+        Thompson Surface Mine	C	Surface	Abandoned	AL	86.842222	33.181667
+        Circle C Farms Pit	M	Surface	Abandoned	AL	86.376944	32.393333
+        King Pit	M	Surface	Abandoned	AL	87.362222	31.43
+        Cresent Valley Mine	C	Surface	Abandoned	AL	87.545556	33.890556
+        Cane Creek Mine	C	Surface	Temporarily Idled	AL	87.209722	33.771667
+        Meredyth Mine	C	Surface	Temporarily Idled	AL	87.578056	34.302778
+        Johnson Mine	C	Surface	Temporarily Idled	AL	87.171667	33.3425
+        Town Creek	C	Surface	Temporarily Idled	AL	87.038611	33.814722
+        Hargrove Mine Site 	C	Surface	Abandoned	AL	87.115277	33.093888
+        Pace Sand & Gravel	M	Surface	Abandoned	AL	87.21	31.003888
+        Calera	C	Facility	Active	AL	86.755833	33.142778
+        HWM 58	C	Surface	Active	WV	86.842222	33.181667
+        Alabama Pit	M	Surface	Abandoned	AL	87.260833	31.000277
+        Mine No. 3	C	Surface	Abandoned	AL	85.756388	34.797777
+        Demopolis Sand Operation	M	Surface	Active	AL	87.836389	32.5175
+        Lynn Nolen Construction	M	Surface	Active	AL	88.393611	30.484444
+        Eduardo Pit	M	Surface	Abandoned	AL	86.395	34.039167
+        Hebron Mine	C	Underground	Abandoned	AL	87.056666	33.166944
+        Carbon Hill Mine	C	Underground	Active	AL	87.530833	33.873056
+        Highway 59 Mine No. 1	C	Surface	Temporarily Idled	AL	87.288056	33.290556
+        Thompson #2 Mine	C	Underground	Abandoned	AL	87.008611	33.123611
+        Four Oaks Mine No 2	C	Surface	Abandoned	AL	88.019444	34.041388
+        Buttahatchee Mine No 1	C	Surface	Abandoned	AL	87.650833	34.123889
+        Poore Mine	C	Surface	Temporarily Idled	AL	85.607222	34.815556
+        Parrish Mine	C	Surface	Abandoned	AL	87.265277	33.746388
+        Kansas Mine	C	Surface	Temporarily Idled	AL	87.551389	33.928056
+        Red Eagle	M	Surface	Active	AL	86.238056	32.465556
+        Cedar Creek Pit	M	Surface	Abandoned	AL	87.21	31.003889
+        WALLACE PIT	M	Surface	Abandoned	AL	87.072222	31.105278
+        Hickory Bend	M	Surface	Active	AL	85.998611	32.418889
+        Reid School Mine	C	Surface	Abandoned	AL	86.691944	33.845555
+        Eagle Quarry	M	Surface	Abandoned	AL	86.767777	33.090555
+        Allstate Plant	M	Surface	Active	AL	86.425278	32.615556
+        Trafford Pit	C	Surface	Temporarily Idled	AL	86.726389	33.8275
+        Coal Valley Mine	C	Surface	Temporarily Idled	AL	87.436111	33.782222
+        Dunn Construction	M	Surface	Active	AL	86.791944	33.216111
+        Warrior River Services, LLC	C	Facility	Abandoned	AL	87.1125	33.586111
+        Tanner Quarry	M	Surface	Active	AL	86.956944	34.691944
+        New Yellow Creek Mine	C	Underground	Abandoned	AL	87.795	33.992222
+        Lumpkin Mill	M	Surface	Abandoned	AL	85.768611	33.817222
+        Yeshic Mine	C	Surface	Temporarily Idled	AL	86.908055	33.197222
+        Martling Quarry	M	Surface	Abandoned	AL	86.168333	34.311388
+        Maxine-Pratt Mine	C	Underground	Active	AL	87.140278	33.601389
+        Jagger Mine	C	Surface	Temporarily Idled	AL	86.927222	33.731944
+        Slate Creek Mine	C	Surface	Active	AL	87.372778	33.796111
+        Clark No 1 Mine	C	Underground	Abandoned and Sealed	AL	86.942778	33.198056
+        Dutton Hill Mine	C	Surface	Temporarily Idled	AL	87.352222	33.803056
+        Universal Understanding	M	Surface	Abandoned	AL	85.145556	31.891389
+        Spurlock	M	Surface	Abandoned	AL	85.286389	31.729722
+        Carbon Hill Prep Plant	C	Facility	Active	AL	87.526111	33.872222
+        Pope Pit #2	M	Surface	Active	AL	87.648333	31.5725
+        Sharit Shoals	C	Underground	Abandoned	AL	86.844444	33.787222
+        Flomaton Sand & Gravel	M	Surface	Abandoned	AL	87.285555	31.01
+        Limestone Creek	M	Surface	Abandoned	AL	86.859444	34.744722
+        Wallace Pit	M	Surface	Abandoned	AL	87.1975	31.212222
+        Skelton Creek	C	Surface	Active	AL	87.265278	33.746667
+        Crane Central Mine	C	Surface	Temporarily Idled	AL	85.706944	34.845833
+        Meadows Silica Rock Pit	M	Surface	Abandoned	AL	86.634722	32.360555
+        Wetumpka Gravel LLC	M	Surface	Abandoned	AL	86.426944	36.954444
+        Swann's Crossing	C	Surface	Active	AL	87.309167	33.310833
+        Black Warrior Mine No 1	C	Surface	Active	AL	86.861944	33.738333
+        Limestone Red Bay	M	Surface	Abandoned	AL	88.140833	34.439722
+        Quality Stone	M	Surface	Abandoned	AL	86.253333	34.131944
+        Marvel Mine	C	Surface	New Mine	AL	87.617222	33.922778
+        Bunt Mine	C	Surface	New Mine	AL	86.798055	33.730555
+        Little Spring Creek Mine	C	Surface	Temporarily Idled	AL	87.249444	33.946111
+        Bull Gap Mine	C	Surface	New Mine	AL	86.366389	33.985278
+        Warrior Mine No. 1	C	Surface	Temporarily Idled	AL	86.8225	33.815556
+        10:16/Roeser Mine	M	Surface	Abandoned	AL	86.52	32.782777
+        Blue Creek Mine No. 1	C	Underground	Temporarily Idled	AL	87.437222	33.5925
+        Wadley Crushed Stone	M	Surface	Active	AL	85.580278	33.141389
+        Knight Mine	C	Surface	Temporarily Idled	AL	87.617778	34.3425
+        Brooklyn Limestone	M	Surface	Active	AL	86.483056	31.308611
+        Berry Mountain Fines Recovery Operation	C	Surface	New Mine	AL	86.496111	34.000833
+        Weller Mine	C	Surface	Active	AL	87	33
+        Southern USA Resources, Inc.	M	Surface	Abandoned	AL	85.869166	33.315833
+        Miller Pit	M	Surface	Abandoned	AL	86.696389	32.673889
+        Coal Valley East Mine	C	Surface	Abandoned	AL	87.436111	33.782222
+        Gurley Quarry	M	Surface	Active	AL	86.403889	34.715833
+        Beaver Run Sand & Gravel LLC	M	Surface	Abandoned	AL	86.372222	32.688333
+        Happy Hill	M	Surface	Abandoned	AL	86.098889	34.140278
+        Helena Surface Mine 	C	Surface	Abandoned	AL	86.939722	33.191667
+        Grier Pit / Wilson-2 Pit	M	Surface	Abandoned	AL	85.241667	31.715
+        Gurnee Surface Mine	C	Surface	Abandoned	AL	86.980278	33.174444
+        M & M #1	M	Surface	Abandoned	AL	87.044444	31.050833
+        Chickasaw Terminal	M	Facility	Intermittent	AL	88.058611	30.767222
+        Mejia Pit	M	Surface	Abandoned	AL	86.410278	34.036111
+        Reagent Technology Services	M	Facility	Active	AL	88.072122	30.661479
+        SARDINE	M	Surface	Active	AL	87.375278	31.151389
+        Rail Site Pit	M	Surface	Abandoned	AL	86.673889	32.625278
+        Masterson Site	M	Surface	Abandoned	AL	87.486667	34.585278
+        Reed Sand and Gravel Pit	M	Surface	Active	AL	86.440278	34.261944
+        Mobile Abrasives Inc.	M	Surface	Abandoned	AL	88.113611	30.546667
+        EADY PIT	M	Surface	Abandoned	AL	87.192778	31.381389
+        Darby Pit	M	Surface	Abandoned	AL	84.083056	42.458333
+        Carter Mine	C	Surface	Active	AL	87.361389	33.257778
+        Ponderosa Sand & Gravel	M	Surface	Active	AL	85.642222	34.755278
+        John Poe Mine	C	Surface	Active	AL	85.7225	34.578056
+        Searles Mine	M	Surface	Abandoned	AL	87.325278	33.328889
+        Russellville Plant	M	Facility	Abandoned	AL	87.728611	34.476667
+        Rocky Branch Mine	M	Surface	Abandoned	AL	87.368333	33.825556
+        Dutton Hill Mine No. 2	C	Surface	Active	AL	87.352222	33.803056
+        Gooden Creek II 	C	Surface	Temporarily Idled	AL	87.616111	34.040556
+        Bessie Mine	M	Surface	Active	AL	87.033056	33.648611
+        Murry Creek Surface Mine	C	Surface	NonProducing	AL	86.926667	33.209167
+        Bockman Pit	M	Surface	Abandoned	AL	86.483611	32.728889
+        Tremendous Pit	M	Surface	Active	AL	86.411111	34.037778
+        Lolley Mine No. 1	C	Underground	NonProducing	AL	86.941389	33.198056
+        CARBO-SELLERS #1	M	Surface	Abandoned	AL	85.215833	31.680833
+        West Huntsville	M	Surface	Active	AL	86.859444	34.744444
+        Chastain Pit	M	Surface	Active	AL	87.905556	31.406667
+        FlatTop Processing Plant	M	Surface	Active	AL	87.014444	33.651944
+        Vickers	M	Surface	Abandoned	AL	85.343889	31.748333
+        Brown Mine	M	Surface	Abandoned	AL	86.595278	32.530556
+        Long Pit	M	Surface	Active	AL	85.560556	33.209722
+        No Business Creek Mine	C	Surface	NonProducing	AL	87.766944	33.849444
+        Meadows	M	Surface	Active	AL	86.627616	32.330989
+        McCollum Mine	C	Surface	NonProducing	AL	87.335	33.785
+        Shannon Mine No. 3	C	Surface	Active	AL	87.071944	33.385
+        Sloan Mtn. No. 3	C	Surface	Active	AL	86.904167	33.758333
+        Meeks	M	Surface	Active	AL	86.652778	32.440833
+        Stave Hollow Mine	C	Surface	Active	AL	87.386389	33.820278
+        SHM-82	C	Surface	Active	AL	87.278611	33.706667
+        Deerlick West Mine	C	Surface	Active	AL	87.458056	33.2725
+        Holt Pit	M	Surface	NonProducing	AL	86.318333	32.5275
+        Dodge Mine 	C	Facility	NonProducing	AL	86.946389	33.980556
+        Pit #1	M	Surface	Active	AL	87.778333	31.433333
+        Redstone Quarry	M	Surface	Active	AL	86.592778	34.671667
+        Clarkdale Facility	M	Facility	Active	AZ	112.074167	34.769444
+        RILLITO QUARRY	M	Surface	Active	AZ	111.187222	32.361111
+        Douglas Plant	M	Surface	NonProducing	AZ	109.734444	31.365
+        Freeport-McMoRan Morenci Inc.	M	Surface	Active	AZ	109.335	33.063333
+        Cheto Mine	M	Surface	Temporarily Idled	AZ	109.251944	35.198056
+        Cheto Mine 01	M	Surface	Temporarily Idled	AZ	109.238333	35.202222
+        Tolleson Mine	M	Surface	Abandoned	AZ	112.243055	33.4225
+        Pantano Mine	M	Surface	Abandoned	AZ	110.588055	32.005
+        Freeport McMoRan Miami Inc 	M	Surface	Active	AZ	110.8525	33.409722
+        Silver Bell Mining LLC	M	Surface	Active	AZ	111.099167	31.877778
+        MISSION/SAN XAVIER/EISENHOWER	M	Surface	Active	AZ	111.0525	31.998333
+        Freeport-McMoRan Bagdad Inc 	M	Surface	Active	AZ	113.168611	34.594722
+        BHP Copper - Miami Unit	M	Facility	Intermittent	AZ	110.869167	33.403611
+        Freeport-McMoRan Sierrita Ops. 	M	Surface	Active	AZ	109.335	33.062778
+        Ray Mine 	M	Surface	Active	AZ	110.988333	33.176667
+        Resolution Mine	M	Underground	NonProducing	AZ	111.096944	33.300278
+        Verde Gypsum Mine	M	Surface	Active	AZ	111.784167	34.533333
+        PR GYPSUM - WINKELMAN MINE	M	Surface	Abandoned	AZ	110.664444	32.881388
+        Darling Mine	M	Surface	Active	AZ	111.413056	35.221111
+        Little Hill Mine	M	Surface	Abandoned	AZ	110.834444	32.588333
+        Black Mesa Mine	C	Surface	Abandoned	AZ	110.723055	36.5
+        BOWIE CHABAZITE OPERATIONS	M	Surface	Intermittent	AZ	109.374444	32.449444
+        TACNA SAND & GRAVEL LLC	M	Surface	Active	AZ	113.915	32.775556
+        PORTABLE SCREENING PLANT	M	Surface	Abandoned	AZ	109.545	31.383611
+        Red Pit Mine	M	Surface	Active	AZ	111.281667	35.316389
+        SUN CITY PLANT	M	Surface	Active	AZ	112.307222	33.614722
+        ARIZONA SILICA SAND COMPANY	M	Surface	Abandoned	AZ	111.093611	34.048888
+        Cottonwood Wash 	M	Surface	Abandoned	AZ	110.08	34.5175
+        Tangerine Road Pit	M	Surface	Active	AZ	111.178889	32.423889
+        CEMEX - MESA	M	Surface	Abandoned	AZ	111.856944	33.449166
+        CEMEX - BEELINE	M	Surface	Abandoned	AZ	111.820555	33.485277
+        CEMEX - CASA GRANDE	M	Surface	Active	AZ	111.801667	32.859167
+        CEMEX - GLENDALE	M	Surface	Abandoned	AZ	112.320277	33.536388
+        CEMEX - HWY 95	M	Surface	Active	AZ	114.424444	32.739722
+        Tri County Materials Inc.	M	Surface	Active	AZ	109.706389	32.801944
+        Outerspace Pit	M	Surface	Active	AZ	109.699444	32.184444
+        North Gila Gravel Plant 	M	Surface	Active	AZ	114.534167	32.649722
+        TONTO PIT	M	Surface	Intermittent	AZ	111.306667	33.935278
+        Cemex - Bullhead 	M	Surface	Active	AZ	114.546944	35.113611
+        Hayden Concentrator	M	Surface	Intermittent	AZ	110.784444	33.007222
+        Oracle Ridge Mine	M	Underground	Abandoned	AZ	110.739167	32.460833
+        Mineral Park 	M	Surface	Temporarily Idled	AZ	114.178611	35.335
+        CEMEX - 19TH AVE	M	Surface	Active	AZ	112.101667	33.4125
+        CEMEX - WEST PLANT #72	M	Surface	Active	AZ	112.123056	33.495
+        Kayenta Preparation Plant	C	Facility	Abandoned and Sealed	AZ	110.75	36.5
+        Pinto Valley Mine	M	Surface	Active	AZ	110.971111	33.393333
+        Hualapai Pit	M	Surface	Active	AZ	114.006667	35.174167
+        Screening Plant	M	Surface	Active	AZ	113.96	35.211667
+        Owens Pit	M	Surface	Active	AZ	109.981111	34.262222
+        Superior Pit & Mill	M	Surface	Active	AZ	111.123611	33.2875
+        RILLITO PLANT	M	Facility	Active	AZ	111.149444	32.411389
+        Kayenta Mine	C	Surface	NonProducing	AZ	110.723056	36.5
+        ORANGE GROVE	M	Surface	Active	AZ	111.056389	32.324444
+        0SCREENING PLANT & SHOP	M	Surface	Active	AZ	111.858333	33.465833
+        Airport Pit	M	Surface	Active	AZ	109.692778	32.858333
+        Yavapai Plant #22	M	Surface	Active	AZ	112.414444	34.643055
+        Sheephill  Portable Power Screen	M	Surface	Intermittent	AZ	111.565278	35.229167
+        CEMEX - GLOBE/BIXBY	M	Surface	Active	AZ	110.826111	32.448611
+        OSBORN WASH	M	Surface	Active	AZ	114.243056	34.176389
+        LITCHFIELD PLANT	M	Surface	Abandoned	AZ	112.315555	33.493055
+        REIDHEAD SAND & ROCK	M	Surface	Active	AZ	110.124444	34.469444
+        Mine #1	M	Surface	Intermittent	AZ	111.745556	33.473056
+        Nelson Quarry &  Plant	M	Surface	Active	AZ	113.614444	35.459167
+        EADS Pit	M	Surface	Abandoned	AZ	109.928333	31.448055
+        Ina Pit	M	Surface	Abandoned	AZ	111.083056	32.344167
+        Mobile Mix Inc.	M	Surface	Temporarily Idled	AZ	111.683889	33.491944
+        Mesa Mine	M	Surface	Active	AZ	111.822778	33.422222
+        MADISON GRANITE PIT	M	Surface	Active	AZ	112.108333	33.755556
+        Copper Queen Branch	M	Surface	Intermittent	AZ	109.894167	31.424444
+        Fortuna Wash Pit	M	Surface	Intermittent	AZ	114.379444	32.672222
+        Woodruff Butte	M	Surface	Abandoned	AZ	110.036111	34.796666
+        Sun City Pit	M	Surface	Abandoned	AZ	112.305833	33.666389
+        Portec 48cone Crusher	M	Surface	Intermittent	AZ	109.545833	31.712778
+        Little Cedar Knoll Pit	M	Surface	Abandoned	AZ	111.093611	34.048889
+        White Cross Mine	M	Surface	Abandoned	AZ	110.640833	32.706944
+        Mesa Plant	M	Surface	Abandoned	AZ	111.723333	33.477222
+        Rio Lomas III	M	Surface	Abandoned	AZ	114.582778	35.050556
+        Star Placer dba:  Big Bug Sand & Gravel	M	Surface	Active	AZ	112.256111	34.428889
+        CEMEX - SIERRA VISTA	M	Surface	Active	AZ	110.239722	31.511667
+        Gray Mountain Pit	M	Surface	Abandoned	AZ	111.508611	35.676111
+        Santan Pit	M	Surface	Active	AZ	111.83	33.145
+        Queen Creek Plant #42	M	Surface	Abandoned	AZ	111.356111	33.271111
+        Prescott Valley Pit	M	Surface	Active	AZ	112.342778	34.584444
+        L.P.'s Cinder Pitt, LLC	M	Surface	Active	AZ	112.215556	35.245278
+        Black Rock Mine	M	Surface	Active	AZ	113.633056	36.9375
+        Feldman #2	M	Surface	Active	AZ	110.697222	32.864722
+        West Plant	M	Surface	Active	AZ	112.159444	33.402222
+        Patagonia Pit	M	Surface	Abandoned	AZ	110.723333	31.534167
+        AGUA FRIA PIT	M	Surface	Active	AZ	111.013611	31.473056
+        TREASURE CHEST GRANITE PIT LLC	M	Surface	Active	AZ	111.515833	33.459167
+        Fort Mc Dowell Yavapai Materials-Plt #1	M	Surface	Active	AZ	111.666389	33.608611
+        Wickenburg #10	M	Surface	Abandoned	AZ	112.700555	33.940277
+        Fort Mc Dowell Yavapai Materials-Plt #3	M	Surface	Active	AZ	111.698611	33.566111
+        FIRST KNOLL CINDER PIT	M	Surface	Abandoned	AZ	110.027222	34.264167
+        Fort Mohave Pit	M	Surface	Abandoned	AZ	114.545	34.9725
+        West Broadway 	M	Surface	Active	AZ	112.227778	33.408333
+        CEMEX - CORTARO WET	M	Surface	Abandoned	AZ	111.105833	32.370277
+        Twin Peaks Aggregate	M	Surface	Active	AZ	111.183056	32.353333
+        Pinenut	M	Underground	Abandoned	AZ	112.526667	36.945556
+        Crushing Plant	M	Surface	Active	AZ	110.151111	34.468056
+        Miller Mine	M	Surface	Active	AZ	111.552222	35.219444
+        Screenmachine Portable	M	Surface	Abandoned	AZ	114.005833	35.177222
+        CEMEX - QUEEN CREEK	M	Surface	Abandoned	AZ	111.546111	33.229722
+        Bonito Quarry 	M	Surface	Active	AZ	110.688611	32.564167
+        Buckeye Plant	M	Surface	Temporarily Idled	AZ	111.821389	33.484444
+        Hardluck Quarry	M	Surface	Active	AZ	110.065	35.406111
+        WHITE VULCAN	M	Surface	Abandoned	AZ	111.651388	35.198055
+        White Cliffs Mine & Plant	M	Surface	Abandoned	AZ	110.626944	32.708611
+        CEMEX - MARICOPA	M	Surface	Abandoned	AZ	112.038333	33.083889
+        A B C Sand & Rock Inc	M	Surface	Active	AZ	112.315278	33.511111
+        Moss Mine	M	Surface	Active	AZ	114.554444	35.074444
+        Santa Rita Plan	M	Surface	Active	AZ	110.781389	31.875556
+        Richville Pit	M	Surface	Intermittent	AZ	109.378056	34.305833
+        Freiday Portable Crusher	M	Surface	Abandoned	AZ	113.9375	36.909722
+        SUPERIOR	M	Surface	Active	AZ	111.096111	33.293889
+        CEMEX - SUN CITY	M	Surface	Abandoned	AZ	112.293056	33.702778
+        SLEEPING BEAUTY MINE	M	Surface	Abandoned	AZ	111.093611	34.048888
+        Sun Land Materials, LLC	M	Surface	Active	AZ	112.208333	33.393056
+        SUPERSTITION MOUNTN. GRANITE PIT	M	Surface	Abandoned	AZ	111.093611	34.048888
+        Bobbitt Silica	M	Surface	Intermittent	AZ	110.774167	33.007222
+        Arizona #1	M	Underground	Abandoned	AZ	112.550278	36.986667
+        NORTH AMERICAN INDUSTRIES	M	Surface	Abandoned	AZ	112.240556	34.500556
+        Cantera Materials Crushing Plant	M	Surface	Abandoned	AZ	110.229722	31.569444
+        Huachuca Concrete Wash Plant #1	M	Surface	Abandoned	AZ	110.229722	31.569444
+        Portable Plant #2 - Crusher	M	Surface	Intermittent	AZ	110.781111	31.875556
+        SHEEP HILL CINDER MINE	M	Surface	Active	AZ	111.568611	35.332222
+        BLAISDALE	M	Surface	Active	AZ	114.417778	32.714167
+        Picacho Plant	M	Surface	Active	AZ	112.448056	33.832778
+        PORTABLE SCREENING PLANT	M	Surface	Temporarily Idled	AZ	111.093611	34.048889
+        COCONINO CINDERS	M	Surface	Abandoned	AZ	111.093611	34.048888
+        Crusher 1	M	Surface	Active	AZ	110.865833	33.4125
+        CEMEX - NOGALES	M	Surface	Abandoned	AZ	110.980277	31.421944
+        Perkins Valley Pit	M	Surface	Abandoned	AZ	110.045	34.996388
+        Chloride Quarry	M	Surface	Active	AZ	114.215278	35.429722
+        Clarkdale Plant #24	M	Surface	Active	AZ	112.074167	34.769444
+        Decker Pit	M	Surface	Intermittent	AZ	110.050556	34.5175
+        TEXAS CANYON ROCK & SAND	M	Surface	Active	AZ	110.058333	32.099444
+        Graham Pit	M	Surface	Abandoned	AZ	109.716111	32.856944
+        Mineral Park Materials, LLC	M	Surface	Abandoned	AZ	114.158333	35.372222
+        CEMEX -  MCCORMICK	M	Surface	Abandoned	AZ	112.073333	33.448611
+        WASH PLANT	M	Surface	Intermittent	AZ	109.546389	31.379444
+        Cyprus Tohono Corporation	M	Surface	Active	AZ	111.888889	32.514444
+        CEMEX - APEX	M	Surface	Active	AZ	111.161111	32.430278
+        FNF Crushing 6	M	Surface	Abandoned	MT	111.9775	33.426944
+        Kingman Quarry/McConnico	M	Surface	Abandoned	AZ	114.084444	35.159444
+        CEMEX - COUNTY 19	M	Surface	Abandoned	AZ	114.405556	32.666944
+        CEMEX - CAMP VERDE	M	Surface	Active	AZ	111.914444	34.615
+        Plant #35  51st  Ave-Pit	M	Surface	Abandoned	AZ	112.1725	33.408333
+        Dobson Plant 	M	Surface	Active	AZ	111.875	33.448611
+        Omya Arizona	M	Surface	Active	AZ	111.120278	33.288611
+        Gold Road Mine	M	Underground	Active	AZ	114.453056	35.006944
+        FNF Crushing 2	M	Surface	Temporarily Idled	AZ	104.100833	47.845833
+        Higley Plant 	M	Surface	Active	AZ	111.718611	33.482778
+        Dewey Plant	M	Surface	Active	AZ	112.201667	34.539722
+        Double J Sand & Rock LLC	M	Surface	Abandoned	AZ	114.044166	35.352777
+        Dukes Peak	M	Surface	Abandoned	AZ	109.959166	34.326388
+        AGUA FRIA PIT-RIVER RANCH	M	Surface	Active	AZ	112.323889	33.510278
+        Swan Pit	M	Surface	Active	AZ	110.888611	32.0825
+        Carlota Copper Company	M	Surface	Active	AZ	110.868611	33.399167
+        Lyle Mine	M	Surface	Abandoned	AZ	112.858333	34.7725
+        Walker Butte Mining Company, L.L.C.	M	Surface	Abandoned	AZ	111.519722	32.995278
+        Portable #1	M	Surface	Active	AZ	111.522778	33.236389
+        WASH PLANT	M	Surface	Intermittent	AZ	109.825	32.248611
+        CEMEX - PIMA	M	Surface	Active	AZ	110.9475	32.008611
+        White Hills Quarry	M	Surface	Active	AZ	114.310833	35.799444
+        Star Valley Granite & Materials	M	Surface	Intermittent	AZ	111.258056	34.257778
+        Hassayampa Plant #46	M	Surface	Intermittent	AZ	112.285	33.293333
+        EUREKA PORTABLE SCREENING PLANT	M	Surface	Abandoned	AZ	111.093611	34.048888
+        MC CALL PIT	M	Surface	Abandoned	AZ	114.071944	35.216944
+        Virden Gravel Pit - Greenlee County	M	Surface	Abandoned	AZ	109.073333	32.715278
+        Beaver Dam Arizona	M	Surface	Abandoned	AZ	114.001111	36.928056
+        Fort Mc Dowell Yavapai Materials-Plt #7	M	Surface	Abandoned	AZ	112.731666	33.392222
+        Cedar Hills Site	M	Surface	Active	AZ	113.796111	35.184167
+        Desert Gold Pit	M	Surface	Abandoned	AZ	110.986388	32.339444
+        Hualapai Chocolate	M	Surface	Intermittent	AZ	112.484167	35.224722
+        Lizard Group	M	Surface	Abandoned	AZ	112.484167	35.225
+        Roeder et all 	M	Surface	Intermittent	AZ	112.484167	35.224722
+        Apple Tree	M	Surface	Abandoned	AZ	112.468333	34.885556
+        Oak Quarry	M	Surface	Abandoned	AZ	112.468333	34.885556
+        DIAMOND 7	M	Surface	Active	AZ	112.480833	35.222778
+        Portable Plant #1	M	Surface	Abandoned	AZ	112.314444	33.521944
+        Rocky II	M	Surface	Abandoned	AZ	112.484166	35.225
+        Golden Buckskin	M	Surface	Abandoned	AZ	112.46	34.838888
+        Clay Mine Adobe, Inc.	M	Surface	Abandoned	AZ	111.103611	32.161111
+        ROCKHOUSE QUARRY	M	Surface	Active	AZ	112.376389	34.981389
+        M C CANYON QUARRY	M	Surface	Active	AZ	112.331944	34.996667
+        Mills	M	Surface	Active	AZ	112.46	34.838889
+        MILLION $ BUFF GRINDSTONE CANYON	M	Surface	Intermittent	AZ	112.333611	35.011389
+        ROSA GRINDSTONE CANYON	M	Surface	Abandoned	AZ	112.333611	35.011389
+        CEMEX - WEST VALLEY	M	Surface	Active	AZ	112.301667	33.551389
+        Crookton Quarry	M	Surface	Abandoned	AZ	112.518056	35.133611
+        EUREKA ROSE	M	Surface	Abandoned	AZ	114.279166	34.521666
+        Dyna Rock and Sand Inc Chevelon Pit	M	Surface	Abandoned	AZ	110.699722	35.023333
+        Portable Read Screen All	M	Surface	Intermittent	AZ	112.869167	32.388056
+        Pass Canyon	M	Surface	Active	AZ	114.545	35.128056
+        FNF Crushing 3	M	Surface	Intermittent	CA	111.934444	33.4325
+        AMMON-COURTLAND	M	Surface	Abandoned	AZ	111.093611	34.048888
+        Collins Excavating and Materials Inc	M	Surface	Abandoned	AZ	111.008055	31.489166
+        Rio Grande Material	M	Surface	Abandoned	AZ	112.168333	33.4
+        Silica Services Mining LLC	M	Surface	Intermittent	AZ	111.495556	33.085556
+        Happy Valley Quarry	M	Surface	Abandoned	AZ	112.074166	33.683611
+        Big Horn Mine	M	Surface	Active	AZ	113.039167	33.751944
+        BLACK HILL PIT	M	Surface	Abandoned	AZ	114.618333	32.71
+        Yellow Buck Matterhorn & Buckskin	M	Surface	Active	AZ	112.482222	35.224167
+        BLACK ANGUS PLANT	M	Surface	Active	AZ	110.7425	32.130556
+        Queen Creek #1	M	Surface	Active	AZ	111.533056	33.235556
+        Johnson Camp Mine 	M	Surface	Abandoned	AZ	109.648333	31.880278
+        Yavapai Apache Sand & Rock	M	Surface	Active	AZ	111.917778	34.620556
+        SOUTH YUMA PIT	M	Surface	Active	AZ	114.565	32.548611
+        RIVER ROAD PLANT	M	Surface	Intermittent	AZ	110.901944	32.276944
+        Portable Plant #1 	M	Surface	Abandoned	AZ	110.678611	32.828333
+        Phx San-Man Coolidge Plant	M	Surface	Abandoned	AZ	111.463889	33.028056
+        Rock Ridge Quarries	M	Surface	Active	AZ	112.572222	34.995833
+        Ehrenberg Wash Pit	M	Surface	Intermittent	AZ	114.524167	33.603611
+        Silverbell Pit	M	Surface	Active	AZ	111.450278	32.388889
+        CEMEX - PRESCOTT/FAIN	M	Surface	Active	AZ	112.229167	34.664722
+        CEMEX - GRAY MOUNTAIN	M	Surface	Active	AZ	111.451389	35.69
+        #3 Quarries-Classic Oak-Champagne	M	Surface	Abandoned	AZ	112.484167	35.225
+        J R  Rosa	M	Surface	Abandoned	AZ	112.484167	35.225
+        Perez Quarry	M	Surface	Active	AZ	112.4825	35.233056
+        CHASE-3CP	M	Surface	Intermittent	NV	115.0525	36.063333
+        Music Mountain Flagstone	M	Surface	Abandoned	AZ	113.419166	35.54
+        Pit  #1 43rd Ave	M	Surface	Active	AZ	112.152222	33.414444
+        JDI Enterprises LLC	M	Surface	Abandoned	AZ	113.898888	35.2
+        Goodyear Wash Plant #13	M	Surface	Abandoned	AZ	112.3575	33.407777
+        MATTHEWSVILLE GRAVEL PIT	M	Surface	Abandoned	AZ	111.093611	34.048888
+        PE 353	M	Surface	Abandoned	AZ	113.4775	34.69
+        Queen Creek Mine	M	Surface	Abandoned	AZ	111.47	33.098888
+        CEMEX - BARD RANCH	M	Surface	Abandoned	AZ	112.294166	33.710555
+        VAL VISTA - CITRUS GROVE 150	M	Surface	Active	AZ	111.757778	33.475556
+        Minnetonka Pit	M	Surface	Active	AZ	110.638056	35.015
+        CEMEX - COOLIDGE	M	Surface	Active	AZ	111.473889	33.0075
+        TEE PEE SAND & GRAVEL	M	Surface	Intermittent	AZ	111.740556	32.835
+        Concho Gravel Pit	M	Surface	Abandoned	AZ	109.831111	34.330555
+        HAMMOND STONE MTN QUARRY	M	Surface	Temporarily Idled	AZ	113.052222	35.337778
+        Portable Screen	M	Surface	Abandoned	AZ	114.174167	35.164167
+        Alpine Dump Pit B	M	Surface	Abandoned	AZ	111.093611	34.048889
+        Chino Pit	M	Surface	Active	AZ	112.449444	34.82
+        MARANA PLANT	M	Surface	Active	AZ	111.178333	32.403611
+        SUPERIOR MARBLE 	M	Surface	Abandoned	AZ	111.121666	33.286944
+        Kingman Pit	M	Surface	Abandoned	AZ	109.283056	34.614444
+        Cross Spear Marble 	M	Surface	Abandoned	AZ	109.465555	32.104166
+        AVONDALE PLANT	M	Surface	Active	AZ	112.341389	32.398333
+        Copper Queen	M	Surface	Abandoned	AZ	112.236388	34.397777
+        Schuck Development Corp	M	Surface	Intermittent	AZ	112.755833	33.996944
+        Partridge T23N R3W &27	M	Surface	Active	AZ	112.468333	34.885556
+        Alpine Dump Pit	M	Surface	Abandoned	AZ	109.146389	33.848333
+        New Superior	M	Surface	Abandoned	AZ	111.094722	33.290833
+        Goat Creek Mining	M	Surface	Intermittent	AZ	111.2625	34.254444
+        Gila Resource Management LLC	M	Surface	Abandoned	AZ	111.236944	34.235833
+        Red Hills Mine	M	Surface	Abandoned	AZ	111.266666	33.031666
+        BLT Companies Materials Plant	M	Surface	Active	AZ	114.416389	32.750833
+        Lake Havasu Airport Pit	M	Surface	Active	AZ	114.3225	34.483889
+        Sun City-PL #12	M	Surface	Abandoned	AZ	112.306111	33.675
+        Taylor Pit	M	Surface	Active	AZ	110.108889	34.48
+        Portable Crushing Plant	M	Surface	Intermittent	AZ	111.253333	34.257778
+        Reymert Mine	M	Surface	Active	AZ	111.212222	33.273056
+        Geronimo Pit	M	Surface	Abandoned	AZ	110.158055	34.902222
+        Pit #1 Wash Plant	M	Surface	Abandoned	AZ	113.628611	36.428611
+        Mayer Onyx	M	Surface	Intermittent	AZ	112.236389	34.397778
+        American Sand and Rock Catclaw Mine	M	Surface	Abandoned	AZ	112.501389	33.938889
+        CEMEX - BUCKEYE	M	Surface	Abandoned	AZ	112.531111	33.361111
+        Crusher #1	M	Surface	Abandoned	AZ	110.346666	32.090833
+        CEMEX - 59TH AVENUE	M	Surface	Abandoned	AZ	112.175277	33.400555
+        Copperstone Mine	M	Underground	NonProducing	AZ	114.284722	33.875556
+        Circle H Sand & Rock	M	Surface	Abandoned	AZ	112.323056	33.387222
+        Swapp Custom Crushing Plant #2	M	Surface	Intermittent	AZ	109.335	33.062778
+        Security Pit	M	Surface	Active	AZ	114.492778	33.645278
+        Weston Wash Plant	M	Surface	Abandoned	AZ	112.729722	33.968611
+        Mobile Extec	M	Surface	Abandoned	AZ	114.053056	35.189444
+        Portable Plant #1	M	Surface	Active	AZ	112.176667	34.482778
+        Belmont Pit	M	Surface	Active	AZ	113.891111	33.6975
+        Old Perrin Pit	M	Surface	Intermittent	AZ	112.198889	35.372222
+        GRG Santa Cruz #1	M	Surface	Abandoned	AZ	110.950556	31.530556
+        Sand Pit	M	Surface	Active	AZ	114.194167	34.415278
+        CEMEX - SACATON	M	Surface	Abandoned	AZ	111.789444	33.093056
+        Broccoli Quarry	M	Surface	Intermittent	AZ	111.133056	32.732778
+        Martin Group Properties Pit #525	M	Surface	Abandoned	AZ	111.096111	33.293888
+        FNF Crushing 8	M	Surface	Intermittent	TX	111.976944	33.426944
+        FNF Crushing 4	M	Surface	Intermittent	AZ	106.659722	36.8575
+        Aggregate Products	M	Surface	Abandoned	AZ	111.618055	32.835833
+        W.M.A.T. Public Works	M	Surface	Temporarily Idled	AZ	109.964167	33.836944
+        Copreco LLC	M	Surface	Abandoned	AZ	109.870278	31.423889
+        Devil's Dip Materials	M	Surface	Abandoned	AZ	113.9875	35.200277
+        Charter Materials L L C  (Plant 100)	M	Surface	Active	AZ	112.388889	34.770556
+        PE 120	M	Surface	Abandoned	AZ	110.248889	31.538333
+        PE 379	M	Surface	Abandoned	AZ	114.045555	35.884444
+        CEMEX - 107TH AVE PLANT	M	Surface	Abandoned	AZ	112.293055	33.702777
+        67th. Ave Plant	M	Surface	Active	AZ	112.196667	33.392778
+        Kingman Turquoise Mining Co	M	Surface	Active	AZ	114.133889	35.238889
+        Lake Havasu Pit	M	Surface	Abandoned	AZ	113.771944	34.602222
+        Windowrock Pit	M	Surface	Abandoned	AZ	114.265833	34.480555
+        PE 500	M	Surface	Abandoned	AZ	111.014722	31.473611
+        Babacomari Ranch Plant	M	Surface	Active	AZ	110.325556	31.653056
+        Maricopa Pit	M	Surface	Active	AZ	111.991667	33.172222
+        FNF Crushing 7	M	Surface	Abandoned	AZ	111.9775	33.426944
+        Coolidge Plant 4	M	Surface	Abandoned	AZ	111.5175	32.977778
+        Bullard	M	Surface	Abandoned	AZ	112.365833	33.378333
+        Crusher #1	M	Surface	Abandoned	AZ	112.476944	34.004722
+        Hassayampa Plant #10	M	Surface	Abandoned	AZ	112.694166	33.508055
+        Docie Pit	M	Surface	Intermittent	AZ	112.599444	34.598333
+        CHASE-2WH	M	Surface	Active	AZ	114.306111	35.792222
+        FNF Crushing 1	M	Surface	Intermittent	TX	111.9775	33.426944
+        MESA	M	Surface	Abandoned	AZ	111.865277	33.421944
+        Fisher A-1Pit	M	Surface	Abandoned	AZ	111.651388	35.198055
+        New Valentine	M	Surface	Active	AZ	113.695556	35.375833
+        Harrington Ranch	M	Surface	Abandoned	AZ	110.798611	33.415
+        Diablo #1	M	Surface	Abandoned	AZ	111.541389	32.991944
+        Rankin Pit	M	Surface	Abandoned	AZ	111.3875	33.055277
+        West Side Pit	M	Surface	Active	AZ	112.314444	33.521944
+        Albo Guzman Sand and Gravel	M	Surface	Abandoned	AZ	111.18	33.284444
+        Portable # 2	M	Surface	Abandoned	AZ	111.533056	33.235556
+        Estrella North Plant	M	Surface	Active	AZ	112.486944	33.298056
+        Pioneer Sand Crusher #2	M	Surface	Active	AZ	111.478333	33.356111
+        Pioneer Sand Company - Sacaton	M	Surface	Abandoned	AZ	111.735833	33.071388
+        Diamond 7 Oak	M	Surface	Abandoned	AZ	112.414444	35.026944
+        Hackberry	M	Surface	Active	AZ	113.609167	35.121389
+        Arizona Crusher	M	Surface	Abandoned	AZ	112.308888	33.532777
+        Babocomari Plant	M	Surface	Abandoned	AZ	110.333333	31.650277
+        Freeport-McMoRan Safford Inc	M	Surface	Active	AZ	109.701111	32.955278
+        D. L. Poole & Sons	M	Surface	Abandoned	AZ	114.053055	35.189444
+        PORTABLE PLANT #2	M	Surface	Abandoned	AZ	111.3875	33.055278
+        Hilltop and Corva	M	Surface	Temporarily Idled	AZ	112.484166	35.224722
+        Stronghold Redi-Mix	M	Surface	Intermittent	AZ	109.8925	32.061389
+        Huachuca Concrete Wash Plant #2	M	Surface	Abandoned	AZ	110.346666	32.090833
+        Sierra Mining and Crushing LLC	M	Surface	Abandoned	AZ	110.9075	32.095
+        Chiricahua Bldg Supply	M	Surface	Abandoned	AZ	109.695	31.818333
+        Padilla Crush and Screening Plant	M	Surface	Intermittent	AZ	111.0175	31.469722
+        Swapp Custom Crushing Plant #3 	M	Surface	Active	AZ	109.335	33.062778
+        Mine #3	M	Surface	Active	AZ	111.746667	33.473056
+        Plant #6 (Sun City)	M	Surface	Active	AZ	112.305833	33.666389
+        PORTABLE CRUSHER #44	M	Surface	Intermittent	AZ	111.746667	33.473056
+        Ranch Creek Sand & Gravel	M	Surface	Intermittent	AZ	110.661667	33.342778
+        portable crusher # 1	M	Surface	Intermittent	AZ	112.388889	34.770556
+        Rainbow Valley Plant	M	Surface	Abandoned	AZ	112.4525	33.2325
+        QUEEN CREEK PIT	M	Surface	Active	AZ	111.413889	33.2525
+        Buckeye Plant	M	Surface	Intermittent	AZ	112.611667	33.326389
+        Fisher Industries Plant 37	M	Surface	Active	AZ	110.971111	33.386111
+        Blue Bell Mine	M	Surface	Abandoned	AZ	112.236388	34.397777
+        Canyon Site	M	Surface	Abandoned	AZ	114.239166	35.031666
+        Portable Screen	M	Surface	Abandoned	AZ	111.007777	31.488333
+        Coolidge Plant #65	M	Surface	Intermittent	AZ	111.490833	33.023333
+        Bradshaw Decorative Rock	M	Surface	Abandoned	AZ	112.095277	34.331111
+        Combs Materials DBA Gagnons Sand & Grave	M	Surface	Abandoned	AZ	110.333056	31.624167
+        CEMEX - MAGUIREVILLE	M	Surface	Abandoned	AZ	111.618333	34.673611
+        Glendale Plant	M	Surface	Abandoned	AZ	112.276667	33.551389
+        Fisher Industries Plant #39	M	Surface	Intermittent	AZ	113.559167	32.858889
+        359501	M	Surface	Intermittent	AZ	112.008333	33.416389
+        Mine #5	M	Surface	Temporarily Idled	AZ	110.239444	31.511667
+        D41	M	Surface	Active	AZ	112.735	33.391667
+        Sedona Brown	M	Surface	Abandoned	AZ	112.236388	34.397777
+        Apache County Limestone Pit	M	Surface	Intermittent	AZ	109.343056	34.503056
+        AZ Best  LLC	M	Surface	Abandoned	AZ	111.519722	32.995278
+        P & P Materials LLC	M	Surface	Active	AZ	111.279444	32.505278
+        Portable #6	M	Surface	Abandoned	AZ	112.308889	33.532778
+        Oak Creek Sand & Gravel, Inc	M	Surface	Abandoned	AZ	109.105277	32.721388
+        Rummel Crusher & Screener	M	Surface	Intermittent	AZ	110.728889	31.464167
+        Vulcan 24th Street Pit	M	Surface	Abandoned	AZ	112.029722	33.413333
+        Sun City	M	Surface	Abandoned	AZ	112.306111	33.675
+        Redbird #1 & #2	M	Surface	Abandoned	AZ	112.452778	34.713333
+        Beeline Plant 	M	Surface	Active	AZ	111.803056	33.495278
+        Josephine Pit	M	Surface	Intermittent	AZ	111.019444	31.541111
+        Plant #2	M	Surface	Abandoned	AZ	112.768056	33.421111
+        Got Rock 1	M	Surface	Abandoned	AZ	111.096111	33.293888
+        Got Rock 2	M	Surface	Abandoned	AZ	112.144166	33.904444
+        10X	M	Surface	Abandoned	AZ	112.7225	33.972222
+        Buckeye Hills Plant	M	Surface	Abandoned	AZ	112.632222	33.276111
+        Gillespie	M	Surface	Abandoned	AZ	112.478333	33.217777
+        Paulden Pit	M	Surface	Abandoned	AZ	111.618333	34.673611
+        Jack Rabbit	M	Surface	Abandoned	AZ	112.506388	33.361111
+        Western Materials Site #1	M	Surface	Intermittent	AZ	109.963333	34.330833
+        Ayala Bluebird	M	Surface	Intermittent	AZ	112.572222	35.163056
+        Vicksburg Pit	M	Surface	Temporarily Idled	AZ	113.744722	33.758056
+        Sonas Pit	M	Surface	Abandoned	AZ	113.668055	33.643333
+        Brothers Mine	M	Surface	Abandoned	AZ	111.651388	35.198055
+        Blue Bird	M	Surface	Abandoned	AZ	112.572222	35.163055
+        Arizona White Rock	M	Surface	Abandoned	AZ	111.368055	32.661388
+        Eagle 1400-45 Mobil	M	Surface	Abandoned	AZ	113.771944	34.602222
+        Buckeye Plant #24	M	Surface	Abandoned	AZ	112.573611	33.43
+        Portable Crushing Plant #1	M	Facility	Abandoned	AZ	114.593888	35.07
+        Fancher	M	Underground	Abandoned	AZ	114.23	33.663888
+        Linden Pit	M	Surface	Abandoned	AZ	110.120833	34.2875
+        Far North Oak	M	Surface	Intermittent	AZ	112.572222	35.163056
+        6708 JCI Plant	M	Surface	Abandoned	AZ	110.721666	31.990277
+        Wentworth	M	Surface	Abandoned	AZ	110.999167	31.913611
+        Mission	M	Surface	Abandoned	AZ	110.999166	31.913611
+        Ayala John Brown	M	Surface	Abandoned	AZ	112.439722	35.318888
+        Hell's Canyon Quarry	M	Surface	Abandoned	AZ	114.001111	35.948611
+        Drake Cement	M	Surface	Active	AZ	112.376389	34.981389
+        Powerscreen	M	Surface	Abandoned	AZ	110.999166	31.913611
+        Viewpoint	M	Surface	Abandoned	AZ	110.999166	31.913611
+        The Old Wasp Mine	M	Surface	Intermittent	AZ	111.489167	33.457222
+        Stone Mountain	M	Surface	Abandoned	AZ	112.572222	35.163055
+        Power Screen #131	M	Surface	Temporarily Idled	AZ	112.738611	33.848056
+        Dakota Blender	M	Surface	Abandoned	AZ	111.828333	33.355556
+        Ayala Quarry Tank	M	Surface	Abandoned	AZ	112.470277	35.282222
+        Santa Cruz Mobile 1	M	Surface	Abandoned	AZ	111.001666	31.473333
+        Pima Mobile 1	M	Surface	Abandoned	AZ	111.019167	32.301111
+        Warrior 1800 Screening Plant	M	Surface	Abandoned	AZ	109.928333	31.448055
+        Dump Pit #2	M	Surface	Intermittent	AZ	109.153611	33.855278
+        Rosemont Copper Project	M	Surface	Temporarily Idled	AZ	110.700278	32.019722
+        Clarkdale Metals Corp	M	Facility	Abandoned	AZ	112.058888	34.775833
+        Pine Mountain 	M	Surface	Abandoned	AZ	112.397222	34.540833
+        Samoht Rock & Sand, L.L.C.	M	Surface	Abandoned	AZ	110.178611	31.549722
+        Gold Rock	M	Surface	Abandoned	AZ	114.065	33.674722
+        Twin Buttes Mine	M	Surface	Abandoned	AZ	111.088055	31.8725
+        Hall Pit	M	Surface	Active	AZ	109.245556	34.108056
+        Reay Brothers	M	Surface	Intermittent	AZ	111.821666	34.646666
+        White Mountain Cinders	M	Surface	Abandoned	AZ	109.291388	34.111111
+        Silica Services Mining, LLC	M	Facility	Active	AZ	109.333611	35.216389
+        Tennessee Mine	M	Surface	Abandoned	AZ	114.190556	35.415
+        Klump Pit	M	Surface	Intermittent	AZ	109.626944	32.320833
+        Ash Fork Quarry	M	Surface	Abandoned	AZ	112.484166	35.225
+        More Sand	M	Surface	Intermittent	AZ	111.605556	35.367778
+        Osbourne Wash	M	Surface	Abandoned	AZ	114.289167	34.149722
+        G Y Mine	M	Surface	Abandoned	AZ	114.183056	35.390278
+        Portable Screen All	M	Surface	Intermittent	AZ	111.565278	35.229167
+        Portable # 4	M	Surface	Intermittent	AZ	112.313056	33.535
+        Gold Remedy Mine	M	Surface	Abandoned	AZ	114.048889	35.8975
+        Wash Plant - Hassayampa	M	Surface	Active	AZ	112.694167	33.508056
+        GoldenValley Rock & Materials LLC	M	Surface	Abandoned	AZ	114.190556	35.023611
+        Mine #6	M	Surface	Intermittent	AZ	111.745556	33.472778
+        Ridco	M	Surface	Abandoned	AZ	112.716389	34.146944
+        Alvarado Mine	M	Surface	Abandoned	AZ	112.850833	34.1625
+        Mine #7	M	Surface	Active	AZ	112.214167	33.838889
+        Wellton Aggregate Plant	M	Surface	Abandoned	AZ	114.191389	32.646944
+        Dewey Pit	M	Surface	Intermittent	AZ	112.146111	34.538056
+        Bryce Rocky Field	M	Surface	Intermittent	AZ	109.965556	33.037222
+        Portable # 5	M	Surface	Intermittent	AZ	112.306111	33.554444
+        Foot Hill Mine	M	Surface	Abandoned	AZ	114.053055	35.189444
+        CP2	M	Surface	Intermittent	AZ	112.306111	31.554444
+        Drake Iron Ore	M	Surface	Abandoned	AZ	112.888056	35.3325
+        Gleed Quarry	M	Surface	Abandoned	AZ	112.449166	35.250555
+        Miller North	M	Surface	Intermittent	AZ	112.590833	33.445278
+        Canyon Mine	M	Underground	NonProducing	AZ	112.095	35.883056
+        Spring Mountain	M	Surface	Intermittent	AZ	109.616111	34.411111
+        NIZ	M	Surface	Abandoned	AZ	110.17	34.439444
+        Pyramid Mine	M	Surface	Abandoned	AZ	112.198056	34.381944
+        Quartzsite Pit	M	Surface	Abandoned	AZ	114.063888	33.674444
+        Silver Queen Mine	M	Underground	Abandoned	AZ	113.589444	34.667222
+        Phoenix	M	Surface	Active	AZ	112.327778	33.433056
+        Sun City Aggregates	M	Surface	Abandoned	AZ	112.305833	33.684444
+        Queen Creek Wash Plant	M	Surface	Active	AZ	111.529444	33.239444
+        Glendale Wash Plant	M	Surface	Active	AZ	112.294444	33.708333
+        FS Cinder Pits	M	Surface	Abandoned	AZ	111.702778	35.289167
+        Higley Wash Plant	M	Surface	Active	AZ	111.723333	33.477222
+        Arizona Marble Company	M	Surface	Intermittent	AZ	109.4025	32.115
+        Crusher # 2	M	Surface	Intermittent	AZ	112.503611	33.265
+        Glendale Plant	M	Surface	Active	AZ	112.310833	33.5925
+        Sandretto Drive	M	Surface	Abandoned	AZ	112.442778	34.620833
+        Saragosa Rock 	M	Surface	Intermittent	TX	112.160278	33.372778
+        Emerald Pit	M	Surface	Active	AZ	110.057222	31.706389
+        Queen Creek Stone 	M	Surface	Active	AZ	111.471111	33.099444
+        Vulture Mine	M	Surface	Active	AZ	112.833056	33.82
+        Diablo Plant # 136	M	Surface	Active	AZ	111.542778	33.022222
+        golden buckskin quarry	M	Surface	Abandoned	AZ	112.715278	35.509722
+        The Gravel Pit	M	Surface	Intermittent	AZ	114.552222	34.895278
+        Mine #8	M	Surface	Active	AZ	112.309444	33.490278
+        New River Pit	M	Surface	Abandoned	AZ	112.144167	33.904444
+        Ringo Canyon Granite LLC	M	Surface	Active	AZ	111.258889	33.118611
+        SCREENING PLANT	M	Surface	Abandoned	AZ	112.526667	36.945556
+        Portable #7	M	Surface	Active	AZ	112.151667	33.900556
+        Apache Gold Boulder Mine	M	Surface	Active	AZ	112.176111	33.985
+        Truxton Wash Pit	M	Surface	Active	AZ	114.050556	35.622778
+        Yavapai 	M	Surface	Intermittent	AZ	112.471111	34.609167
+        Snowflake	M	Surface	Abandoned	AZ	110.094167	34.521389
+        Gressley Pit	M	Surface	Intermittent	AZ	111.3125	33.968889
+        Kingman Briggs	M	Surface	Abandoned	AZ	114.153056	35.106944
+        New River Plant	M	Surface	Active	AZ	112.214722	33.841111
+        Maricopa Plant	M	Surface	Active	AZ	111.994444	33.174722
+        Black Rock Pit	M	Surface	Active	AZ	114.100278	36.549167
+        Top Dog Materials	M	Surface	Temporarily Idled	AZ	112.398889	34.630278
+        Kerley Pit	M	Surface	Temporarily Idled	AZ	111.015	31.919167
+        Dewey Pit	M	Surface	Intermittent	AZ	112.238056	34.536111
+        Schist Quarry 	M	Surface	Intermittent	AZ	112.236667	34.405556
+        Thunder Material Source	M	Surface	Active	AZ	109.991667	34.258056
+        City Screen Plant	M	Surface	Intermittent	AZ	112.988889	36.983333
+        San Tan Plant	M	Surface	Active	AZ	111.831667	33.148611
+        Horseshoe Mine	M	Surface	Abandoned	AZ	109.839167	32.254167
+        Honset Claim	M	Surface	Abandoned	AZ	112.716389	34.146944
+        Upton	M	Surface	Abandoned	AZ	112.723889	34.153611
+        Maxus 1 - Portable Crusher	M	Surface	Active	AZ	111.746667	33.473056
+        The Azurite - Senator Mine	M	Surface	Intermittent	AZ	112.484444	34.561667
+        Portable Crusher No.1	M	Surface	Abandoned	AZ	111.901667	33.426389
+        Lonestar Diorite Mine	M	Surface	Abandoned	AZ	109.335	33.062778
+        Plant 1	M	Surface	Active	AZ	112.326111	33.390278
+        Superior Materials Inc 	M	Surface	Intermittent	AZ	111.1175	33.282778
+        Pioneer Group Mine	M	Surface	Abandoned	AZ	114.416389	35.026944
+        Aguila Facility	M	Surface	Abandoned	AZ	113.239444	33.940278
+        Hermosa Mine	M	Underground	Active	AZ	110.725	31.463056
+        NGU Contracting Inc.	M	Surface	Abandoned	AZ	109.641389	32.797222
+        Victoria Farms	M	Surface	Intermittent	AZ	114.342778	34.55
+        Safford Screen and Crush	M	Surface	Intermittent	AZ	109.696111	32.939444
+        Black Mountain Farms Pit	M	Surface	Intermittent	AZ	114.549722	34.924444
+        Circle H West	M	Surface	Intermittent	AZ	112.478611	33.372778
+        Mine #9	M	Surface	Active	AZ	111.745556	33.472778
+        Kirkland Mining Company LLC	M	Surface	Abandoned	AZ	112.693333	34.434444
+        Maxus 2	M	Surface	Active	AZ	110.854167	32.597778
+        Gila 240	M	Surface	Abandoned	AZ	112.330833	33.391667
+        Schist Quarry	M	Surface	Intermittent	AZ	112.204444	34.383056
+        ARMCO	M	Surface	Intermittent	AZ	112.505833	33.361389
+        Douglas Quarry	M	Surface	Intermittent	AZ	109.445278	31.344722
+        Track #1	M	Surface	New Mine	AZ	112.451667	34.443333
+        Drake Mobile Crusher	M	Surface	Intermittent	AZ	112.310278	33.526111
+        Cross Hill	M	Surface	Intermittent	AZ	110.58	32.323056
+        McCloskey S190 SN84108	M	Surface	Intermittent	AZ	112.218056	34.395278
+        Bones Stone and Sand	M	Surface	Intermittent	AZ	114.166389	35.162222
+        Black Rock Quarry & Plant	M	Surface	Active	AR	91.261944	36.124167
+        Valley Springs Quarry	M	Surface	Intermittent	AR	93.149722	36.273611
+        MIDWEST LIME COMPANY	M	Surface	Active	AR	91.831944	35.201111
+        Lamar Quarry-Rainbow Stone 	M	Surface	Active	AR	91.831944	35.201111
+        LIMEDALE QUARRY	M	Surface	Active	AR	91.72	35.794722
+        Black Rock Quarry 	M	Surface	Active	AR	91.158056	36.140278
+        Granite Mountain Quarry #1	M	Surface	Active	AR	92.264167	34.679722
+        MALVERN MINING	M	Surface	Intermittent	AR	92.819722	34.350556
+        Fort Smith Pit	M	Surface	Abandoned	AR	94.399444	35.363889
+        Proctor Plant # 1670	M	Surface	Abandoned	AR	90.289722	35.110833
+        Charleston No 1	C	Surface	Abandoned	AR	95	9.833333
+        Hays Chapel No 1	C	Underground	Abandoned	AR	95	9.833333
+        MC BRIDE STONE COMPANY, INC.	M	Surface	Active	AR	91.849722	35.795556
+        Foreman Quarry & Plant	M	Facility	Active	AR	94.420555	33.695
+        Arkansas Operations Mill	M	Facility	Active	AR	92.535278	34.582778
+        Saint-Gobain Proppants	M	Surface	Abandoned	AR	92.516389	34.583889
+        CertainTeed Gypsum Manufacturing Inc	M	Surface	Active	AR	93.847129	33.945669
+        Mine #1	C	Surface	Abandoned	AR	94.2917	35.5833
+        Ozark	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        Malvern Minerals Sandstone Quarry	M	Surface	Active	AR	93.055278	34.503611
+        Guion Plant	M	Underground	Active	AR	91.940556	35.925556
+        Arkhola Dredge & Plant	M	Surface	Active	AR	94.351111	35.427222
+        Galloway Dredge & Plant	M	Surface	Abandoned	AR	91.649444	35.763611
+        Dredge David H	M	Surface	Active	AR	92.541389	35.106389
+         3 M Little Rock Industrial Mineral Prod	M	Surface	Active	AR	92.2925	34.694722
+        Jenny Lind Quarry	M	Surface	Active	AR	94.323611	35.241667
+        Portable Crusher #2	M	Surface	Abandoned	AR	92.392777	36.343888
+        Avoca Quarry & Plant	M	Surface	Intermittent	AR	94.059166	36.400833
+        LIMEDALE PLANT	M	Facility	Active	AR	91.72	35.794722
+        Glenwood Quarry	M	Surface	Active	AR	93.5775	34.361389
+        US Vanadium, LLC	M	Surface	Active	AR	92.9475	34.463611
+        Sand Hog Dredge	M	Surface	Abandoned	AR	91.988611	34.229166
+        Arkansas Sand & Gravel 	M	Surface	Active	AR	93.800833	35.463333
+        Little Rock Plant	M	Facility	Active	AR	92.306111	34.656389
+        3M Arch Street Quarry 	M	Surface	Abandoned	AR	92.2925	34.694722
+        Jonesboro Plant 675	M	Surface	Abandoned	AR	90.704444	35.8425
+        Mountain Home Plant	M	Surface	Abandoned	AR	92.376666	36.337777
+        Skorcz Pit & Plant	M	Surface	Active	AR	92.500833	34.228333
+        MCGUIRE QUARRY AND PLANT	M	Surface	Active	AR	92.376667	36.337778
+        Natural State Materials & Logistic LLC	M	Surface	Active	AR	90.433056	36.230556
+        BLOCKER LEAD #4	M	Surface	Active	AR	91.831944	35.201111
+        Rauch Mine	M	Surface	Abandoned	AR	92.288889	34.631667
+        Portable Plant #1	M	Surface	Abandoned	AR	92.443333	35.096111
+        Greenbrier Quarry	M	Surface	Active	AR	92.4325	35.111667
+        Granite Mountain Quarry #2	M	Surface	Active	AR	92.253889	34.706944
+        South New Hope Quarry & Plant	M	Surface	Active	AR	93.106111	35.243611
+        Big River Materials, Inc.	M	Surface	Intermittent	AR	93.139167	35.218056
+        Mountain View Pit And Plant	M	Surface	Intermittent	AR	92.117778	35.868333
+        Stryton Mine #1	C	Surface	Temporarily Idled	AR	94.283056	35.016667
+        Spanish Mountain Quarry  	M	Surface	Intermittent	AR	93.078333	34.393333
+        Newton County Portable Crusher	M	Surface	Intermittent	AR	92.510833	35.745556
+        Searcy Quarry	M	Surface	Active	AR	91.678611	35.283056
+        SMITH GRAVEL PIT	M	Surface	Active	AR	91.841503	33.897349
+        Carroll County Stone Inc	M	Surface	Active	AR	93.568055	36.364722
+        Baxter County Quarry 	M	Surface	Active	AR	92.385278	36.334722
+        Mine #2	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        Miller Mt Mine	M	Surface	Abandoned	AR	93.218056	34.6875
+        Eagle Mills Plant	M	Surface	Abandoned	AR	92.392778	33.835556
+        Lou #1	C	Facility	Abandoned	AR	95	9.833333
+        Pryor Mountain Quarry Inc	M	Surface	Abandoned	AR	92.221944	35.510555
+        Mine #1	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        Rocky Point Materials	M	Surface	Active	AR	91.605	35.659167
+        Bradley-Stephens Mines	C	Surface	Abandoned and Sealed	AR	93.183333	35.216667
+        Black Diamond #1	C	Surface	Abandoned	AR	93.566667	35.466667
+        Sparta Mine	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        Lookout Gap Mine	C	Surface	Abandoned and Sealed	AR	94.1083	34.8333
+        Preston Quarry	M	Surface	Active	AR	94.280833	35.466389
+        SAC Sand & Gravel	M	Surface	Abandoned	AR	92.955555	34.264444
+        Site #1	C	Facility	Abandoned	AR	94.3392	35.4181
+        Vesta #1	C	Surface	Abandoned and Sealed	AR	93.183333	35.216667
+        STANDARD GRAVEL CO INC	M	Surface	Active	AR	92.682222	33.753333
+        Cabot Quarry 	M	Surface	Active	AR	92.143056	35.000278
+        H&H #1	C	Facility	Abandoned	AR	93.8333	35.6175
+        Bonanza Plant	C	Facility	Abandoned	AR	94.3872	35.2358
+        New Hope Test Pit	C	Surface	Abandoned	AR	95	9.833333
+        Site #1	C	Facility	Abandoned	AR	95	9.833333
+        Aearth Preparation Inc Site #1	C	Facility	Abandoned	AR	95	9.833333
+        Black Reclamation	C	Facility	Abandoned	AR	93.7194	35.4203
+        Mine #1	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        Bates No 1	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        7 C'S #1	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        Allen #1	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        Dan's Pit #1	M	Surface	Intermittent	AR	91.831944	35.201111
+        Hunt Mine No 1	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        PHANTOM	M	Surface	Intermittent	AR	93.639167	34.512778
+        Reasons Mine No 1	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        Mine No 1	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        Seven C'S #1	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        Mine No 3	C	Surface	Abandoned	AR	93.6717	35.4244
+        Vesta No 1	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        Granite Mountain Qrys-Crystal Hill Plt	M	Surface	Active	AR	92.382778	34.828611
+        LITTLE RIVER PLANT	M	Surface	Active	AR	94.175833	33.756667
+        Prairie View #1	C	Facility	Abandoned	AR	95	9.833333
+        Site #2	C	Facility	Abandoned	AR	94.2917	35.5833
+        JOHNSVILLE COMPANY LLC	M	Surface	Active	AR	92.019601	33.359497
+        Site #2	C	Facility	Abandoned	AR	95	9.833333
+        Hilltop #3	C	Surface	Abandoned	AR	94.3719	35.0117
+        Sun Belt Mine #1	C	Surface	Abandoned	AR	93.666667	35.5
+        Sam'S Coal Co #1	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        Five Hill #1	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        Site No 1	C	Facility	Abandoned	AR	95	9.833333
+        Mine No 1	C	Facility	Abandoned	AR	95	9.833333
+        Mine No 1	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        Mine No 1	C	Facility	Abandoned	AR	95	9.833333
+        Mine No 1	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        Larson Coal Co Mine #1	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        Penny #1	C	Surface	Abandoned	AR	94.34	35.100278
+        Skinner Mine	C	Surface	Abandoned and Sealed	AR	94.3789	35.0142
+        Cross County Material	M	Surface	Intermittent	AR	90.750267	35.244736
+        Prairie Creek Mine #1	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        Midland Mine No 1	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        Alix	C	Surface	Abandoned and Sealed	AR	95	9.833333
+        SHERIDAN WHITE ROCK Inc.	M	Facility	Active	AR	92.394444	34.306944
+        Sharps Quarry & Plant	M	Surface	Active	AR	94.179166	36.226111
+        Jones Mill Quarry	M	Surface	Active	AR	92.822222	34.4075
+        Russ #1	C	Surface	Abandoned and Sealed	AR	94.0403	35.1003
+        Frog Town #1	C	Surface	Abandoned and Sealed	AR	95.5	35.0539
+        Pine Mountain No 1	C	Surface	Abandoned	AR	94.3333	35.0556
+        Interchem No 1	C	Surface	Abandoned and Sealed	AR	93.6903	35.4167
+        Mine #1	C	Surface	Abandoned	AR	94.3289	35.0567
+        Quality No 1	C	Surface	Abandoned and Sealed	AR	94.3753	35.0147
+        Harrisburg Plant 671	M	Surface	Active	AR	90.697693	35.489331
+        Vesta Project No 1	C	Surface	Abandoned	AR	94.0753	35.3864
+        Bates Mine	C	Facility	Abandoned	AR	94.4314	34.9047
+        Saint-Gobain Proppants 	M	Surface	Abandoned	AR	94.378611	35.428611
+        HATTON QUARRY	M	Surface	Active	AR	94.350833	34.342222
+        COLLIER CREEK	M	Surface	Intermittent	AR	93.680278	34.455
+        Hackett Project	C	Facility	Abandoned	AR	94.3917	35.1833
+        Gum Log Quarry	M	Surface	Active	AR	93.030278	35.328611
+        BLUE BAYOU SAND & GRAVEL LLC	M	Surface	Active	AR	93.481388	33.368611
+        Mine #1	C	Surface	Abandoned	AR	94.3156	35.1806
+        Benton Lignite Mine	C	Surface	Abandoned	AR	92.5	34.466667
+        PIT NO. 1	M	Surface	Intermittent	AR	91.839722	36.136389
+        McBride Stone Co, Inc.Calico Qua	M	Surface	Intermittent	AR	92.0175	36.170278
+        Lowell Quarry	M	Surface	Abandoned	AR	94.146389	36.255
+        Seven C'S No 2	C	Surface	Abandoned and Sealed	AR	93.6717	35.4244
+        Mine #2	C	Surface	Abandoned	AR	93.679167	35.422222
+        Middle Mountain Mine	M	Surface	Abandoned	AR	92.096388	35.889722
+        Lockesburg Pit	M	Surface	Abandoned	AR	94.262778	33.970278
+        Avatar Crystal Mine	M	Surface	Abandoned	AR	93.647778	34.513889
+        Ouachita Gravel #2	M	Surface	Abandoned	AR	92.861667	34.345
+        Green Valley Coal Co No 1	C	Facility	Abandoned	AR	94.3	34.2
+        Mine No 1	C	Surface	Abandoned	AR	94.3694	35.1903
+        Mountain Home Concrete Incorporated	M	Surface	Active	AR	92.383056	36.3175
+        Shale-Co	C	Facility	Abandoned	AR	94.366667	35.183333
+        Mine #2	C	Surface	Abandoned	AR	95	9.833333
+        Atlas Qu Pt Crusher #1	M	Surface	Intermittent	AR	91.617778	36.230556
+        Hedger Aggregates Incorporated	M	Surface	Active	AR	90.696666	35.918055
+        River Mountain Quarry	M	Surface	Active	AR	93.348889	35.320556
+        Wilkem #1	C	Surface	Abandoned	AR	94.3814	30.01
+        BENTON CO STONE INC	M	Surface	Active	AR	94.458611	36.483056
+        Sebastian Mine	C	Underground	Temporarily Idled	AR	94.365	35.008889
+        Paragould Plant 676	M	Surface	Abandoned	AR	90.604722	36.0675
+        MIDWAY QUARRY PLANT	M	Surface	Active	AR	93.535833	35.361111
+        Van Buren Co	M	Surface	Active	AR	92.510833	35.745556
+        MARION COUNTY ROAD DEPT QUARRY	M	Surface	Active	AR	92.727778	36.255278
+        Floyd Quarry 	M	Surface	Abandoned	AR	91.736111	35.250555
+        WOLF CREEK SAND & GRAVEL	M	Surface	Active	AR	93.436111	34.022778
+        Scott Branch H E S	C	Facility	Abandoned	AR	95	9.833333
+        Portable Crusher	M	Surface	Abandoned	AR	93.729722	35.510278
+        Franklin Stone Inc	M	Surface	Abandoned	AR	93.860556	35.440278
+        Les Rogers Sand & Gravel	M	Surface	Active	AR	94.191667	35.963611
+        TIGUE AGGREGATE & MATERIALS, INC	M	Surface	Intermittent	AR	93.5925	34.371667
+        The Hoover Mine	C	Underground	Abandoned	AR	95	9.833333
+        Drum Sand & Gravel Inc	M	Surface	Active	AR	90.704752	35.606358
+        Arkansas Quality Stone Company	M	Surface	Active	AR	91.571944	36.248056
+        Portable Plant Gourdneck	M	Surface	Abandoned	AR	92.759722	34.503333
+        Spa City Gravel	M	Surface	Abandoned	AR	93.035833	34.533888
+        Slim's Stone	M	Surface	Intermittent	OK	94.411111	35.190278
+        Powhatan Quarry	M	Surface	Active	AR	91.118333	36.082222
+        Ozark Aggregates L.L.C.	M	Surface	Abandoned	AR	93.777222	35.383888
+        Morrow Quarry	M	Surface	Active	AR	94.1775	36.035278
+        FOX PASS	M	Surface	Active	AR	93.024722	34.545278
+        Goose Pond Quarry	M	Surface	Abandoned	AR	92.886389	34.663889
+        Lentz Sand & Gravel	M	Surface	Active	AR	92.701944	35.192222
+        El Paso Quarry	M	Surface	Active	AR	92.078333	35.040278
+        Hindsville Quarry & Plant	M	Surface	Intermittent	AR	93.924166	36.215555
+        IBISON #2	M	Surface	Active	AR	94.411111	35.190278
+        Dredge Cora J	M	Surface	Active	AR	92.241389	34.750278
+        Sheridan Mine	M	Surface	Abandoned	AR	92.401389	34.306944
+        Bear Mountain	M	Surface	Abandoned	AR	93.634167	34.556667
+        Pocahontas Quarry	M	Surface	Active	AR	90.980833	36.301667
+        Granite Mountain Quarry  #3	M	Surface	Active	AR	92.525	34.688611
+        Lentz Sand & Gravel LLC	M	Surface	Intermittent	AR	92.534167	35.068333
+        SWEET SURRENDER	M	Surface	Abandoned	AR	93.520556	34.666389
+        Conway County Quarry 	M	Surface	Intermittent	AR	92.646389	35.249444
+        Jonesboro Mining	M	Surface	Intermittent	AR	90.728055	35.8475
+        Brewster Mountain	M	Surface	Abandoned	AR	93.528055	34.676388
+        L&N Quarry, Inc. -div. of L&N Const. Inc	M	Surface	Abandoned	AR	92.117778	35.868333
+        COUNTY LINE MINE	M	Surface	Abandoned	AR	93.634166	34.556666
+        Ouachita Rock	M	Facility	Abandoned	AR	94.125555	34.588055
+        Searcy County Mine	M	Surface	Abandoned	AR	92.631389	35.908889
+        Gravel Mountain Quarry 	M	Surface	Intermittent	AR	93.304652	34.33923
+        The Hayden Group	M	Surface	Active	AR	92.401389	34.306944
+        B & B GRAVEL #2	M	Surface	Active	AR	92.705833	33.773611
+        Mauldin Pit	M	Surface	Intermittent	AR	93.539167	34.554444
+        Johnson County Portable	M	Surface	Abandoned	AR	93.466666	35.471388
+        F.A. II	M	Surface	Abandoned	AR	92.758056	34.7725
+        Ouachita Rock Portable	M	Surface	Intermittent	AR	94.125556	34.588056
+        Bradley Contracting Inc	M	Surface	Active	AR	91.329722	35.86
+        Flagstone Heights Inc	M	Surface	Abandoned	AR	94.291111	35.965833
+        Springdale Quarry	M	Surface	Active	AR	94.065833	36.183611
+        Winona East	M	Surface	Abandoned	AR		43.501111
+        Lone Star Quarry	M	Surface	Abandoned	AR	92.040277	35.4075
+        Cossatot Rock LLC	M	Surface	Active	AR	94.199722	34.046944
+        Delta Asphalt of Arkansas Clinton Quarry	M	Surface	Abandoned	AR	92.499444	35.681111
+        North Harrison Quarry	M	Surface	Active	AR	93.190278	36.2925
+        Portable #1 Plant 1313	M	Surface	Intermittent	OK	94.160556	36.065278
+        Danny Hall	M	Surface	Abandoned	AR	93.036944	36.27
+        C & M Stone	M	Surface	Abandoned	AR	93.364444	35.381944
+        Miller Stone	M	Surface	Abandoned	AR	93.388055	35.440555
+        Arkansas Sand Company	M	Surface	Abandoned	AR	91.651111	35.770555
+        F.A. III	M	Surface	Abandoned	AR	93.475277	34.730555
+        North Central Arkansas Quarry Inc	M	Surface	Active	AR	92.2675	36.273611
+        Van Buren County Crusher	M	Surface	Abandoned	AR	92.510833	35.745555
+        B & B MATERIALS	M	Surface	Active	AR	92.1225	34.723889
+        Lost Lake Mine	M	Surface	Abandoned	AR	92.441111	34.534167
+        Portable #2 Plant 1400	M	Surface	Intermittent	OK	94.160556	36.065278
+        Abernathy Portable Plant #1	M	Surface	Abandoned	AR	93.629722	34.553889
+        Alabama Mine	M	Surface	Abandoned	AR	92.506667	34.558611
+        L & N Quarries	M	Surface	Intermittent	AR	92.21	35.768611
+        North Custer Quarry	M	Surface	Abandoned	AR	94.379166	35.260833
+        Portable Plant #1	M	Surface	Abandoned	AR	94.637222	34.951111
+        BC 218	M	Surface	Abandoned	AR	94.206388	36.416666
+        Ozark Southern Stone Property, LLC	M	Surface	Intermittent	AR	93.794444	36.473611
+        Sheridan White Rock Inc.-Blake Rd	M	Surface	Active	AR	92.39	34.299722
+        Fisher Industries Plant #35	M	Surface	Intermittent	AZ	102.738611	46.882778
+        Abernathy Portable Plant #2	M	Surface	Abandoned	AR	93.629722	34.553888
+        Elizabeth Quarry Inc	M	Surface	Intermittent	AR	92.054444	36.326111
+        Arkansas Aggregates	M	Surface	Active	AR	92.300833	34.688611
+        BLK Quarries Inc	M	Surface	Abandoned	AR	92.2225	35.381111
+        Portable Plant #1	M	Surface	Abandoned	AR	92.799444	35.383056
+        Bonds Quarry	M	Surface	Abandoned	AR	92.516944	35.441944
+        White Oaks Sand & Gravel	M	Surface	Abandoned	AR	90.710556	35.249167
+        McHenry Aggregates Inc	M	Surface	Active	AR	93.009722	34.567778
+        Bradshaw Mine	M	Surface	Active	AR	92.471389	33.5375
+        Green Bay Quarry	M	Surface	Abandoned	AR	92.678055	35.406944
+        Byrd's Heritage Stone	M	Surface	Active	AR	94.427778	35.193056
+        Pine's Stone Co Hartford Division	M	Surface	Abandoned	AR	94.375555	35.04
+        Kirby Crusher #15	M	Surface	Abandoned	AR	93.644722	34.234167
+        Pleasant Plains Quarry	M	Surface	Abandoned	AR	91.619166	35.573611
+        Portable Plant #1	M	Surface	Abandoned	AR	91.895278	35.338889
+        Aday Quarry	M	Surface	Abandoned	AR	92.721944	35.686111
+        Marcella Quarry	M	Surface	Abandoned	AR	90.649444	35.860556
+        Big Red Dirt Farm	M	Surface	Abandoned	AR	94.1575	36.0625
+        Lonesome Dove	M	Surface	Abandoned	AR	93.218055	34.6875
+        Farmington Quarry	M	Surface	Active	AR	94.295	36.121111
+        Cedar Ridge Quarries	M	Surface	Abandoned	AR	93.8975	35.399722
+        South Yell Country Gravel Co	M	Surface	Active	AR	93.448611	35.093056
+        Batesville Marble Quarry	M	Surface	Abandoned	AR	91.628333	35.798889
+        Drying Plant	M	Surface	Intermittent	AR	91.523611	35.460278
+        SCS LLC.	M	Surface	Abandoned	AR	94.090833	34.898333
+        Midland Quarry	M	Surface	Active	AR	94.3325	35.131389
+        Wooten Sand & Gravel, Inc.	M	Surface	Active	AR	93.885459	33.261239
+        SWN SAND COMPANY	M	Surface	Abandoned	AR	92.140556	34.758333
+        Section 27	M	Surface	Intermittent	AR	92.513611	34.535
+        V-Tech Sand, LLC	M	Surface	Abandoned	AR	91.585833	35.702222
+        BLK Quarries Inc Rosebud Location	M	Surface	Active	AR	92.046944	35.351389
+        HMB Quarry	M	Surface	Abandoned	AR	94.160833	34.086111
+        Cleveland Carr	M	Surface	Abandoned	AR	92.687777	35.4325
+        Rock Connection	M	Surface	Abandoned	AR	92.380833	34.375555
+        SamSand LLC	M	Surface	Active	AR	93.71	33.362778
+        Hydro Sizing Plant	M	Surface	Abandoned	AR	91.460278	35.630833
+        Jenkins Gravel and Construction	M	Facility	Abandoned	AR	93.593611	34.333333
+        Bluebird Sand	M	Surface	Abandoned	AR	91.752222	35.962778
+        Caswell Mine	M	Surface	Abandoned	AR	93.883888	33.263333
+        Sugarloaf Farms Quarry	M	Surface	Abandoned	AR	92.931111	36.412777
+        Willis Green Phantom Mine	M	Surface	Abandoned	AR	92.801666	34.8
+        Board Camp Crystal Mine	M	Surface	Abandoned	AR	94.091111	34.536666
+        Hattieville Rock 	M	Surface	Active	AR	92.766944	35.271389
+        Crusher No 1	M	Surface	Active	AR	93.258333	34.543333
+        Harkey Road Plant	M	Surface	Abandoned	AR	91.723611	35.771388
+        Goshen Tuttle Quarry	M	Surface	Abandoned	AR	93.975833	36.047222
+        FOUKE SAND & GRAVEL,LLC	M	Surface	Abandoned	AR	93.885555	33.261111
+        Waldron Pit	M	Surface	Abandoned	AR	93.704722	35.129166
+        T & H Sand Plant #1	M	Surface	Abandoned	AR	91.460277	35.630833
+        T & H Sand Plant # 2	M	Surface	Abandoned	AR	91.513333	35.651388
+        Billy Duffield Quarry	M	Surface	Abandoned	AR	94.160833	34.086111
+        Hancock Quarry	M	Surface	Abandoned	AR	93.949166	35.431388
+        Hokie Okie Stone No. 1	M	Surface	Abandoned	AR	93.5625	35.3025
+        Thompson Gravel Pit	M	Surface	Abandoned	AR	92.768333	35.067777
+        Black Bear Mine	M	Surface	Abandoned	AR	93.949167	35.431389
+        Asphalt Products LLC dba Little Rock Qry	M	Surface	Active	AR	92.4575	34.704444
+        C & M Stone Company Cecil Quarry	M	Surface	Active	AR	93.915833	35.443333
+        Gravette Quarry	M	Surface	Abandoned	AR	94.382222	36.460833
+        V-Tech Sand, LLC	M	Surface	Abandoned	AR	91.289167	35.603889
+        Bonanza Quarry	M	Surface	Abandoned	AR	94.409722	35.222777
+        Martins Quarry	M	Surface	Abandoned	AR	93.689722	36.361944
+        CLARKSVILLE #1, & #2	M	Surface	Active	AR	93.565833	35.414722
+        LAMAR #1, & CASEY #1	M	Surface	Active	AR	93.381111	35.416111
+        Hard Rock Quarry	M	Surface	Active	AR	92.6525	36.309722
+        Ozark Premium Sand Desha Plant	M	Surface	Abandoned	AR	91.670278	35.773056
+        T&H Sand Plant #3	M	Surface	Abandoned	AR	91.460277	35.630833
+        Clarksville #1	M	Surface	Abandoned	AR	93.565833	35.414722
+        T&H Sand Plant #5	M	Surface	Abandoned	AR	91.394444	35.757778
+        Huber Specialty Hydrates, LLC 	M	Facility	Active	AR	92.535278	34.582778
+        B&C Mine	M	Surface	Abandoned	AR	92.586944	34.564444
+        69 Quarry	M	Surface	Abandoned	AR	91.907222	36.058333
+        Galloway Sand & Gravel # 2	M	Surface	Abandoned	AR	91.671111	35.7725
+        Antoine Rock Quarry	M	Surface	Active	AR	93.494167	34.081111
+        T & H 6	M	Surface	Abandoned	AR	91.455278	35.6325
+        Greers Ferry Quarry	M	Surface	Abandoned	AR	92.114722	35.600556
+        Pryor Mtn. Quarry	M	Surface	Active	AR	92.221944	35.510833
+        Section 20 Mines	M	Surface	Abandoned	AR	92.508611	34.5575
+        Razorstone Rock Quarry	M	Surface	Abandoned	AR	92.926667	34.3225
+        OZARK	M	Surface	Active	AR	93.798889	35.385833
+        Cedar Ridge Quarries	M	Surface	Abandoned	AR	93.563888	35.288055
+        F.A. III	M	Surface	Abandoned	AR	91.831944	35.201111
+        Lamar #2	M	Surface	Abandoned	AR	93.445833	35.471389
+        Lamar #3, & #4	M	Surface	Abandoned	AR	93.416389	35.416111
+        RVQ LAVACA	M	Surface	Intermittent	AR	94.084722	35.436944
+        Centerton Quarry	M	Surface	Intermittent	AR	94.374444	36.348611
+        Hokie Okie A-1	M	Surface	Abandoned	AR	93.944722	35.438611
+        HUNT #1	M	Surface	Abandoned	AR	88.389722	37.005
+        East Cave City Quarry	M	Surface	Abandoned	AR	91.436667	35.915
+        Big Oak Sand & Gravel	M	Surface	Active	AR	92.915556	34.331944
+        Backbone Quarry	M	Surface	Active	AR	94.332222	35.136389
+        Hallelujah Crystal Mine	M	Surface	Abandoned	AR	93.586389	34.526667
+        SBM Materials	M	Surface	Active	AR	94.344722	34.274444
+        Sandtown	M	Surface	Intermittent	AR	91.600278	35.92
+        Holt Quarry	M	Surface	Abandoned	AR	93.8125	35.388056
+        Roseville Stone	M	Surface	Abandoned	AR	93.826944	35.386111
+        Avant Mining	M	Surface	Intermittent	AR	93.091111	34.673056
+        White County Stone	M	Surface	Active	AR	91.5175	35.376111
+        Crestmore Quarry	M	Facility	Abandoned	CA	117.390278	34.033889
+        Oro Grande Quarry	M	Facility	Active	CA	117.335833	34.606389
+        San Rafael Rock Quarry	M	Surface	Active	CA	122.453333	37.984167
+        Napa Quarry	M	Surface	Active	CA	122.275833	38.261944
+        Brubaker-Mann Incorporated	M	Surface	Active	CA	116.987778	34.904444
+        Redding Plant	M	Surface	Active	CA	122.318056	40.7375
+        Mojave Plant & Quarry	M	Facility	Active	CA	118.294722	35.038333
+        Colton Plant & Quarry	M	Surface	Abandoned	CA	117.334444	34.057777
+        Canyon Rock Co Inc	M	Surface	Active	CA	122.923333	38.514444
+        PEBBLY BEACH QUARRY	M	Surface	Active	CA	118.314233	33.339782
+        MARIS PIT 	M	Surface	Abandoned	CA	124.147778	41.920278
+        MISSION GORGE PLANT	M	Surface	Active	CA	117.078055	32.808611
+        Blue Mountain Minerals PR LLC	M	Surface	Active	CA	120.683889	35.554167
+        Felton Quarry	M	Surface	Active	CA	122.098056	37.034722
+        Cal Rock Products LLC	M	Surface	Active	CA	121.368333	36.735556
+        Best Rock Products Corp	M	Surface	Abandoned	CA	118.919722	34.354722
+        A R Wilson Quarry	M	Surface	Active	CA	121.634722	36.897222
+        El Cajon Quarry	M	Surface	Active	CA	116.89	32.764722
+        JAMACHA QUARRY	M	Surface	Active	CA	116.927778	32.761389
+        NATIVIDAD PLANT	M	Surface	Active	CA	121.603333	36.746944
+        Cushenbury Plant 	M	Facility	Active	CA	116.855833	34.354444
+        Lehigh Permanente Quarry	M	Surface	Abandoned	CA	122.078056	37.322222
+        Clayton	M	Surface	Active	CA	121.957222	37.936667
+        Omya California	M	Surface	Active	CA	116.945833	34.387222
+        Langley Hill Quarry 	M	Surface	Active	CA	122.247778	37.336111
+        Clayton Plant	M	Surface	Active	CA	121.942222	37.93
+        Guadalupe	M	Surface	Active	CA	122.419167	37.687222
+        3M Corona Plant	M	Surface	Active	CA	117.511944	33.848333
+        Tehachapi Plant	M	Facility	Active	CA	118.397778	35.125278
+        National Quarries	M	Surface	Abandoned	CA	117.157222	33.179722
+        Lebec Cement Plant 	M	Facility	Active	CA	118.748889	34.820833
+        Lucerne Valley Plant and Quarry	M	Surface	Active	CA	116.911388	34.367222
+        Chili Bar Slate	M	Surface	Active	CA	120.820556	38.766111
+        Dolomite Mine	M	Surface	Active	CA	117.9375	36.5575
+        Academy Black	M	Surface	Active	CA	119.528611	36.893611
+        Sierra White	M	Surface	Active	CA	119.872222	37.220278
+        Rasmussen Soledad Rock Quarry	M	Surface	Abandoned	CA	118.389722	34.435278
+        Panamint Valley Limestone Quarry	M	Surface	Active	CA	117.400833	36.161111
+        Blue Rock Quarry	M	Surface	Active	CA	122.913333	38.473056
+        Victorville Cement Plant	M	Facility	Active	CA	117.2925	34.538056
+        Soiland Co., Inc.	M	Surface	Active	CA	122.735556	38.321111
+        Painted Hills Quarry	M	Surface	Active	CA	116.629444	33.951389
+        Yosemite Slate Quarry 	M	Surface	Intermittent	CA	120.020833	37.483611
+        GMcB Lincoln Pits & Mill	M	Surface	Active	CA	121.291667	38.894444
+        San Andreas Plant	M	Surface	Active	CA	120.6825	38.179167
+        Frazier Park	M	Surface	Active	CA	119.006389	34.816389
+        GMcB Clay Products	M	Surface	Abandoned	CA	121.309722	38.908333
+        Pacific Clay Pits	M	Surface	Active	CA	117.393056	33.726389
+        FLORIN PLANT	M	Facility	Active	CA	121.396111	38.493333
+        Sidehill Mine	M	Surface	Abandoned	CA	116.866389	36.455556
+        HECTOR MINE	M	Surface	Active	CA	116.680556	34.830556
+        Mark West Quarry	M	Surface	Active	CA	122.653056	38.5525
+        Lake Herman Quarry	M	Surface	Active	CA	122.181111	38.117222
+        Boron Operations	M	Surface	Active	CA	117.703333	35.022222
+        PLASTER CITY QUARRY	M	Surface	Active	CA	116.132778	33.130833
+        Lost Hills Mining	M	Surface	Active	CA	119.755	35.633611
+        LEXINGTON QUARRY	M	Surface	Active	CA	121.981389	37.200556
+        Rebecca De Boy Mine	M	Surface	Intermittent	CA	122.2425	41.534722
+        CLEARLAKE LAVA	M	Surface	Active	CA	122.546944	38.984444
+        PORTABLE SCREEN PLANT	M	Surface	Intermittent	CA	122.160278	40.0675
+        U S Pumice Mill 	M	Facility	Abandoned	CA	119.100833	37.955
+        Dunn Mill	M	Facility	Intermittent	CA	116.996389	35.045
+        Protech Minerals, LLC	M	Facility	Active	CA	117.286388	34.534166
+        WESTERN MINE	M	Surface	Abandoned	CA	116.226389	35.848333
+        FISH SPRINGS QUARRY	M	Surface	Intermittent	CA	118.253611	37.075
+        Sixteen To One Mine	M	Underground	Active	CA	120.842222	39.465
+        Pacific Rock Inc	M	Surface	Abandoned	CA	119.011667	34.195
+        Santa Margarita Quarry	M	Surface	Active	CA	120.810278	35.861667
+        Stevens Creek Quarry	M	Surface	Active	CA	122.084444	37.296944
+        Martis Valley Plant	M	Surface	Intermittent	CA	120.123333	39.332778
+        Perkins Plant	M	Surface	Active	CA	121.377778	38.545
+        Gardner Pit	M	Surface	Abandoned	CA	120.171389	34.595278
+        Anderson Cottonwood Pit	M	Surface	Abandoned	CA	122.278611	40.378333
+        Littlerock Plant	M	Surface	Active	CA	118.002329	34.54281
+        Mountain View Plant 	M	Surface	Abandoned	CA	117.680833	34.088056
+        Azusa Quarry 	M	Surface	Abandoned	CA	117.930556	34.115278
+        Hallwood Plant	M	Surface	Active	CA	121.509722	39.201389
+        Healdsburg Main Plant	M	Facility	Abandoned	CA	122.856389	38.601944
+        Solvang Plant	M	Surface	Active	CA	120.154166	34.594444
+        River Rock Plant	M	Surface	Intermittent	CA	119.766389	36.898889
+        Morehead Pit	M	Surface	Active	CA	121.805	39.158056
+        SANTA FE READYMIX	M	Surface	Abandoned	CA	119.513333	36.696666
+        Clements Rock Plant 	M	Surface	Abandoned	CA	121.103611	38.198056
+        Kelsey Creek Mill	M	Surface	Intermittent	CA	122.848863	38.998646
+        Durbin Plant	M	Surface	Active	CA	117.988056	34.091944
+        Sun Valley Plant	M	Surface	Abandoned	CA	118.379444	34.228611
+        Ten Mile River Plant	M	Surface	Intermittent	CA	123.726111	39.560556
+        Edison Sand Pit	M	Surface	Active	CA	119.018611	35.373333
+        CHRISTIE BAR	M	Surface	Active	CA	123.997778	40.888611
+        IRWINDALE PLANT	M	Surface	Active	CA	117.980556	34.118333
+        Hughson Pit & Mill	M	Surface	Active	CA	120.823611	37.615278
+        Ford Gravel	M	Facility	Active	CA	123.183056	39.133889
+        Marks Pit 	M	Surface	Active	CA	121.090278	37.334167
+        Santa Cruz Sand Plant	M	Surface	Active	CA	122.083611	36.960278
+        Gordon Sand Co	M	Surface	Active	CA	120.603772	34.960316
+        Carroll Canyon Rock Plant	M	Surface	Abandoned	CA	117.159722	32.894444
+        Bear River Plant	M	Surface	Abandoned	CA	120.990556	39.113611
+        San Emidio Plant	M	Surface	Active	CA	116.1775	35.048056
+        DNA Ridge Rock	M	Surface	Intermittent	CA	122.695277	38.917222
+        Robert E Hove Pit	M	Surface	Active	CA	115.983889	34.136389
+        Upland Pit and Mill	M	Surface	Active	CA	117.679167	35.173611
+        East Highline	M	Surface	Active	CA	115.530267	32.978657
+        Bear River Materials	M	Surface	Active	CA	121.028333	39.033056
+        Stony Creek/Gilmore Plant	M	Surface	Abandoned	CA	122.014167	39.746111
+        Wheeler Ridge Plant	M	Surface	Abandoned	CA	118.975833	35.060833
+        Kaweah River Rock 	M	Surface	Abandoned	CA	119.060833	36.396944
+        Irwindale Rock Plant	M	Surface	Active	CA	117.973611	34.111111
+        TRP-Los Banos Plant	M	Surface	Active	CA	120.8925	37.0275
+        WATERFORD PIT & MILL	M	Surface	Active	CA	120.727222	37.647222
+        Madison Sand & Gravel	M	Surface	Abandoned	CA	121.968889	38.699444
+        HJ Hove	M	Surface	Active	CA	116.237222	33.768889
+        Sunol Plant	M	Surface	Active	CA	121.880278	37.575833
+        Sousa Ready Mix	M	Surface	Active	CA	122.310556	41.31
+        Five Bridges Aggregate Plant	M	Surface	Abandoned	CA	118.395556	37.406111
+        Smith River Pit & Mill	M	Surface	Abandoned	CA	124.1325	41.875277
+        Orland Sand & Gravel Corporation	M	Surface	Intermittent	CA	122.104444	39.720278
+        USMC Ione Plant 	M	Surface	Active	CA	120.946389	38.334167
+        Coalinga Pit	M	Surface	Active	CA	120.358056	36.165833
+        Barstow	M	Surface	Abandoned	CA	116.967222	34.876667
+        Canyon Rock Plant	M	Surface	Active	CA	118.716944	34.3325
+        Eliot Plant	M	Surface	Active	CA	121.831111	37.6725
+        Tracy Kerlinger Plant	M	Surface	Active	CA	121.429167	37.680556
+        Lemon Cove Plant	M	Surface	Abandoned	CA	119.033056	36.3975
+        Rockfield Plant	M	Surface	Active	CA	119.735278	36.930833
+        Patterson Plant	M	Surface	Active	CA	121.344722	39.020278
+        Frink Pit	M	Surface	Active	CA	115.644722	33.373611
+        Wayne J. Sand & Gravel Inc.	M	Surface	Active	CA	118.886111	34.326667
+        Pleasanton Plant	M	Surface	Active	CA	121.826944	37.676667
+        Pacific Heights Pit	M	Surface	Intermittent	CA	121.583611	39.467222
+        Hidden Valley Sand & Gravel	M	Surface	Active	CA	122.67193	39.026284
+        Carroll Canyon Plant	M	Surface	Active	CA	117.123611	32.901389
+        Mission Valley Plant	M	Surface	Abandoned	CA	117.154722	32.777777
+        Sanger Plant	M	Surface	Active	CA	119.483056	36.727778
+        SCHWARZGRUBER PIT & MILL	M	Surface	Abandoned	CA	121.839444	38.697777
+        7/11 Materials Inc	M	Surface	Active	CA	120.64	37.635556
+        Shea Sand & Gravel	M	Surface	Intermittent	CA	122.352222	40.52
+        G3 Enterprises Byron Plant	M	Surface	Active	CA	121.669167	37.8625
+        Lang Station	M	Surface	Abandoned	CA	118.383611	34.431666
+        Sisquoc Rock Plant	M	Surface	Active	CA	120.28	34.868056
+        Tracy Plant	M	Surface	Abandoned	CA	121.416388	37.690277
+        Woodland Plant	M	Surface	Active	CA	121.849722	38.6925
+        Hallwood Plant	M	Surface	Active	CA	121.4775	39.198889
+        Thomes Creek Rock Co Inc	M	Surface	Active	CA	120.789877	37.443787
+        San Bernardino Plant	M	Surface	Active	CA	117.344444	34.136111
+        Campus Plant 	M	Surface	Active	CA	120.670833	40.170833
+        Lakeside Sand & Processing	M	Surface	Abandoned	CA	116.93	32.865278
+        Valley Rock Products-Orland	M	Surface	Active	CA	122.111029	39.745906
+        Garnet	M	Surface	Abandoned	CA	116.545556	33.818889
+        RCP Sand Plant	M	Surface	Abandoned	CA	116.97	32.849167
+        DeSilva Gates Aggregates	M	Surface	Active	CA	121.863889	37.569167
+        Palmdale Plant	M	Surface	Active	CA	118.013056	34.510278
+        PILARCITOS QUARRY	M	Surface	Active	CA	122.392222	37.494722
+        Olive Springs Quarry Inc	M	Surface	Active	CA	121.925278	37.054722
+        Robinson Gravel Pit / Ophir Rd. Quarry	M	Surface	Intermittent	CA	121.104444	39.011944
+        Santa Maria Stone/Colson Quarry	M	Surface	Active	CA	120.185833	34.938611
+        Dredge 17	M	Surface	Intermittent	CA	121.451667	39.173611
+        TIMM MINE	M	Underground	Abandoned	CA	120.794722	38.8225
+        Mt Pass Mine & Mill	M	Surface	Active	CA	115.574444	35.471944
+        OLANCHA MILL	M	Facility	Abandoned	CA	119.418055	36.778333
+        Newberry Mill 	M	Facility	Active	CA	116.680556	34.830556
+        Maricopa Plant	M	Surface	Active	CA	117.798611	33.733611
+        Laws Mill	M	Facility	Abandoned	CA	118.345555	37.400833
+        Lakeside Aggregate Plant	M	Surface	Active	CA	116.941944	32.906389
+        Munn & Perkins Pit & Mill	M	Surface	Active	CA	120.973333	37.760833
+        Cottonwood Creek Sand & Gravel	M	Surface	Abandoned	CA	122.311944	40.3675
+        ALTON PIT & MILL	M	Surface	Active	CA	124.149722	40.548333
+        Humboldt Quarries	M	Surface	Intermittent	CA	124.16	40.805278
+        Cache Creek Quarry	M	Surface	Active	CA	121.944722	38.692778
+        Sandy Prairie Portable Crusher Plant A	M	Surface	Intermittent	CA	124.154444	40.584722
+        Willow Creek Portable Crusher	M	Surface	Intermittent	CA	123.641111	40.979444
+        Cabazon	M	Surface	Active	CA	116.814167	33.9225
+        Big River Rock Co	M	Surface	Abandoned	CA	123.716389	39.506389
+        Twin Bridges	M	Surface	Abandoned	CA	123.4275	38.701944
+        Vernalis Plant	M	Surface	Active	CA	121.359444	37.621944
+        Ohe Sand & Gravel Inc	M	Surface	Active	CA	120.682778	37.806944
+        Orange County Operation	M	Surface	Active	CA	117.580556	33.513889
+        Banning	M	Surface	Active	CA	116.867222	33.942778
+        Upland Plant	M	Surface	Abandoned	CA	117.684722	34.133333
+        Owens Lake Mine	M	Surface	Active	CA	118.065556	36.610556
+        Nuns Canyon Rock LLC	M	Surface	Active	CA	122.517222	38.384167
+        River Rock Pit & Mill	M	Surface	Active	CA	120.507778	37.347222
+        Lapis Plant	M	Surface	Active	CA	121.799444	36.712222
+        Imerys Lompoc Plant	M	Surface	Active	CA	120.464167	34.608889
+        El Toro Materials Co	M	Surface	Abandoned	CA	117.6525	33.665
+        MIRAMAR AGGREGATE PLANT	M	Surface	Active	CA	117.131389	32.876667
+        Taft Production Company & Mines	M	Surface	Active	CA	117.636389	34.136667
+        Canebrake Pit	M	Surface	Active	CA	120.177778	40.751389
+        Oakland Marine Plant	M	Surface	Active	CA	122.222222	37.764444
+        GAREY ROCK PLANT	M	Surface	Active	CA	120.299444	34.893611
+        Plumbago Mine	M	Underground	Abandoned	CA	120.812778	39.451111
+        Bradshaw 	M	Surface	Active	CA	121.334444	38.548889
+        RUBY MINE	M	Underground	Abandoned	CA	120.848611	39.509444
+        Table Mountain Plant & Quarry 	M	Surface	Active	CA	120.513056	37.893611
+        GREENHORN PIT & MILL	M	Surface	Active	CA	120.933611	39.198333
+        Quail Hollow Operation	M	Surface	Active	CA	122.058333	37.077778
+        Lucerne Valley Pit	M	Surface	Active	CA	116.926111	34.413056
+        Reliance Plant	M	Surface	Active	CA	117.931667	34.133611
+        China Hill Quarry	M	Surface	Abandoned	CA	120.625	38.425833
+        Greenstone Materials Quarry	M	Surface	Active	CA	117.552778	33.528611
+        North Pit	M	Surface	Intermittent	CA	120.480677	41.507073
+        Washington Mine	M	Underground	Active	CA	122.680833	40.718056
+        Edmonston Rock Plant 	M	Surface	Active	CA	118.903055	34.939166
+        SIERRA ROCK PRODUCTS	M	Surface	Active	CA	120.441111	37.9275
+        COLTON PLANT	M	Surface	Abandoned	CA	117.365277	34.054722
+        Baxter Mine	M	Surface	Intermittent	CA	115.994167	35.262778
+        Pt Lakeview Rock & Redi Mix	M	Surface	Active	CA	122.6625	38.927222
+        Kellog Creek Aggregates Inc	M	Surface	Active	CA	121.674444	37.86
+        Twin Mountain Rock	M	Surface	Active	CA	117.9075	35.935556
+        All American Aggregates	M	Surface	Active	CA	117.524722	33.868333
+        MAITRI CANYON PLANT	M	Surface	Active	CA	117.477778	33.745833
+        Ellwood Pit	M	Surface	Active	CA	119.896666	34.443611
+        Jackson Valley Quarry	M	Surface	Active	CA	120.963611	38.306944
+        Colorado Quartz	M	Underground	Abandoned	CA	119.97	37.556667
+        Mayhew Plant	M	Surface	Active	CA	117.476944	33.758333
+        Bihlman Butte Rock	M	Surface	Abandoned	CA	121.771389	39.275278
+        Diamond Quarry	M	Surface	Active	CA	120.762222	38.692222
+        Dicalite Minerals	M	Surface	Active	CA	121.681389	41.030278
+         Permanente Cement Plant & Quarry	M	Facility	Active	CA	122.086944	37.32
+        Chula Vista Quarry	M	Surface	Active	CA	116.993889	32.59
+        CLARK PIT	M	Surface	Active	CA	121.063611	36.278333
+        Moorpark Quarry	M	Surface	Active	CA	118.879167	34.335278
+        Aggregate Products	M	Surface	Active	CA	122.414722	40.506111
+        Parks Bar Quarry	M	Surface	Active	CA	121.333056	39.221389
+        Chandler Aggregates-Sierra Plant	M	Surface	Active	CA	117.483056	33.7575
+        Glass Mountain Pumice	M	Surface	Active	CA	121.3275	41.644444
+        Packway Portable	M	Surface	Active	CA	121.571944	40.940278
+        West Coast Aggregate Supply Inc	M	Surface	Active	CA	116.162222	33.636667
+        Tapo Rock & Sand	M	Surface	Active	CA	118.708056	34.326667
+        U S Pumice Mine 	M	Surface	Intermittent	CA	119.100833	37.955
+        Hot Creek Mine	M	Surface	Abandoned	CA	118.394444	37.363611
+        Navajo Rock & Block	M	Surface	Active	CA	120.205	35.413889
+        7/11 Materials Inc-Robie Ranch	M	Surface	Abandoned	CA	120.855	38.076667
+        VINA QUARRY	M	Surface	Intermittent	CA	122.054167	39.9325
+        Riverside Operation	M	Facility	Active	CA	117.396111	34.016944
+        Randall Sand & Gravel	M	Surface	Active	CA	123.799722	40.093611
+        Deer Creek Asphalt	M	Surface	Active	CA	118.952778	36.007222
+        Irelan Mine	M	Underground	Abandoned	CA	120.828611	39.448056
+        San Bernardino Plant	M	Surface	Abandoned	CA	117.341667	34.121389
+        Arvin Pit	M	Surface	Abandoned	CA	118.744444	35.209444
+        Sloat Quarry	M	Surface	Intermittent	CA	120.724722	39.857222
+        Big Seam mine	M	Underground	Abandoned	CA	120.818056	39.020278
+        Fargo Canyon Mine	M	Surface	Intermittent	CA	116.154444	33.745278
+        Poway Plant	M	Surface	Abandoned	CA	117.038889	32.931111
+        Sydney Peak Stone	M	Surface	Active	CA	117.63	35.37
+        S Bar S Quarry	M	Surface	Intermittent	CA	122.7575	38.929722
+        Cherry Hill Mine	M	Underground	Abandoned	CA	122.758056	41.716389
+        Makayla	M	Surface	Active	CA	117.881111	36.087778
+        Mesquite	M	Surface	Active	CA	114.99	33.0175
+        Valley Rock Products - Willows	M	Surface	Active	CA	122.169236	39.598948
+        Valley Rock Products - Red Bluff Plant	M	Surface	Active	CA	122.1225	40.016388
+        Rocky Canyon Plant	M	Surface	Active	CA	120.599722	35.479444
+        Whale Rock Quarry	M	Surface	Active	CA	120.861962	35.452436
+        PLANT 25	M	Surface	Active	CA	121.419167	36.893056
+        Redlands	M	Surface	Active	CA	117.208611	34.057222
+        Mojave Pit	M	Surface	Intermittent	CA	117.977778	34.963056
+        Azusa Rock	M	Surface	Active	CA	117.924722	34.156111
+        API Pit	M	Surface	Active	CA	116.023056	33.374444
+        Pyrite Quarry	M	Surface	Abandoned	CA	117.458056	34.03
+        Bear Creek Quarry	M	Surface	Intermittent	CA	120.823611	38.874722
+        Bee Rock Quarry	M	Surface	Active	CA	120.101111	34.489722
+        RED TOP MINE	M	Surface	Active	CA	116.842222	34.513611
+        Boca Quarry	M	Surface	Abandoned	CA	120.064722	39.376389
+        BLUE MOUNTAIN MINERALS	M	Surface	Active	CA	120.423056	38.069444
+        Ward Lake Pit	M	Surface	Active	CA	120.418056	40.080833
+        North Chester Pit	M	Surface	Intermittent	CA	121.250833	40.290278
+        West Coast Aggregate Supply Inc	M	Surface	Active	CA	116.213889	33.8225
+        Moores Gravel Inc	M	Surface	Active	CA	122.8275	41.348611
+        Troesh Recycling, Inc. dba RoXsand	M	Surface	Intermittent	CA	120.438333	34.995
+        Eagle Valley Quarry	M	Surface	Active	CA	117.510556	33.845
+        Frink	M	Surface	Abandoned	CA	115.644722	33.373611
+        TRP-Sacramento Plant	M	Surface	Active	CA	121.250833	38.500833
+        7/11 Materials - Adams Pit	M	Surface	Abandoned	CA	118.386944	37.375833
+        Global Pumice Mine - Olancha	M	Surface	Active	CA	117.927222	36.223333
+        Soper Pit	M	Surface	Intermittent	CA	121.080556	39.950556
+        Carson Hill Rock Products	M	Surface	Active	CA	120.505556	38.025556
+        MT. GAINES MINE	M	Surface	Active	CA	120.174444	37.533056
+        Pine Canyon Quarry	M	Surface	Intermittent	CA	121.629722	36.588056
+        Littlerock Quarry	M	Surface	Active	CA	118.018888	34.542777
+        Palmdale 	M	Surface	Active	CA	117.995833	34.576111
+        Thousand Palms Pit	M	Surface	Active	CA	116.405	33.845556
+        HOGAN QUARRY	M	Surface	Active	CA	120.826944	38.147222
+        Newberry Springs Plant	M	Surface	Abandoned	CA	116.591111	34.888055
+        Mine #1	M	Surface	Abandoned	CA	116.943333	32.906389
+        TRP Table Mountain Plant	M	Surface	Active	CA	121.593056	39.599722
+        Sand Pit	M	Surface	Abandoned	CA	117.261667	34.086944
+        Redlands Quarry	M	Surface	Active	CA	117.1825	34.072778
+        GPS River Rock Products Co	M	Surface	Active	CA	120.505556	35.833333
+        La Grange Mine	M	Surface	Active	CA	123.003333	40.734444
+        Intravaia Screening	M	Surface	Intermittent	CA	117.689167	34.121667
+        Enniss Lakeside Plant	M	Surface	Abandoned	CA	116.931667	32.901389
+        Oro Grande Pit	M	Surface	Active	CA	117.339722	34.674166
+        Castle Mountain Mine	M	Surface	Intermittent	CA	115.176389	35.293333
+        Littlerock	M	Surface	Abandoned	CA	117.96	34.516944
+        Holliday Rock-Little Rock Plant 	M	Surface	Active	CA	118.013056	34.510278
+        Snelling Plant/George Reed Inc	M	Surface	Abandoned	CA	120.507778	37.347222
+        DILLON ROAD PIT	M	Surface	Active	CA	116.188333	33.791388
+        Avenal Asphalt & Aggregate	M	Surface	Intermittent	CA	120.229444	36.073611
+        Western Aggregates LLC	M	Surface	Active	CA	121.4525	39.179167
+        Empire Quarry	M	Surface	Active	CA	118.448056	33.424167
+        A-1 Grit Co	M	Facility	Abandoned	CA	117.973611	34.111111
+        Hi Desert Rustic Stone	M	Surface	Abandoned	CA	117.636389	35.33
+        Diamond T Natural Resources, LLC	M	Surface	Active	CA	123.048056	38.475833
+        Graham Equipment	M	Surface	Intermittent	CA	117.289444	34.497222
+        Lind Marine Incorporated	M	Facility	Abandoned	CA	122.635	38.235833
+        Smith Pit	M	Surface	Active	CA	123.066111	40.738889
+        Campo Materials Company	M	Surface	Abandoned	CA	116.356111	32.676389
+        Esparto Plant	M	Surface	Intermittent	CA	121.988056	38.730833
+        Sherwood Rd Quarry	M	Surface	Intermittent	CA	123.733611	39.448889
+        LINCOLN MINE PROJECT	M	Underground	Active	CA	120.816944	38.411389
+        MTN SPRINGS RD. PIT	M	Surface	Intermittent	CA	120.725556	35.64
+        French Corral Mine	M	Surface	Abandoned	CA	121.152222	39.306944
+        3M	M	Surface	Active	CA	117.508056	33.839444
+        Parks Quarry 	M	Surface	Abandoned	CA	119.938611	34.44
+        FRANKLIN SAND PLANT	M	Surface	Abandoned	CA	121.631111	39.629167
+        RIVER PLANT	M	Surface	Abandoned	CA	119.252778	35.290833
+        LUCKY 7 PIT	M	Surface	Abandoned	CA	121.624444	39.623056
+        PRADO	M	Surface	Abandoned	CA	117.651667	33.889444
+        Andrew	M	Surface	Abandoned	CA	117.661944	34.231389
+        Bowman Asphalt Inc.	M	Surface	Abandoned	CA	117.380278	35.820556
+        Corona Plant	M	Surface	Active	CA	117.104722	33.136111
+        KETT SIDING	M	Surface	Active	CA	122.465	40.606389
+        Juniper Rock Corporation	M	Surface	Active	CA	117.110556	33.76
+        TELEGRAPH MINE	M	Underground	Abandoned	CA	120.867778	39.618889
+        Mercer Fraser Plant B Portable Crusher	M	Surface	Intermittent	CA	124.158333	40.592778
+        Bess Bar	M	Surface	Intermittent	CA	124.051389	40.529722
+        Hatchery Road Crusher	M	Surface	Intermittent	CA	123.995556	40.867778
+        SAN ANTONIO MATERIALS	M	Surface	Abandoned	CA	117.655277	34.1
+        Preparation Plant	C	Facility	Abandoned	CA	95	9.833333
+        Howard Properties Lot 232	C	Surface	Abandoned	CA	95	9.833333
+        WINTON PIT & MILL	M	Surface	Active	CA	120.596944	37.459722
+        S.R.I. MARYSVILLE	M	Surface	Active	CA	121.454444	39.174167
+        Crawford's Mine	M	Surface	Active	CA	114.61	33.605833
+        Speciality Sand Plant	M	Facility	Abandoned	CA	118.715555	34.329722
+        Harris Quarry	M	Surface	Active	CA	123.310556	39.3375
+        Concrete, Inc DBA Knife River	M	Surface	Active	CA	121.021944	38.160556
+        EL CENTRO PROCESSING	M	Surface	Intermittent	CA	115.531111	32.792777
+        LEMONCOVE GRANITE	M	Surface	Active	CA	119.008333	36.381944
+        Orland Plant	M	Surface	Active	CA	122.206111	39.783889
+        Jackson Valley Open Pit Mine	C	Surface	Abandoned	CA	120.015	38.0044
+        Plymouth Sand & Gravel	M	Surface	Active	CA	120.898889	38.449722
+        Southside Sand And Gravel	M	Surface	Active	CA	121.331389	36.796944
+        Montezuma Sand & Gravel	M	Surface	Intermittent	CA	120.467778	37.903611
+        Acton Clay Quarries	M	Surface	Active	CA	118.157777	34.460277
+        All Rock 	M	Surface	Abandoned	CA	120.6025	38.158611
+        Ridge Rock Quarry	M	Surface	Active	CA	121.146389	39.332222
+        Fountain Springs	M	Surface	Abandoned	CA	118.918333	35.800833
+        Inland Rock Plant	M	Surface	Abandoned	CA	117.543055	34.146944
+        MCCARTY PIT	M	Surface	Abandoned	CA	120.449444	38.117778
+        Acin Ranch	M	Surface	Active	CA	120.393055	34.620277
+        Portable #1	M	Surface	Abandoned	CA	122.419444	40.508889
+        Lytle Creek Pit	M	Surface	Active	CA	117.399722	34.156389
+        Cain Ranch Aggregate Quarry	M	Surface	Intermittent	CA	119.069167	37.754167
+        Cooks Valley Portable Crusher	M	Surface	Abandoned	CA	123.681388	39.856944
+        Discovery Day Mine	M	Underground	Abandoned	CA	123.311944	41.205
+        Mosler Rock-Ojai Quarry	M	Surface	Abandoned	CA	118.923056	34.167778
+        Lee Vining Aggregate Plant	M	Surface	Intermittent	CA	119.13	37.939167
+        Crushing Screening	M	Surface	Active	CA	115.512777	32.978611
+        Napa Shop	M	Facility	Abandoned	CA	122.275833	38.261944
+        Lind Marine Incorporated	M	Surface	Active	CA	121.8525	38.088889
+        Mule Shoe Mine	M	Facility	Abandoned	CA	121.020556	36.354722
+        Gold Mountain Mine	M	Surface	Abandoned	CA	116.915277	34.282222
+        San Francisco Marine Plant	M	Surface	Active	CA	122.377778	37.745556
+        Schneider Historic Mine	M	Surface	Abandoned	CA	121.065833	38.431388
+        Goose Hill Rock 	M	Surface	Active	CA	120.905	38.296389
+        O'Sullivan Ranch Pit	M	Surface	Abandoned	CA	122.189167	39.08
+        DECKER ISLAND 	M	Surface	Intermittent	CA	121.723611	38.094167
+        Briggs Mine	M	Surface	Abandoned	CA	117.371667	35.762778
+        Westside Aggregate	M	Surface	Intermittent	CA	122.34	40.479167
+        Silver Lake Mine 	M	Surface	Active	CA	116.296111	35.396111
+        Roads Extec Crusher	M	Surface	Intermittent	CA	124.102778	40.483611
+        Laytonville Rock	M	Surface	Intermittent	CA	123.474722	39.693056
+        BALD HILLS QUARRY	M	Surface	Intermittent	CA	123.681389	38.989722
+        Fawndale Rock & Asphalt	M	Surface	Active	CA	122.307778	40.735278
+        Amboy Limestone Quarry	M	Surface	Abandoned	CA	115.642778	34.563333
+        Pine Creek Rock	M	Surface	Active	CA	121.953253	39.879016
+        #1 PORTABLE	M	Surface	Active	CA	117.511944	33.848333
+        PECK ROAD GRAVEL PIT	M	Surface	Active	CA	118.003611	34.111111
+        Tule River/Success Dam	M	Surface	Active	CA	118.932901	36.050105
+        Soledad Mountain Project	M	Surface	Active	CA	118.180833	35.008889
+        SPRING VALLEY QUARRY	M	Surface	Abandoned	CA	121.425278	39.255833
+        Alpha Materials, Inc.	M	Surface	Intermittent	CA	117.306667	34.063889
+        Mossdale Plant	M	Surface	Active	CA	121.313889	37.771389
+        Deer Creek Plant	M	Surface	Intermittent	CA	122.026944	39.986944
+        Kernen Portable Crusher I	M	Surface	Abandoned	CA	124.024166	40.901388
+        Highway 175 Quarry	M	Surface	Active	CA	122.935556	38.994444
+        DQA Curtner Quarry	M	Surface	Abandoned	CA	121.89	37.467777
+        Capay Plant Facility	M	Surface	Active	CA	122.019444	38.714444
+        CARMELITA MINE	M	Underground	Abandoned	CA	116.646389	33.353056
+        Red Ledge Mining	M	Surface	Abandoned	CA	72.001944	43.2325
+        IBEX BENTONITE	M	Surface	Intermittent	CA	116.316389	35.877222
+        Wilsey Ranch Quarry 	M	Surface	Intermittent	CA	123.776944	39.599167
+        WILLIAMS PIT	M	Surface	Active	CA	121.575833	36.878333
+        Blue Ridge Quarry	M	Surface	Intermittent	CA	123.026944	38.8575
+        Cabazon Rock Plant	M	Surface	Active	CA	116.8075	33.923889
+        Marina Vista Plant	M	Surface	Abandoned	CA	122.124722	38.023333
+        Blasted Rock Quarry	M	Surface	Intermittent	CA	120.385278	39.797222
+        COACHELLA VALLEY AGGREGATE	M	Surface	Active	CA	116.126944	33.753056
+        ERM Rock	M	Surface	Intermittent	CA	124.146667	40.540278
+        Schlegel North County Sand & Gravel, Inc	M	Surface	Abandoned	CA	120.654722	35.507222
+        Le Grand Asphalt	M	Surface	Active	CA	120.188056	37.251111
+        Dunstone Rock Quarry 	M	Surface	Intermittent	CA	121.474612	39.373903
+        Portable Crusher	M	Surface	Abandoned	CA	122.636666	41.708888
+        IRON SPRINGS CONSOLIDATED	M	Surface	Intermittent	CA	120.005278	37.4725
+        Portable Recycle Plant #1106	M	Surface	Abandoned	CA	121.3725	38.546944
+        WHITNEY PIT	M	Surface	Abandoned	CA	122.5825	39.49
+        R Brown & Son's Quarry	M	Surface	Intermittent	CA	123.668055	40.94
+        Merrill Borrow Pit	M	Surface	Intermittent	CA	119.704167	38.613889
+        Rialto	M	Surface	Active	CA	117.418333	34.150556
+        S-8 Portable Screen Loader	M	Surface	Abandoned	CA	120.660833	40.419722
+        RC-2 Portable Rock Crusher 	M	Surface	Abandoned	CA	120.660833	40.419722
+        LONG DECOMPOSED GRANITE PIT	M	Surface	Intermittent	CA	119.984444	37.447222
+        MIDDLE CREEK FACILITY	M	Surface	Abandoned	CA	122.913333	39.161944
+        STRINGER PIT	M	Surface	Active	CA	121.375833	39.222778
+        Goodwin Sand & Gravel	M	Surface	Intermittent	CA	120.158889	41.478611
+        Morris Ravine Mine	M	Surface	Active	CA	121.547222	39.565
+        Upper Dry Creek Slate Mine	M	Surface	Intermittent	CA	120.835833	38.451667
+        Chieftan Power Screen	M	Facility	Abandoned	CA	120.879167	36.023333
+        Portable Plant 1	M	Surface	Intermittent	CA	120.585556	40.371389
+        Menne Pit	M	Surface	Abandoned	CA	122.897778	41.632222
+        Grimes Rock Inc	M	Surface	Active	CA	118.909444	34.334722
+        MANNING PORTABLE PLANT 19-03	M	Surface	Abandoned	CA	120.79	37.443888
+        West Coast Rock and Sand	M	Surface	Active	CA	117.123611	32.901389
+        Portable Crusher #1	M	Surface	Abandoned	CA	121.325556	38.554444
+        Ranch Rock Capo	M	Surface	Abandoned	CA	117.567778	33.884722
+        DILLON PLANT	M	Surface	Intermittent	CA	116.164167	33.738056
+        Freeman Quarry	M	Surface	Abandoned	CA	121.554167	36.938333
+        Plant #4	M	Surface	Abandoned	CA	117.464167	33.784167
+        PLANT #5	M	Surface	Intermittent	CA	117.414167	33.7375
+        Nicasio Rock Quarry	M	Surface	Active	CA	122.7025	38.066389
+        Diamond J Corp	M	Surface	Abandoned	CA	122.581666	38.803055
+        Knife River Construction Vernalis Plant	M	Surface	Active	CA	121.333056	37.617222
+        Bear Creek Quarry	M	Surface	Abandoned	CA	120.060555	37.507777
+        Valley Sand & Gravel	M	Surface	Abandoned	CA	120.909444	36.991389
+        Eastside Aggregates	M	Surface	Intermittent	CA	121.623611	40.993333
+        Ventucopa Quarry	M	Surface	Active	CA	119.453333	34.819167
+        Extec Screener	M	Surface	Abandoned	CA	124.102777	40.483333
+        Paso Robles Plant	M	Surface	Intermittent	CA	120.693055	35.581944
+        Portable #1 Big Plant	M	Surface	Active	CA	122.525556	41.644444
+        Sand Merchant	M	Surface	Active	CA	121.371111	37.906111
+        Mill Bar Pit	M	Surface	Abandoned	CA	120.726667	39.862222
+        Prairie City	M	Surface	Abandoned	CA	121.153888	38.612777
+        Grantline Plant #1194	M	Surface	Active	CA	121.182222	38.579722
+        Cool Cave Quarry	M	Surface	Active	CA	121.013611	38.903333
+        SWA @ Mountain Gate Quarry	M	Surface	Active	CA	122.302778	40.726389
+        Redlands - Wet Plant	M	Surface	Abandoned	CA	118.066666	34.020277
+        Cryo Genie Mine	M	Surface	Abandoned	CA	116.678889	33.306667
+        Lovelady-1	M	Surface	Abandoned	CA	117.203333	33.393333
+        Superior - Twin Oaks	M	Surface	Active	CA	117.157222	33.179722
+        Sparrock Pit	M	Surface	Intermittent	CA	120.228889	39.743889
+        Fab-Tech 17	M	Surface	Abandoned	CA	117.181666	33.740555
+        Fab-Tech 18	M	Surface	Abandoned	CA	117.181667	33.740556
+        Blue Rock	M	Surface	Abandoned	CA	122.376666	38.646666
+        Plant 5B	M	Surface	Abandoned	CA	117.334444	34.057778
+        Plant 5	M	Surface	Abandoned	CA	117.813611	33.862778
+        Larranaga Pit	M	Surface	Intermittent	CA	120.560833	41.345278
+        San Bernardino	M	Surface	Abandoned	CA	117.329444	34.115833
+        North Murrieta	M	Surface	Abandoned	CA	117.523889	33.936111
+        Texas Rock Plant	M	Surface	Abandoned	CA	117.138888	34.066388
+        Alliance Ready Mix Inc	M	Surface	Abandoned	CA	119.288611	34.696111
+        Ione Minerals	M	Surface	Abandoned	CA	120.948056	38.334722
+        Specialty Granules (Ione)  LLC	M	Surface	Active	CA	120.918611	38.343611
+        Pacific States Plant #1	M	Surface	Abandoned	CA	117.334444	34.057778
+        Chandler Aggregates - Gilman Springs	M	Surface	Active	CA	117.034444	33.869167
+        Marysville Plant	M	Surface	Active	CA	121.386667	39.167222
+        Hostetter Sand & Gravel #2	M	Surface	Abandoned	CA	117.483055	33.7575
+        Dantoni Rd	M	Surface	Abandoned	CA	121.516944	39.163056
+        NorCal Sand and Rock	M	Surface	Active	CA	121.586389	39.64
+        #2 Portable	M	Surface	Abandoned	CA	117.465	33.828889
+        Portable Crusher (Rental)	M	Surface	Abandoned	CA	117.458056	34.03
+        TXI-Riverside Cement	M	Surface	Abandoned	CA	117.335833	34.606389
+        Bianchi Pit	M	Surface	Active	CA	121.019166	35.578611
+        Santee Rock Plant	M	Surface	Active	CA	117.021667	32.847778
+        NORCAL	M	Surface	Abandoned	CA	123.345556	39.400278
+        San Bernardino Plant	M	Surface	Abandoned	CA	117.195277	34.1225
+        7/11 Materials - Coyote Valley Aggregate	M	Surface	Active	CA	118.450278	37.3575
+        Round Mountain Rock 	M	Surface	Intermittent	CA	120.928333	40.286389
+        Bradley Plant	M	Surface	Abandoned	CA	120.780556	35.863056
+        TOURMALINE KING MINE	M	Underground	Active	CA	117.071389	33.390278
+        Eagle Valley	M	Surface	Active	CA	117.494722	33.826944
+        Ocean View Mine	M	Underground	Abandoned	CA	117.045556	33.385833
+        El Jaro	M	Surface	Abandoned	CA	120.369722	34.570278
+        Pauley D G Mine	M	Surface	Intermittent	CA	118.163333	34.864167
+        Standish Pit	M	Surface	Intermittent	CA	120.450278	40.36
+        Portable	M	Surface	Abandoned	CA	123.368333	39.4025
+        Johnson Pit	M	Surface	Intermittent	CA	123.353889	39.992778
+        Redlands/S-5 Extec	M	Surface	Abandoned	CA	117.373333	33.941666
+        Harlow Quarry/Corona	M	Surface	Abandoned	CA	117.553611	33.938889
+        Black Butte Cinders	M	Surface	Intermittent	CA	122.002778	40.461667
+        Portable Screen Plant	M	Surface	Intermittent	CA	122.636667	41.708889
+        Renewable Resources	M	Surface	Intermittent	CA	121.239722	36.702222
+        Portable #1	M	Surface	Intermittent	CA	117.969444	34.557778
+        Truck Village	M	Surface	Abandoned	CA	122.3675	41.368055
+        Fab-Tech 09	M	Surface	Abandoned	CA	117.168611	33.600556
+        Curtis Hanford Sand & Gravel	M	Surface	Abandoned	CA	121.281388	38.419722
+        Wheeler-Hagan Rock Quarry	M	Surface	Intermittent	CA	123.785833	40.208056
+        VINEYARD ROCK	M	Surface	Intermittent	CA	121.335	36.685833
+        Handley Ranch Quarry	M	Surface	Active	CA	121.427222	36.565
+        Ben Bridge Trust Allottment No. Red-14	M	Surface	Abandoned	CA	121.503333	41.122222
+        Roadrunner 32	M	Surface	Abandoned	CA	117.181667	33.740556
+        Plant 7	M	Surface	Abandoned	CA	118.196944	34.990278
+        Joiner Portable #2	M	Surface	Abandoned	CA	120.936111	41.188611
+        Pacific Aggregates Pits	M	Surface	Active	CA	117.389722	33.702222
+        Nichols Road Pit	M	Surface	Active	CA	117.364722	33.705833
+        BENSON MINE	M	Surface	Active	CA	117.344444	34.136111
+        Mason Materials	M	Facility	Abandoned	CA	124.045833	40.9075
+        Smith Sand Pit	M	Surface	Intermittent	CA	120.700556	35.545278
+        LT105 Jaw	M	Surface	Intermittent	CA	124.008055	40.896388
+        Black Angel	M	Surface	Abandoned	CA	117.138889	34.739167
+        Hidden Canyon Quarry	M	Surface	Active	CA	121.226944	36.354167
+        Ammex Site	M	Surface	Active	CA	116.0025	32.758056
+        Irish Hill Portable Plant No. 1	M	Surface	Abandoned	CA	120.963333	38.383889
+        Day Creek Spreading Grounds	M	Surface	Abandoned	CA	117.536389	34.108056
+        The Standard Mine	M	Surface	Active	CA	114.826111	33.801944
+        Colton Aggregates	M	Surface	Abandoned	CA	117.334444	34.057778
+        Rodriguez Borrow Pit	M	Surface	Abandoned	CA	116.301389	33.344722
+        EAST HIGHLINE #2	M	Surface	Abandoned	CA	115.639166	32.87
+        Rosemary	M	Surface	Abandoned	CA	117.146389	33.337778
+        Extec	M	Surface	Intermittent	CA	124.008056	40.896389
+        Bear Butte Quarry	M	Surface	Active	CA	123.841944	40.206667
+        West Valley Sand & Gravel	M	Surface	Abandoned	CA	122.436667	40.388333
+        Lucerne Valley	M	Surface	Active	CA	116.862778	34.370278
+        Lucerne Valley	M	Surface	Abandoned	CA	116.889722	34.391944
+        Decomposed Granite Pit (LG)	M	Surface	Active	CA	118.935193	36.10927
+        Syndex Sand & Gravel	M	Surface	Abandoned	CA	119.469444	35.400555
+        Long Valley Pozzolan	M	Surface	Abandoned	CA	120.049722	39.869167
+        Black Mountain Quarry	M	Facility	Active	CA	117.206944	34.615833
+        Greenwood Aggregates	M	Surface	Intermittent	CA	123.616497	39.125039
+        BCJ Mobile	M	Surface	Abandoned	CA	122.787778	38.505556
+        Portable Operation	M	Surface	Abandoned	CA	116.989167	32.8025
+        Jerry Brown 	M	Surface	Active	CA	117.02	33.168056
+        Portable Crusher #2	M	Surface	Abandoned	CA	121.335555	38.550277
+        Portable Crusher 1	M	Surface	Abandoned	CA	117.398611	33.899722
+        Plant A	M	Surface	Abandoned	CA	117.936111	33.927222
+        San Pasqual Quarry	M	Surface	Abandoned	CA	117.027222	33.098889
+        High Country Aggregates	M	Surface	Abandoned	CA	120.898888	38.449722
+        Portable Crusher	M	Surface	Abandoned	CA	120.5425	41.487222
+        C A Rasmussen Inc Crusher Units	M	Surface	Abandoned	CA	118.389722	34.435278
+        Pedrotti Materials	M	Surface	Active	CA	122.395833	40.510556
+        Orosi Quarry	M	Surface	Active	CA	119.246667	36.553611
+        Portable Plant #1	M	Surface	Abandoned	TX	121.126944	37.730556
+        Plant 1	M	Surface	Active	CA	117.293056	34.533056
+        Valley Rock	M	Surface	Abandoned	CA	119.111944	35.382777
+        Riverside	M	Surface	Abandoned	CA	117.353333	33.987778
+        Bangor Quarry	M	Surface	Active	CA	121.400278	39.372222
+        1000 Springs Pit	M	Surface	Intermittent	CA	120.653056	40.416389
+        Portable plant B	M	Surface	Abandoned	CA	118.197222	36.799166
+        Bridgeville Quarry	M	Surface	Intermittent	CA	123.820556	40.457222
+        Portable Plant #5	M	Surface	Abandoned	CA	121.126944	37.730556
+        Twin Mine	M	Surface	Intermittent	CA	122.194722	40.503889
+        Shasta Ranch Aggregates	M	Surface	Active	CA	122.2175	40.44
+        Portable Operation Plant #1	M	Surface	Abandoned	CA	120.422777	37.953333
+        Portable Plant #2	M	Surface	Abandoned	CA	120.466944	37.904444
+        American Girl Mine East	M	Surface	Active	CA	114.811667	32.836944
+        Bio Gyp	M	Facility	Abandoned	CA	114.598055	33.598888
+        H.L. Rodney	M	Surface	Active	CA	121.842778	40.299167
+        Screen A	M	Surface	Abandoned	CA	116.843888	34.982222
+        PORTABLE FINLEY	M	Surface	Abandoned	CA	121.776667	37.459722
+        Mesquite Lake Gypsum Mine	M	Surface	Active	CA	115.496944	35.764722
+        Garlock Pit	M	Surface	Abandoned	CA	117.749166	35.403055
+        Portable Screen Plant #1	M	Surface	Abandoned	ND	108.060555	45.9925
+        Ranch Rock Haven	M	Surface	Abandoned	CA	117.575556	34.163333
+        Big Rock Creek	M	Surface	Abandoned	CA	117.853333	34.509444
+        Santa Fe Aggregates Portable	M	Surface	Temporarily Idled	CA	120.4525	37.507222
+        Roberti Ranch	M	Surface	Intermittent	CA	120.268611	39.779167
+        Mockingbird Mine	M	Underground	Abandoned	CA	119.965556	37.553333
+        CR-04	M	Surface	Abandoned	CA	118.003611	34.111111
+        Vernalis Plant	M	Surface	Active	CA	121.346389	37.602778
+        PORTABLE NORBERG 	M	Surface	Abandoned	CA	121.776667	37.459722
+        PORTABLE EXTEC	M	Surface	Abandoned	CA	121.776667	37.459722
+        Sheridan Quarry	M	Surface	Intermittent	CA	121.905833	37.5625
+        Highland Plant	M	Surface	Abandoned	CA	117.121111	34.104444
+        Portable Plant 2	M	Surface	Abandoned	CA	117.228611	33.7825
+        Plant # 1	M	Surface	Abandoned	CA	117.190556	32.881667
+        Browns	M	Surface	Intermittent	CA	122.635006	41.733641
+        Santa Paula Materials	M	Surface	Intermittent	CA	119.053056	34.363611
+        Sanger Agg Plant	M	Surface	Active	CA	119.507222	36.669167
+        Portable #1	M	Surface	Abandoned	CA	122.180277	37.735555
+        PORTABLE PLANT #1	M	Surface	Active	CA	117.195278	34.1225
+        Portable Plant #1	M	Surface	Abandoned	CA	116.968333	32.831666
+        Canyon Rock Pit	M	Surface	Abandoned	CA	120.908333	37.001111
+        Plant #1	M	Surface	Abandoned	CA	118.376666	34.233611
+        Almond	M	Surface	Abandoned	CA	121.6325	39.401388
+        Mtn Laurel Quartz Mn/Gold Ball Mill Site	M	Underground	Abandoned	CA	123.137222	41.274166
+        Santa Barbara Portable	M	Surface	Abandoned	CA	119.811666	34.438611
+        Turner Pit	M	Surface	Abandoned	CA	120.205	40.352777
+        Beck Mine	M	Surface	Active	CA	115.931944	35.789167
+        Wishon Quarry	M	Surface	Abandoned	CA	119.563333	37.315
+        Big Cut Mine	M	Surface	Abandoned	CA	120.781111	38.71
+        Old Smith Family Mine	M	Underground	Abandoned	CA	120.782222	39.603611
+        Portable Operation A	M	Surface	Abandoned	CA	117.285556	34.535
+        Ford Quarries	M	Surface	Active	CA	124.031389	40.937222
+        Madera Quarry	M	Surface	Intermittent	CA	119.793056	37.054167
+        Bed Rock Mine	M	Surface	Abandoned	CA	124.201667	41.755833
+        Lopez Rock Quarry	M	Surface	Abandoned	CA	124.174167	41.936389
+        Live Oak Quarry	M	Surface	Abandoned	CA	120.19	34.613889
+        Grist Creek Aggregates, Longvale Plant	M	Facility	Active	CA	123.4	39.566944
+        Portable Plant	M	Surface	Active	CA	117.401389	33.726667
+        Esmeralda Mine	M	Underground	Abandoned	CA	116.678889	33.306667
+        Red Rover Mine	M	Underground	Abandoned	CA	118.215833	34.496666
+        PCR-1	M	Surface	Intermittent	OR	124.262222	42.063611
+        Radcliff Mine	M	Underground	Abandoned	CA	117.244167	35.921944
+        Delaney Aggregates	M	Surface	Intermittent	CA	120.502778	37.633611
+        T-K Springs Quarry	M	Surface	Abandoned	CA	120.135833	40.316944
+        Newman Minerals No.1	M	Surface	Abandoned	CA	120.997222	38.37
+        Waverly	M	Surface	Active	CA	120.943611	38.051667
+        California Silica Products	M	Surface	Active	CA	117.383889	34.558333
+        Imperial Valley Aggregates	M	Surface	Active	CA	116.0025	32.758333
+        Indian Valley Rock	M	Surface	Intermittent	CA	120.761111	40.210278
+        Triple Pocket Mine	M	Underground	Abandoned	CA	120.832778	39.545
+        Baker Creek Quarry	M	Surface	Abandoned	CA	123.929444	40.008889
+        Weyrick Plant	M	Surface	Abandoned	CA	120.654722	35.472222
+        Pioneer Lucky Strike Mining Company LLC	M	Underground	Abandoned	CA	120.560556	38.445556
+        Echo Mountain	M	Surface	Active	CA	121.331389	41.644444
+        Plant #2	M	Surface	Abandoned	CA	121.013611	37.796944
+        Silva Quarry	M	Surface	Intermittent	CA	122.635023	41.734407
+        Permanente Rock Plant	M	Facility	Abandoned	CA	122.086944	37.32
+        Goss Pit	M	Surface	Abandoned	CA	120.158056	39.818333
+        Sierra Silica Resources	M	Surface	Active	CA	121.566262	39.47642
+        T-Rock	M	Surface	Abandoned	CA	117.330833	35.828333
+        California Hectorite Pit	M	Surface	Abandoned	CA	116.471944	36.423056
+        Turvey's Granite Pit	M	Surface	Active	CA	116.816111	32.855833
+        Corona	M	Surface	Active	CA	117.501111	33.824444
+        RUC QUARRY	M	Surface	Intermittent	CA	123.545	41.304444
+        Estrella Sand Pit	M	Surface	Intermittent	CA	120.640556	35.716389
+        El Jay Cone	M	Surface	Intermittent	CA	124.093889	40.463889
+        75th Street Quarry and Recycling	M	Surface	Active	CA	117.995833	34.576111
+        LT106 Jaw	M	Surface	Intermittent	CA	124.008056	40.896389
+        Mountain Lily Mine	M	Underground	Abandoned	CA	116.767222	33.332222
+        Hoopa Aggregate	M	Surface	Active	CA	123.657778	41.0325
+        RMQ Plant 1	M	Surface	Abandoned	CA	117.146944	33.346667
+        US Rock Corp - Wildomar Pit	M	Surface	Abandoned	CA	117.283611	33.648056
+        Oro Grande Aggregates	M	Surface	Abandoned	CA	117.336111	34.606667
+        Scheerer Quarry	M	Surface	Active	CA	117.211389	34.571667
+        Coast Aggregates Big Rock Creek 	M	Surface	Active	CA	117.896389	34.69
+        Laguna East Gravel Pit	M	Surface	Abandoned	AZ	114.325833	34.454444
+        PORTABLE #1	M	Surface	Abandoned	CA	121.568889	39.493333
+        iRock Crusher	M	Surface	Intermittent	CA	120.310556	40.397222
+        Portable Screen #1	M	Surface	Abandoned	CA	117.723333	33.663056
+        Mojave Rock Mine	M	Surface	Active	CA	118.183056	34.987222
+        Azusa Quarry	M	Surface	Abandoned	CA	117.925833	34.119444
+        HGM Nebo	M	Surface	Abandoned	CA	116.941667	34.868889
+        Geo Plant	M	Surface	Intermittent	CA	123.806389	39.465278
+        Snow White Mine	M	Surface	Abandoned	CA	117.939722	35.386111
+        Latona Aggregates	M	Surface	Intermittent	CA	122.361111	40.493333
+        Berthoud Pink 	M	Surface	Abandoned	CO	105.081111	40.308333
+        Monarch Quarry 	M	Surface	Abandoned	CO	106.310833	38.543889

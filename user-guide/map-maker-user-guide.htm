@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOL Map Maker User Guide</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="css/user-guide-styles.css">
+</head>
+
+
+
+<body>
+
+    <link rel="stylesheet" type="text/css" href="staticweb/css/data-portal-styles.css" />
+
+
+    <style>
+        #main_banner {
+            background-image: url("images/vis-banner.jpg");
+        }
+
+        @media (max-width: 650px) {
+
+            #main_banner h1 {
+                /*makes it a little smaller so "visualization" can fit  */
+                font-size: 3.5em;
+            }
+        }
+
+
+        @media (max-width: 890px) {
+
+            #main_banner h1 {
+                padding-top: 15px;
+            }
+
+        }
+
+
+        #visualizations_teasers_div {
+            /* padding: 2rem; */
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: top;
+            padding-top: 0px;
+            margin-top: 15px;
+
+        }
+
+
+
+        .visualizations_teaser {
+            flex: 1;
+            width: fit-content;
+            height: fit-content;
+            /* padding: 10px; */
+            padding-bottom: 0px;
+            border: none;
+            margin: 10px 0px 20px 0px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+
+        .visualizations_teaser_img {
+            width: 252px;
+            height: 185px;
+            display: block;
+            margin: auto;
+            margin-bottom: 12px;
+        }
+
+
+        #gallery_row .viz_outer_div {
+            padding-left: 0px !important;
+            padding-right: 20px !important;
+        }
+    </style>
+
+
+
+
+
+
+
+    <div id="main_banner" class="container-fluid">
+        <h1>INTERACTVE MAP MAKER</h1>
+        <h2>Resources for Getting Started</h2>
+    </div>
+
+
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-6 col-lg-8">
+
+                <div class="row" id="map_examples_row">
+
+                    <h3>About the Map Maker</h3>
+                    <p style="margin-top: 0px; font-size: 1.2em; margin-bottom: 5px;">The Interactive Map Maker was
+                        developed to create 508 compliant data visualizations for the <a
+                            href="https://datadev.opadev.dol.gov/visualization-gallery">Visualization Gallery</a> on the
+                        DOL Open Data Portal. The Office of Data Governance invites agencies to use this tool to create
+                        visualizations for the Visualization Gallery, internal analysis, or for your webpages.</p>
+
+                    <!--Teasers - click to go to instruction divs-->
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 map_example_div">
+                        <a href="#basic_maps">
+                            <h4>Basic Maps</h4>
+                            <img class="map_image" src="images/basic_map.png">
+                        </a>
+                    </div>
+
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 map_example_div">
+                        <a href="#filter_maps">
+                            <h4>Filter Maps</h4>
+                            <img class="map_image" src="images/filter_map.png">
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 map_example_div">
+                        <a href="#animated_maps">
+                            <h4>Animated Maps</h4>
+                            <img class="map_image" src="images/animated_map.png">
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 map_example_div">
+                        <a href="#animated_filer_maps">
+                            <h4>Animated Filter Maps</h4>
+                            <img class="map_image" src="images/animated_filter_map.png">
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+                <!--instruction row and divs-->
+
+                <div class="row" id="map_examples_row">
+
+
+
+                    <div class="col-12 map_instructions_div" id="animated_maps">
+                        <h3>Animated Map</h3>
+                        <p style="margin-top: 0px; font-size: 1.2em; margin-bottom: 5px;">This section will help you
+                            make an animated map.</p>
+
+                        <img class="instruction_map_image" src="images/animated_map.png" />
+
+                        <div class="map_instructions_step_div">
+                            <h4>1) Identify a Dataset</h4>
+                            <p>Provide raw data file</p>
+                        </div>
+
+                        <div class="map_instructions_step_div">
+                            <h4>2) Transform Your Data</h4>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/-5KAN9_CzSA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="map_instructions_step_div">
+
+                            <h4>3) Create Map</h4>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/-5KAN9_CzSA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+
+
+                <div class="row">
+                    <h3>Report a bug</h3>
+                    <p>If you encounter any issues with the map maker, please let us know.</p>
+                    <a href="contact-us.html" class="button">Report</a>
+
+                </div>
+
+
+                <div class="row">
+                    <h3>Share your work</h3>
+                    <p>Contribute a visualization to the <a
+                            href="https://datadev.opadev.dol.gov/visualization-gallery">Visualization Gallery</a>.</p>
+                    <a href="contact-us.html" class="button">Share</a>
+
+                </div>
+
+
+
+                <div class="row">
+                    <h3>Help Us Improve</h3>
+                    <p>Help us improve the map maker with your feedback.</p>
+                    <a href="contact-us.html" class="button">Feedback</a>
+
+                </div>
+
+
+                <div class="row">
+                    <h3>Contact Us</h3>
+                    <p>If you have any questions about the map maker, let us know.</p>
+                    <a href="contact-us.html" class="button">Contact</a>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

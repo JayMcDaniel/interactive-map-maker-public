@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map Maker</title>
+
+    <!-- <script src="js/jquery-latest.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        //first check if old browser
+        $(document).ready(function () {
+            var isIE = /*@cc_on!@*/ false || !!document.documentMode;
+            if (isIE) { // is IE
+                $("#browser_warning").show();
+                $("#map_outer_div").hide();
+            }
+        })
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.6/proj4.js"> </script>
+    <script src='https://code.highcharts.com/maps/9.2.0/highmaps.js'></script>
+    <script src='https://code.highcharts.com/maps/9.2.0/modules/data.js'></script>
+    <script src='https://code.highcharts.com/maps/9.2.0/modules/exporting.js'></script>
+    <script src='https://code.highcharts.com/maps/9.2.0/modules/offline-exporting.js'></script>
+
+    <script src="https://code.highcharts.com/9.2.0/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/9.2.0/modules/pattern-fill.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/g/filesaver.js"></script>
+
+    <script src="js/dataFramer.js"></script>
+    <script src="js/annotation-drawing.js"></script>
+    <script src="js/loadSavedSession.js"></script>
+    <script src="js/data_import.js"></script>
+    <script src="js/map_export.js"></script>
+    <script src="js/options_controller.js"></script>
+    <script src="js/colorMap.js"></script>
+    <script src="js/makeMap.js"></script>
+    <script src="js/side_nav.js"></script>
+    <script src="js/app.js"></script>
+
+    <link rel="stylesheet" href="https://www.bls.gov/stylesheets/bls_tables.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+
+    <div id="question_popup_div"></div>
+
+    <div id="map_maker_header">
+        <h1>Interactive Map Maker <span style="font-size: 0.6em;"> (Beta <span id="app_version"></span>)</span><a
+                href="#save" id="save_progress_button" data-rel-filename="map_saved_status_file_name_text"><i class="fas fa-save fa_white"></i>Save progress</a></h1>
+
+    </div>
+    <div id="map_maker">
+
+
+
+        <div id="map_maker_side_nav">
+            <div id="map_maker_side_nav_menu">
+                <div>
+                    <a class="nav_menu_tab selected" href="#import_data">Data</a>
+                </div>
+
+                <div>
+                    <a class="nav_menu_tab" href="#add_interactivity">Interactivity</a>
+                </div>
+
+                <div>
+                    <a class="nav_menu_tab" href="#edit_options">Options</a>
+                </div>
+                <div>
+                    <a class="nav_menu_tab" id="export_tab" href="#export_map">Export</a>
+                </div>
+
+            </div>
+
+            <div id="map_maker_side_nav_content">
+
+                <div id="map_maker_side_nav_import_div" class="side_nav_content import_data selected">
+                    <h2>Import Data</h2>
+
+                    <a class="side_nav_options_section_head" href="#">
+                        <h3 aria-label="Display"><i class="fas fa-video"> </i>Video Tutorial (+)</h3>
+
+                    </a>
+                    <div class="side_nav_options_section">
+                        <h4>Importing and connecting your data</h4>
+                        <iframe width="450" height="223" src="https://www.youtube.com/embed/fhbrUslJWSk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            aria-label="Importing and connecting your data"
+                            ></iframe>
+                        <a class="data_link" href="test-data/county-data-basic.xlsx">Tutorial data (.xlsx)</a>
+
+                    </div>
+
+                    <label for="import_data_textarea">Acceptable formats include comma (CSV), pipe (|), or tab-separated
+                        data <a href="#" class="question_popup_anchor"
+                            role="tooltip" aria-label="Cells copied from Excel are tab-separated data"><i class="fa fa-question-circle" aria-hidden="true"></i></a> or code from a saved
+                        session. One column needs
+                        to contain area names or codes to join with the map (e.g. "Alaska" or "AK").</label>
+                    <br>
+                    <br>
+
+
+                    <fieldset id="data_input_radios_fieldset">
+
+                    <legend>Choose a data source</legend>
+
+                    <input type="radio" id="paste_data_radio" value="paste_data" name="data_input_radios" class="toggle_radio" data-rel="paste_data_div" checked>
+                    <label for="paste_data_radio" >Paste data</label><br>
+
+                    <input type="radio" id="load_data_from_url_radio" name="data_input_radios" value="load_data_from_url"  class="toggle_radio" data-rel="load_data_div" >
+                    <label for="load_data_from_url_radio">Load data from URL</label><br>
+
+                    <input type="radio" id="upload_file_radio" name="data_input_radios" value="upload_file" class="toggle_radio" data-rel="upload_file_div"> 
+                    <label for="upload_file_radio">Upload file</label>
+                    <br>
+                    
+                
+                    
+                    <div id="paste_data_div">
+
+                        <h4>Paste data</h4>
+
+                        <label for="import_data_textarea">Insert data directly into this box: </label>
+                        <br>
+
+                        <textarea id="import_data_textarea" style="margin-bottom: 0px;">State	date	unemployment rate (april 2020)
+                            Alabama	2020 M04	13.2
+                            Alaska	2020 M04	11.8
+                            Arizona	2020 M04	14.2
+                            Arkansas	2020 M04	10
+                            California	2020 M04	16
+                            Colorado	2020 M04	12.1
+                            Connecticut	2020 M04	8.6
+                            Delaware	2020 M04	13.4
+                            District of Columbia	2020 M04	11.1
+                            Florida	2020 M04	14
+                            Georgia	2020 M04	12.5
+                            Hawaii	2020 M04	21.9
+                            Idaho	2020 M04	11.6
+                            Illinois	2020 M04	16.5
+                            Indiana	2020 M04	16.9
+                            Iowa	2020 M04	11.1
+                            Kansas	2020 M04	12.6
+                            Kentucky	2020 M04	16.9
+                            Louisiana	2020 M04	13.1
+                            Maine	2020 M04	9.1
+                            Maryland	2020 M04	9
+                            Massachusetts	2020 M04	16.4
+                            Michigan	2020 M04	23.6
+                            Minnesota	2020 M04	9
+                            Mississippi	2020 M04	15.7
+                            Missouri	2020 M04	12.5
+                            Montana	2020 M04	11.9
+                            Nebraska	2020 M04	7.4
+                            Nevada	2020 M04	29.5
+                            New Hampshire	2020 M04	16
+                            New Jersey	2020 M04	16.6
+                            New Mexico	2020 M04	10
+                            New York	2020 M04	16.2
+                            North Carolina	2020 M04	13.5
+                            North Dakota	2020 M04	8.7
+                            Ohio	2020 M04	16.4
+                            Oklahoma	2020 M04	13
+                            Oregon	2020 M04	13.2
+                            Pennsylvania	2020 M04	16.2
+                            Rhode Island	2020 M04	17.4
+                            South Carolina	2020 M04	11.5
+                            South Dakota	2020 M04	9.2
+                            Tennessee	2020 M04	15.8
+                            Texas	2020 M04	12.9
+                            Utah	2020 M04	10.1
+                            Vermont	2020 M04	14.8
+                            Virginia	2020 M04	11.3
+                            Washington	2020 M04	16.3
+                            West Virginia	2020 M04	15.6
+                            Wisconsin	2020 M04	14.8
+                            Wyoming	2020 M04	5.5
+                        </textarea>
+
+                        
+                        <a href="#" id="update_input_button">Update</a>
+                        <a href="#" id="clear_input_button">Clear</a>
+
+                    </div>
+
+
+                    <div class="hidden" id="load_data_div">
+
+                        <h4>Load data</h4>
+                        <label for="get_csv_from_url_input">Load from a URL: <a href="#"
+                                role="tooltip" aria-label="Usable data formats are the same as above, so if calling the DOL Open Data Portal API, make sure to request a CSV. This may take a moment depending on the site requested from. Many sites, including BLS have restrictions that block data from being sent from one site to another."
+                                class="question_popup_anchor"><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                        <textarea id="get_csv_from_url_input" style="height: 20px;" placeholder="(URL)"></textarea>
+                        <button id="get_csv_from_url_button">Request Data</button>
+
+
+                        <p class="error" id="get_csv_from_url_error_message" aria-atomic="true" role="alert"></p>
+
+
+                        <input type="checkbox" id="live_data_connection_checkbox">
+                        <label for="live_data_connection_checkbox">Connect to this URL every time map loads? <a href="#"
+                                role="tooltip" aria-label="This will make your map first attempt to connect to this data source when the map loads on a page, so if that data is updated, the map will also be updated."
+                                class="question_popup_anchor"><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                        <br>
+                    </div>
+
+
+                    <div class="hidden" id="upload_file_div">
+                        <h4>Upload file</h4>
+                        <p>Accepted formats are .txt, .tsv, .csv, .xls, .xlsx for data, or .json for saved session.</p> 
+
+                        <input type="file" id="import_data_button" aria-label="Choose file" value="No file chosen"/> 
+                        <span id="upload_loading">Loading...</span>
+                        <br>
+                        <div id="XLS_info_div" style="display: none; margin-top: 10px;">
+
+                            <label id="XLS_info_label" for="XLS_info_dropdown"></label>
+                            <select id="XLS_info_dropdown"></select>
+
+                        </div>
+                    </div>
+                
+                
+                <a href="#" id="show_data_as_table" style="text-align: center; display: block; margin-top: 20px; width: 80%;">View as table</a>
+
+                
+                
+                </fieldset>
+
+
+                    <br>
+
+
+
+
+
+                    <h4><i class="fas fa-table"></i>Connect your data</h4>
+
+                    <div class="side_nav_box">
+                        <h4>Data type</h4>
+                        <p>Select your type of data</p>
+
+                        <ul class="side_nav_tabs_ul" style="margin-top: -25px;">
+                            <li class="side_nav_tab_li active" id="geographic_li" aria-label="selected">
+                                <img
+                                    src="images/map-icon.png" alt="Geographic map icon"/><a href="#geographic">Geographic</a><a href="#" class="question_popup_anchor"
+                                    role="tooltip" aria-label="Used for boundry-type maps (e.g. states, counties)"><i class="fa fa-question-circle" aria-hidden="true"></i></a></li>
+                            <li class="side_nav_tab_li" id="geospatial_li"><img
+                                    src="images/bubble-map-icon.png" alt="Geospatial map icon"/><a href="#geospatial">Geospatial</a><a href="#"
+                                    class="question_popup_anchor"
+                                    role="tooltip" aria-label="Used for maps with area locations (e.g. cities, or areas with lat/lon values)"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+
+
+                        <div class="side_nav_panes" style="margin-top: 48px;">
+                            <div class="side_nav_pane">
+
+                                <h5>Geographic</h5>
+                                <label for="join_map_areas_by_category_dropdown">Select geography field name (e.g.
+                                    state,
+                                    country):</label>
+                                <br>
+                                <select id="join_map_areas_by_category_dropdown" class="categories_dropdown">
+                                    <option value="">(Import data for map first)</option>
+                                </select>
+
+                                <br>
+                                <br>
+
+
+                                <label for="join_map_areas_to_template_dropdown">Select geography field type (e.g. state
+                                    name,
+                                    FIPS
+                                    code): <a href="#" class="question_popup_anchor"
+                                        role="tooltip" aria-label="This will determine what metadata field in the map template to match with your geography field name. For county and city maps, it is best to use FIPS codes for exact matches."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                <br>
+                                <select id="join_map_areas_to_template_dropdown">
+                                    <option value=""></option>
+                                    <option value="postal-code">Postal code (e.g. "AL")</option>
+                                    <option value="name">Name (e.g. "Alabama")</option>
+                                    <option value="region">Region (e.g. "South")</option>
+                                    <option value="fips">FIPS (e.g. "01")</option>
+                                    <option value="GEOID">GEOID</option>
+                                    
+                                </select>
+                                <br>
+
+                                <p><a href="#" class="show_template_geography_field_types">+ Show current template's
+                                        field types and info</a></p>
+
+                                <div id="template_geography_field_types_display_div" class="hidden">
+
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="side_nav_pane">
+
+                                <h5>Geospatial</h5>
+
+                                <label for="bubble_area_dropdown">Select areas or items to display: <a href="#"
+                                        class="question_popup_anchor"
+                                        role="tooltip" aria-label="This could be city or location names."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                <br>
+                                <select id="bubble_area_dropdown" class="categories_dropdown">
+                                    <option value="">(Import data for map first)</option>
+                                </select>
+
+                                <br>
+                                <br>
+
+                                <label for="latitude_category_dropdown">Select Latitude field:</label>
+                                <br>
+                                <select id="latitude_category_dropdown" class="categories_dropdown">
+                                    <option value="">(Import data for map first)</option>
+                                </select>
+
+                                <br>
+                                <br>
+
+                                <label for="longitude_category_dropdown">Select Longitude field:</label>
+                                <br>
+                                <select id="longitude_category_dropdown" class="categories_dropdown">
+                                    <option value="">(Import data for map first)</option>
+                                </select>
+
+                                <br>
+                                <br>
+
+                                <input type="checkbox" id="use_saved_lat_lon_checkbox">
+                                <label for="use_saved_lat_lon_checkbox">Fallback to saved location points if none found
+                                    in dataset <a href="#" class="question_popup_anchor"
+                                        role="tooltip" aria-label="This will look at a saved set of major cities and metro areas for their lat/lon values."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+
+                                <br>
+                                <a href="#" id="geospatial_areas_found_link"
+                                    style="text-align: center; display: none; "><span
+                                        id="geospatial_areas_found_span"></span> areas found. Click for details.</a>
+                                <br>
+                                
+
+                                <label for="bubble_size_number">Area bubble size:</label>
+                                <input type="number" id="bubble_size_number" min="1" value="10">
+                                <br>
+
+                                <label for="bubble_opacity_number">Area bubble opacity <a href="#"
+                                    class="question_popup_anchor"
+                                    role="tooltip" aria-label='This controls how "see-through" the bubbles are, with 0 being completely invisible.'><i class="fa fa-question-circle" aria-hidden="true"></i></a>: </label>
+                                <input type="number" id="bubble_opacity_number" min="0" max="1" value=".8" step=".1">
+                                <br>
+
+                                <input type="checkbox" id="vary_bubble_size_checkbox">
+                                <label for="vary_bubble_size_checkbox">Vary bubble size according to values</label>
+                                <br>
+                                <input type="checkbox" id="add_jitter_to_bubble_checkbox">
+                                <label for="add_jitter_to_bubble_checkbox">Add jitter to bubble locations <a href="#"
+                                        class="question_popup_anchor"
+                                        role="tooltip" aria-label="This adds a small amount of random variation to the location of each point, and is a useful way of showing all bubbles when locations are the same."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <h5>Data values</h5>
+                    <label for="map_color_by_category_dropdown">Select data values field (e.g. violations, employees,
+                        hours): <a href="#" class="question_popup_anchor"
+                            role="tooltip" aria-label="This column of values is what the map will be colored by."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                    <br>
+                    <select id="map_color_by_category_dropdown" class="categories_dropdown">
+                        <option value="">(Import data for map first)</option>
+                    </select>
+                    <br>
+                    <br>
+
+                    <input type="checkbox" id="map_color_by_categories_checkbox" class="toggle_checkbox"
+                    data-rel="color_by_categories_div color_options_for_value_maps_only" /><label
+                    for="map_color_by_categories_checkbox">Data field contains categories, not values <a href="#"
+                        role="tooltip" aria-label="Check this box if your data column has categorical data you want to color by, instead of numerical."
+                        class="question_popup_anchor"><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                <br>
+
+                <div class="multiple_fields">
+
+                    <input type="checkbox" id="map_create_extra_categories_dropdown_checkbox" class="toggle_checkbox"
+                        data-rel="map_categories_options_div" /><label
+                        for="map_create_extra_categories_dropdown_checkbox">Select multiple fields as
+                        options <a href="#"
+                            role="tooltip" aria-label="This will add a dropdown menu to the map that allows the user to change the values field being charted. Best for wide data tables. Using the keyboard, you can hold control and use the arrow keys to get to the option you want to select, then use the space bar to select an option."
+                            class="question_popup_anchor"><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                    <br>
+
+
+                    <div id="map_categories_options_div" class="hidden">
+                        <label for="map_categories_options_multiselect">Select options for map dropdown menu:</label>
+                        <select id='map_categories_options_multiselect' class="categories_dropdown multiselect"
+                            multiple></select>
+                        <br>
+                        <br>
+                        <label for="map_categories_options_multiselect_label">Label for dropdown choice: </label><br>
+                        <textarea id="map_categories_options_multiselect_label"
+                            style="height: 20px;">Select a category: </textarea>
+
+                    </div>
+
+                </div>
+
+
+
+                </div>
+
+
+
+
+
+                <div id="map_maker_side_nav_options_div" class="side_nav_content add_interactivity">
+                    <h2>Add Interactivity</h2>
+                    <p>These options allow filtering and animation in your map</p>
+
+                    <a class="side_nav_options_section_head" href="#">
+                        <h3 aria-label="Display"><i class="fas fa-video"> </i>Video Tutorials (+)</h3>
+                    </a>
+                    <div class="side_nav_options_section">
+
+                        <h4>Create a dropdown filter map</h4>
+                        <iframe width="450" height="223" src="https://www.youtube.com/embed/uJ8Qc1_nKaY"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            aria-label="Create a dropdown filter map"
+                            ></iframe>
+                        <a class="data_link" href="test-data/county-data-filter.xlsx">Tutorial data (.xlsx)</a>
+
+
+                        <h4>Create an animated map</h4>
+                        <iframe width="450" height="223" src="https://www.youtube.com/embed/xRdGPcWKIL8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            aria-label="Create an animated map"
+                            ></iframe>
+                        </iframe>
+                        <a class="data_link" href="test-data/county-data-animated.xlsx">Tutorial data (.xlsx)</a>
+
+
+                        <h4>Create an animated filter map</h4>
+                        <iframe width="450" height="223" src="https://www.youtube.com/embed/nBjfBStCxq8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            aria-label="Create an animated filter map"
+
+                            ></iframe>
+                        <a class="data_link" href="test-data/county-data-animated-filter.xlsx">Tutorial data (.xlsx)</a>
+
+
+
+                    </div>
+
+                    <h5><i class="fas fa-bars"></i> Buttons</h5>
+                    <input type="checkbox" id="zoom_buttons_enabled_checkbox" checked /> <label
+                        for="zoom_buttons_enabled_checkbox">Zoom buttons enabled</label>
+
+                    <br>
+
+                    <input type="checkbox" id="exporting_menu_enabled_checkbox" checked /> <label
+                        for="exporting_menu_enabled_checkbox">Options (exporting) menu enabled</label>
+                        <p class="error" >If the options menu is not enabled, you should have another way for map users to access the data table.</p>
+       
+                    
+
+
+
+                        <div class="exclude_columns_from_table">
+
+                            <input type="checkbox" id="map_exclude_columns_from_table_dropdown_checkbox" class="toggle_checkbox"
+                                data-rel="map_exclude_columns_from_table_div" /><label
+                                for="map_exclude_columns_from_table_dropdown_checkbox">Exclude columns from options menu table and CSV <a href="#"
+                                    role="tooltip" aria-label="This will allow you to select columns from your data table that you don't want to be included with the resulting map's table display and CSV download."
+                                    class="question_popup_anchor"><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                            <br>
+        
+        
+                            <div id="map_exclude_columns_from_table_div" class="hidden">
+                                <label for="map_exclude_columns_from_table_multiselect">Select data columns to exclude:</label>
+                                <select id='map_exclude_columns_from_table_multiselect' class="categories_dropdown multiselect"
+                                    multiple></select>
+                                <br>
+                              
+
+                            </div>
+        
+                        </div>
+
+
+
+
+
+
+
+
+                    <h5><i class="fas fa-filter"></i>Filter by subcategories in a single column <a href="#"
+                            role="tooltip" aria-label="This adds a dropdown menu that filters for values in a single column. Best with long data tables."
+                            class="question_popup_anchor"><i class="fa fa-question-circle" aria-hidden="true"></i></a></h5>
+
+
+                    <label for="filter_by_category_dropdown">Select single field to filter on: </label> <br>
+                    <select id="filter_by_category_dropdown" class="categories_dropdown">
+                        <option value="">(Import data for map first)</option>
+                    </select>
+                    <br>
+                    <!-- <input type="checkbox" id="filter_by_category_allow_none_checkbox" />
+                    <label for="filter_by_category_allow_none_checkbox"> Allow option to not filter (show all)?</label>
+                    <br>
+                    <br> -->
+
+                    <label for="filter_by_category_label">Label for primary filter: </label><br>
+                    <textarea id="filter_by_category_label" style="height: 20px;">Select a filter: </textarea>
+                    <br>
+                    <br>
+
+
+                    <label for="secondary_filter_by_category_dropdown">Select secondary field to filter on: </label>
+                    <br>
+                    <select id="secondary_filter_by_category_dropdown" class="categories_dropdown">
+                        <option value="">(Import data for map first)</option>
+                    </select>
+                    <br>
+
+                    <!-- <input type="checkbox" id="secondary_filter_by_category_allow_none_checkbox" /> <label
+                        for="secondary_filter_by_category_allow_none_checkbox"> Allow option to not filter (show
+                        all)?</label>
+                    <br>
+                    <br> -->
+
+                    <label for="secondary_filter_by_category_label">Label for secondary filter: </label><br>
+                    <textarea id="secondary_filter_by_category_label"
+                        style="height: 20px;">Select a secondary filter: </textarea>
+                    <br>
+                    
+
+
+
+
+
+                    <h5><i class="fas fa-clock"></i>Animated map <a href="#"
+                        role="tooltip" aria-label="This will allow the map to change values based on a date over time."
+                        class="question_popup_anchor"><i class="fa fa-question-circle" aria-hidden="true"></i></a></h5>
+
+                    <fieldset id="animate_type_radios_fieldset">
+
+                        <legend>Choose how to animate</legend>
+
+                        <input type="radio" id="animate_by_date_field_radio" value="animate_by_date_field" name="animate_type_radios" class="toggle_radio" data-rel="animate_by_date_field_div" checked>
+                        <label for="animate_by_date_field_radio" >Select a single date field</label><br>
+
+                        <input type="radio" id="map_animate_over_multiple_columns_checkbox" name="animate_type_radios" value="animate_over_multiple_columns"  class="toggle_radio" data-rel="map_animate_over_multiple_columns_div" >
+                        <label for="map_animate_over_multiple_columns_checkbox">Select multiple data columns</label><br>
+                        <br>
+
+
+
+
+                        <div id="animate_by_date_field_div">
+                            <label for="map_is_animated_dropdown">Select date field (e.g. year): <a href="#"
+                                class="question_popup_anchor"
+                                role="tooltip" aria-label="When you choose a date column, the map maker will look for unique dates in that column to group and animate your data."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                            <br>
+                            <select id="map_is_animated_dropdown" class="categories_dropdown">
+                                <option value="">(Import data for map first)</option>
+                            </select>
+                            <br>
+                            
+
+                        </div>
+
+                                       
+                        <div id="map_animate_over_multiple_columns_div" class="hidden">
+                            <label for="map_animate_over_multiple_columns_multiselect">Select columns to animate
+                                over: <a href="#"
+                                role="tooltip" aria-label="This will cause the map to animate over the selected columns. Best if each column is a sequential date. Using the keyboard, you can hold control and use the arrow keys to get to the option you want to select, then use the space bar to select an option."
+                                class="question_popup_anchor"><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                            <select id='map_animate_over_multiple_columns_multiselect'
+                                class="categories_dropdown multiselect" multiple></select>
+
+                        </div>
+
+                       
+
+                        <br>
+                        <input type="number" id="map_animation_delay_number" value="1000" style="width: 45px;" />
+                        <label for="map_animation_delay_number"> Animation delay <a href="#" class="question_popup_anchor"
+                                role="tooltip" aria-label="This is the delay between animation frames, in milliseconds. Note that the animation speed may slightly vary depending on the browser and how complicated the map is."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+
+                        <br>
+                        <br>
+
+                        <input type="checkbox" id="map_start_animation_at_last_point_checkbox" checked /><label
+                            for="map_start_animation_at_last_point_checkbox">Start map at last point in timeframe?</label>
+                        <br>
+
+
+                    </fieldset>
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+                <div id="map_maker_side_nav_options_div" class="side_nav_content edit_options">
+                    <h2>Edit Options</h2>
+                    <p>Changing these options will fine-tune your map. This app uses cookies to remember some of your
+                        preferences. &nbsp;<a href="#" id="reset_default_settings_button">Reset to defaults</a>.</p>
+
+
+                    <a class="side_nav_options_section_head" href="#">
+                        <h3 aria-label="Display"><i class="fas fa-video"> </i>Video Tutorials (+)</h3>
+                    </a>
+                    <div class="side_nav_options_section">
+
+                        <h4>Customizing your map</h4>
+
+                        <iframe width="450" height="223" src="https://www.youtube.com/embed/B3YcL94HKwA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            aria-label="Customizing your map"
+
+                            ></iframe>
+
+                    </div>
+
+                    <a class="side_nav_options_section_head" href="#">
+                        <h3 aria-label="Display"><i class="fas fa-align-left"></i>Text (+)</h3>
+                    </a>
+                    <div class="side_nav_options_section">
+                        <h4>Map Title</h4>
+                        <label for="map_title_input">Title</label>
+                        <br>
+                        <textarea class="small" id="map_title_input">(Click to edit map title)</textarea>
+
+                        <br>
+                        <label for="map_title_horizontal_align">Title horizontal align</label><br>
+                        <select id="map_title_horizontal_align" class="localStorage">
+                            <option value="center">Center</option>
+                            <option value="left">Left</option>
+                            <option value="right">Right</option>
+                        </select>
+                        <br>
+                        <br>
+                        <input type="number" value="18" id="map_title_font_size" class="localStorage">
+                        <label for="map_title_font_size">Title font size</label>
+                        <br>
+                        <br>
+
+                        <label for="map_title_font_family">Title font family</label><br>
+                        <select id="map_title_font_family" class="localStorage">
+                            <option>'Merriweather', serif</option>
+                            <option>Arial, Helvetica, sans-serif</option>
+                        </select>
+                        <br>
+                        <br>
+                        <input type="checkbox" checked id="map_title_font_bold_checkbox" class="localStorage"> <label
+                            for="map_title_font_bold_checkbox"> Bold title font-weight?</label>
+                        <br>
+                        <br>
+                        <br>
+
+
+
+                        <label for="map_subtitle_input">Subtitle</label>
+                        <br>
+                        <textarea class="small" id="map_subtitle_input"></textarea>
+                        <br>
+                        <label for="map_subtitle_horizontal_align">Subtitle horizontal align</label><br>
+                        <select id="map_subtitle_horizontal_align" class="localStorage">
+                            <option value="center">Center</option>
+                            <option value="left">Left</option>
+                            <option value="right">Right</option>
+                        </select>
+                        <br>
+                        <br>
+                        <input type="number" value="12" id="map_subtitle_font_size" class="localStorage">
+                        <label for="map_subtitle_font_size">Subtitle font size</label>
+                        <br>
+                        <br>
+
+                        <h4>Map Notes</h4>
+                        <label for="map_caption_input">Caption (description or footnotes) <a href="#"
+                                class="question_popup_anchor"
+                                role="tooltip" aria-label="It's good practice to describe what's going on in your map. If you have this text, then you don't need the asccessibility description for blind users. You can bold or italicize your text by putting it between <strong> </strong> and <em> </em> tags."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                        <br>
+                        <textarea class="small" id="map_caption_input"
+                            class="localStorage">Hover, tap on mobile devices, or use tab and arrow keys to see area data.</textarea>
+                        <br>
+
+                        <label for="map_caption_vertical_align">Caption vertical align</label><br>
+                        <select id="map_caption_vertical_align" class="localStorage">
+                            <option value="top">Top</option>
+                            <option value="bottom" selected>Bottom</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="map_caption_horizontal_align">Caption horizontal align</label><br>
+                        <select id="map_caption_horizontal_align" class="localStorage">
+                            <option value="center">Center</option>
+                            <option value="left" selected>Left</option>
+                            <option value="right">Right</option>
+                        </select>
+                        <br>
+                        <br>
+                        <h4>Accessibility</h4>
+                        <label for="map_accessibility_description">Accessibility description <a href="#"
+                                class="question_popup_anchor"
+                                role="tooltip" aria-label="Used for screen readers. A visible caption or text near the map is usually preferable."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                        <br>
+                        <textarea class="small" id="map_accessibility_description"></textarea>
+                        <br>
+                        <h4>Credits</h4>
+                        <label for="map_credits_input">Credits text <a href="#" class="question_popup_anchor"
+                                role="tooltip" aria-label="The copyright info on the map has to stay, but here you can add specific Program Office credit if desired. You can bold or italicize your text by putting it between <strong> </strong> and <em> </em> tags."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                        <br>
+                        <textarea class="small localStorage" id="map_credits_input">Department of Labor</textarea>
+                        <br>
+
+                        <label for="map_credits_horizontal_align">Credits horizontal align</label><br>
+                        <select id="map_credits_horizontal_align" class="localStorage">
+                            <option value="center">Center</option>
+                            <option value="left">Left</option>
+                            <option value="right" selected>Right</option>
+                        </select>
+
+                    </div>
+
+
+
+                    <a class="side_nav_options_section_head" href="#">
+                        <h3 aria-label="Display"><i class="fas fa-palette"></i>Colors (+)</h3>
+                    </a>
+
+                    <div class="side_nav_options_section">
+
+                        <br>
+
+                        <div class="color_by_categories_div hidden" id="color_by_categories_div" style="margin-bottom: 30px;">
+
+                        </div>
+
+
+                        <div class="color_options_for_value_maps_only">
+
+                            <input id="map_legend_dataclasses_checkbox" type="checkbox" class="toggle_checkbox"
+                                data-rel="legend_range_input_span gradient_legend_options_only"> <label
+                                for="map_legend_dataclasses_checkbox">Use separate colors instead of a gradient <a href="#" class="question_popup_anchor"
+                                    role="tooltip" aria-label="This will show color boxes based on specific values, instead of a color gradient. The ranges will be auto-calculated if they are not manually set."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                            <br>
+                            <br>
+
+                            <div id="map_colors_div">
+                                <div class="float_left">
+                                    <label for="map_colors_start_input">Start:</label>
+                                    <br>
+                                    <input type="color" id="map_colors_start_input" value="#d7191c"
+                                        class="map_legend_color_input" />
+
+                                    <span class="legend_range_input_span">
+                                        <input type="number"
+                                            class="legend_range_input to_input" placeholder="Auto calculated if empty" aria-label="Insert a value for this color"
+                                            id="legend_range_input_1" /> <label>&nbsp;and lower
+                                        </label></span>
+
+                                </div>
+
+
+                                <div class="float_left middle_color_div">
+                                    <label for="map_colors_middle_input_1"><span class="mid_text">Mid: </span>
+                                        <span class="clone_color_buttons"><a href="#" class="clone_middle_color_button" aria-label="Add specific mid values">(+)</a> </span>
+                                    </label>
+
+                                    <br>
+                                    <input type="color" id="map_colors_middle_input_1" value="#ffffbf"
+                                        class="map_legend_color_input" id="legend_range_input_2" />
+                                    <span class="legend_range_input_span"><label>From: </label><input type="number"
+                                            placeholder="Auto calculated if empty" aria-label="Insert a value for this color" class="legend_range_input from_input"
+                                            id="map_colors_middle_from_input_1" />
+                                            <label> &nbsp;To:</label>
+                                        <input type="number" class="legend_range_input to_input" placeholder="Auto calculated if empty" aria-label="Insert a value for this color"
+                                            id="map_colors_middle_to_input_1" /></span>
+
+                                </div>
+
+
+                                <div class="float_left">
+                                    <label for="map_colors_end_input">End:</label>
+                                    <br>
+                                    <input type="color" id="map_colors_end_input" value="#2c7bb6"
+                                        class="map_legend_color_input" />
+                                    <span class="legend_range_input_span">
+                                        <input type="number" placeholder="Auto calculated if empty" aria-label="Insert a value for this color"
+                                            class="legend_range_input from_input" id="legend_range_input_end"/><label>&nbsp;and higher </label>
+                                    </span>
+
+                                </div>
+                                <div class="clear_float"></div>
+
+
+                                <span class="legend_range_input_span">
+
+                                    <br>
+
+                                    <input id="map_apply_patterns_checkbox" type="checkbox"> <label
+                                        for="map_apply_patterns_checkbox">Apply patterns to map areas <a href="#"
+                                            class="question_popup_anchor"
+                                            role="tooltip" aria-label="This will apply different background patterns to each color. This can be helpful for colorblind users or when printing the map in black and white."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                    <br>
+                                </span>
+
+                            </div>
+
+                            <p>Advice and ideas on good map color schemes can be found at <a
+                                    href="https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3"
+                                    target="_blank">colorbrewer2.org</a>. </p>
+
+                            <h5>Or choose a preset color scheme:</h5>
+
+                            <div aria-label="Color gradient selection: light green to dark green" class="color_scheme" tabindex="0"
+                                style="background: linear-gradient(90deg, rgba(229,245,249,1) 0%, rgba(153,216,201,1) 50%, rgba(44,162,95,1) 100%);">
+                            </div>
+
+                            <div aria-label="Color gradient selection: light purple to dark purple" class="color_scheme" tabindex="0"
+                                style="background: linear-gradient(90deg, rgba(224,236,244,1) 0%, rgba(158,188,218,1) 50%, rgba(136,86,167,1) 100%);">
+                            </div>
+
+                            <div aria-label="Color gradient selection: light yellow to blue" class="color_scheme" tabindex="0"
+                                style="background: linear-gradient(90deg, rgba(224,243,219,1) 0%, rgba(168,221,181,1) 50%, rgba(67,162,202,1) 100%);">
+                            </div>
+
+                            <div aria-label="Color gradient selection: light orange to dark orange" class="color_scheme" tabindex="0"
+                                style="background: linear-gradient(90deg, rgba(254,232,200,1) 0%, rgba(253,187,132,1) 50%, rgba(227,74,51,1) 100%);">
+                            </div>
+
+                            <div aria-label="Color gradient selection: brown to white to green" class="color_scheme" tabindex="0"
+                                style="background: linear-gradient(90deg, rgba(166,97,26,1) 0%, rgba(245,245,245,1) 50%, rgba(1,133,113,1) 100%);">
+                            </div>
+
+                            <div aria-label="Color gradient selection: red to yellow to blue" class="color_scheme" tabindex="0"
+                                style="background: linear-gradient(90deg, rgba(215,25,28,1) 0%, rgba(255,255,191,1) 50%, rgba(44,123,182,1) 100%);">
+                            </div>
+
+                            <div aria-label="Color gradient selection: blue to uellow to red" class="color_scheme" tabindex="0"
+                                style="background: linear-gradient(90deg, rgba(44,123,182,1) 0%,  rgba(255,255,191,1) 50%, rgba(215,25,28,1) 100%);">
+                            </div>
+
+                            <div aria-label="Color gradient selection: purple to green" class="color_scheme" tabindex="0"
+                                style="background: linear-gradient(90deg, rgba(123,50,148,1) 0%, rgba(247,247,247,1) 50%, rgba(0,136,55,1) 100%);">
+                            </div>
+
+                            <div aria-label="Color gradient selection: green to purple" class="color_scheme" tabindex="0"
+                                style="background: linear-gradient(90deg,  rgba(0,136,55,1) 0%, rgba(247,247,247,1) 50%, rgba(123,50,148,1) 100%);">
+                            </div>
+
+
+                            <br>
+
+                            <div class="gradient_legend_options_only">
+                                <input type="number" id="map_legend_min_number" placeholder="auto" />
+                                <label for="map_legend_min_number"> Minimum value for color scale <a href="#"
+                                        class="question_popup_anchor"
+                                        role="tooltip" aria-label='Legend min may still be rounded down if "Start on a tick mark" is checked.'><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+
+                                <br>
+                                <input type="number" id="map_legend_max_number" placeholder="auto" />
+                                <label for="map_legend_max_number"> Maximum value for color scale <a href="#"
+                                        class="question_popup_anchor"
+                                        role="tooltip" aria-label='Legend max may still be rounded up if "End on a tick mark" is checked.'><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+
+                                <br>
+                                <input id="map_logarithmic_checkbox" type="checkbox"> <label for="map_logarithmic_checkbox">Use
+                                    logarithmic scale (all values must be positive) <a href="#" class="question_popup_anchor"
+                                        role="tooltip" aria-label="A logarithmic scale is a nonlinear scale often used when analyzing a large range of quantities. This result in more variance of colors in the map."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                
+                                <br>
+                                <br>
+                            </div>
+
+                           
+
+                            <input id="map_show_all_areas_checkbox" type="checkbox" checked> <label for="map_show_all_areas_checkbox">Show areas that aren't colored <a href="#" class="question_popup_anchor"
+                                    role="tooltip" aria-label="If unchecked, the areas that aren't found in the dataset will be removed from the visible map, and may cause the map to be more zoomed in than otherwise."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                            <br>
+
+                            <br>
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <a class="side_nav_options_section_head" href="#">
+                        <h3 aria-label="Display"><i class="fas fa-grip-lines"></i>Borders (+)</h3>
+                    </a>
+
+                    <div class="side_nav_options_section">
+                        
+                        <input type="color" id="map_area_border_color_input" value="#000000" class="localStorage" />
+                        <label for="map_area_border_color_input">Border color for geographic areas</label>
+                        <br>
+
+                        <input type="number" id="map_areas_border_width_number" placeholder="auto" value="1"/>
+                        <label for="map_areas_border_width_number">Geographic areas border thickness<a href="#"
+                                class="question_popup_anchor"
+                                role="tooltip" aria-label='Adjusting the thickness of area borders may improve print quality.'><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                        <br>
+
+                        <input type="color" id="map_container_border_color_input" value="#112e51"
+                            class="localStorage" />
+                        <label for="map_container_border_color_input">Border color for map container</label>
+                        <br>
+
+                    </div>
+
+
+
+                    <a class="side_nav_options_section_head" href="#">
+                        <h3 aria-label="Display"><i class="fas fa-square"></i>Legend (+)</h3>
+                    </a>
+
+                    <div class="side_nav_options_section">
+
+                        <h4>Legend</h4>
+
+                        <input type="checkbox" id="map_legend_is_enabled_checkbox" checked />
+                        <label for="map_legend_is_enabled_checkbox">Show legend</label>
+
+                        <br>
+
+
+                        <input type="checkbox" id="map_legend_is_reversed_checkbox" />
+                        <label for="map_legend_is_reversed_checkbox"> Reversed legend</label>
+
+                        <br>
+                        <br>
+
+
+                        <label for="map_legend_title_text">Legend title:</label><br>
+                        <textarea id="map_legend_title_text" style="height: 20px;">Values</textarea>
+                        <br>
+                        
+                        <input type="number" value="14" id="map_legend_title_font_size" class="localStorage">
+                        <label for="map_legend_title_font_size">Legend title font size</label>
+                        <br>
+                        <br>
+
+                        <label for="map_legend_prefix_input">Legend values prefix (e.g. "$") <a href="#"
+                                class="question_popup_anchor"
+                                role="tooltip" aria-label="This will go before the numerical values in your map legend."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                        <br>
+                        <textarea class="small" id="map_legend_prefix_input"
+                            style="width: 50%; height: 20px;"></textarea>
+                        <br>
+
+                        <label for="map_legend_suffix_input">Legend values suffix (e.g. "%") <a href="#"
+                                class="question_popup_anchor"
+                                role="tooltip" aria-label="This will go after the numerical values in your map legend."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                        <br>
+                        <textarea class="small" id="map_legend_suffix_input"
+                            style="width: 50%; height: 20px;"></textarea>
+                        <br>
+
+                        <input type="number" id="map_legend_fixed_decimals" placeholder="auto" min="0"/>
+                        <label for="map_legend_fixed_decimals">Legend values decimals<a href="#"
+                                class="question_popup_anchor"
+                                role="tooltip" aria-label="Set this to force values to show a decimal place (e.g. 10.0). When auto, the decimal places in the legend are computed."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                        <br>
+
+                        <input type="number" value="11" id="map_legend_values_font_size" class="localStorage">
+                        <label for="map_legend_values_font_size">Legend values font size</label>
+                        <br>
+
+
+                        <br>
+
+
+                        <div class="gradient_legend_options_only">
+                            <input type="number" id="map_legend_tick_interval" placeholder="auto" min="0"/>
+                            <label for="map_legend_tick_interval"> Tick mark interval <a href="#"
+                                    class="question_popup_anchor"
+                                    role="tooltip" aria-label="The interval of the tick marks in axis units. This is helpful to set if your min/max values are being rounded. When auto, the tick interval is computed."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                            <br>
+
+                            <input type="checkbox" id="map_legend_start_on_tick_checkbox" checked />
+                            <label for="map_legend_start_on_tick_checkbox"> Start on a tick mark <a
+                                    class="question_popup_anchor"
+                                    role="tooltip" aria-label="Whether to force the axis to start on a tick. Sometimes this will round the min value."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+
+                            <br>
+                            <input type="checkbox" id="map_legend_end_on_tick_checkbox" checked />
+                            <label for="map_legend_end_on_tick_checkbox"> End on a tick mark <a
+                                    class="question_popup_anchor"
+                                    role="tooltip" aria-label="Whether to force the axis to end on a tick. Sometimes this will round the max value."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+
+                            <br>
+                            <br>
+                            <input type="number" id="map_legend_symbol_width" placeholder="auto" min="0"/>
+                            <label for="map_legend_symbol_width">Width of gradient box <a href="#"
+                                    class="question_popup_anchor"
+                                    role="tooltip" aria-label="The width of the color gradient box in the legend, in pixels."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+
+                            <br>
+
+                            <input type="number" id="map_legend_symbol_height" placeholder="auto" min="0"/>
+                            <label for="map_legend_symbol_height">Height of gradient box <a href="#"
+                                    class="question_popup_anchor"
+                                    role="tooltip" aria-label="The height of the color gradient box in the legend, in pixels."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+
+                            <br>
+
+                            <br>
+                        </div>
+
+
+                        <label for="map_legend_layout">Layout <a href="#" class="question_popup_anchor"
+                                role="tooltip" aria-label="Vertical legends are best placed to the side of the map, while horizontal legends look better at the top or bottom."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label><br>
+                        <select id="map_legend_layout">
+                            <option value="vertical" selected>Vertical</option>
+                            <option value="horizontal">Horizontal</option>
+                        </select>
+                        <br>
+
+                        <label for="map_legend_vertical_align">Vertical align</label><br>
+                        <select id="map_legend_vertical_align">
+                            <option value="top">Top</option>
+                            <option value="middle" selected>Middle</option>
+                            <option value="bottom">Bottom</option>
+                        </select>
+                        <br>
+
+                        <label for="map_legend_horizontal_align">Horizontal align</label><br>
+                        <select id="map_legend_horizontal_align">
+                            <option value="center">Center</option>
+                            <option value="left">Left</option>
+                            <option value="right" selected>Right</option>
+                        </select>
+                        <br>
+                        <br>
+
+
+
+                        <input type="number" id="map_legend_x_number" placeholder="auto" />
+                        <label for="map_legend_x_number">X placement adjustment <a href="#"
+                                class="question_popup_anchor"
+                                role="tooltip" aria-label='Increasing this number will move the legend to the right.'><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+
+                        <br>
+                        <input type="number" id="map_legend_y_number" placeholder="auto" />
+                        <label for="map_legend_y_number"> Y placement adjustment <a href="#"
+                                class="question_popup_anchor"
+                                role="tooltip" aria-label='Increasing this number will move the legend lower.'><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+
+                        <br>
+                        <br>
+
+                        <input type="color" id="map_legend_title_text_color" value="#000" class="localStorage" />
+                        <label for="map_legend_title_text_color">Legend title text color</label>
+                        <br>
+                        
+                        <input type="color" id="map_legend_values_text_color" value="#666666" class="localStorage" />
+                        <label for="map_legend_values_text_color">Legend value text color</label>
+                        <br>
+                        <br>
+
+                        <input type="checkbox" id="map_edit_legend_background_checkbox" class="toggle_checkbox"
+                        data-rel="map_edit_legend_background_div" /><label
+                        for="map_edit_legend_background_checkbox">Give the legend a background and border color <a href="#"
+                            role="tooltip" aria-label="This will allow you to edit the legend's background and border color. Keeping this unchecked will keep the default of none."
+                            class="question_popup_anchor"><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                        <br>
+
+
+                        <div id="map_edit_legend_background_div" class="hidden">
+                            <input type="color" id="map_legend_background_color" value="#ffffff" class="localStorage" />
+                            <label for="map_legend_background_color">Legend background color</label>
+                            <br>
+                            
+                            <input type="color" id="map_legend_border_color" value="#ffffff" class="localStorage" />
+                            <label for="map_legend_border_color">Legend border color</label>
+                            <br>
+                            <br>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <a class="side_nav_options_section_head" href="#">
+                        <h3 aria-label="Display"><i class="fas fa-mouse-pointer"></i>Display values (+)</h3>
+                    </a>
+                    <div class="side_nav_options_section">
+
+                        <fieldset id="tooltip_prefix_suffix_radios_fieldset">
+
+                            <legend>Choose how to set prefixes and suffixes</legend>
+    
+                            <input type="radio" id="tooltip_set_manually_radio" value="tooltip_set_manually" name="tooltip_prefix_suffix_radios" class="toggle_radio" data-rel="tooltip_set_manually_div" checked>
+                            <label for="tooltip_set_manually_radio" >Set manually</label><br>
+        
+                            <input type="radio" id="tooltip_set_automatically_radio" value="tooltip_set_automatically" name="tooltip_prefix_suffix_radios" class="toggle_radio" data-rel="tooltip_set_automatically_div" >
+                            <label for="tooltip_set_automatically_radio" >Set automatically</label><br>
+                            <br>
+
+                            <div id="tooltip_set_manually_div">
+
+                                <label for="map_tooltip_prefix_input">Tooltip values prefix (e.g. "$") <a href="#"
+                                    class="question_popup_anchor"
+                                    role="tooltip" aria-label="This will go before the numerical values in your map tooltip (mouseover) display."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                <br>
+                                <textarea class="small" id="map_tooltip_prefix_input"
+                                    style="width: 50%; height: 20px;"></textarea>
+                                <br>
+        
+                                <label for="map_tooltip_suffix_input">Tooltip values suffix (e.g. "%") <a href="#"
+                                        class="question_popup_anchor"
+                                        role="tooltip" aria-label="This will go after the numerical values in your map tooltip (mouseover) display."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                <br>
+                                <textarea class="small" id="map_tooltip_suffix_input"
+                                    style="width: 50%; height: 20px;"></textarea>
+                                <br>
+                            </div>
+
+                            <div id="tooltip_set_automatically_div" class="hidden">
+                                <input type="checkbox" id="map_tooltip_smart_prefix_suffix" /> <label
+                                for="map_tooltip_smart_prefix_suffix">Automatically choose prefixes and suffixes based on
+                                values displayed (column header names) <a href="#" class="question_popup_anchor"
+                                    role="tooltip" aria-label='This will look at the series name that the map is being colored by (helpful when you have different series types, such as rates or levels, in your map dropdown menu). Specifically, this will add a % sign if your data column header contains the word "percent" or "rate" in it, or will add a "$" if your header has the words "earning", "dollar", or "wage" in it.'><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                                <br>
+                            </div>
+
+
+                        </fieldset>    
+
+                        
+
+                       
+                        <h4>Data Labels</h4>
+                        <input type="checkbox" id="map_data_labels_checkbox" class="toggle_checkbox"
+                            data-rel="map_data_labels_options_div" /><label for="map_data_labels_checkbox">Include
+                            data labels on map <a href="#" class="question_popup_anchor"
+                                role="tooltip" aria-label="This will place the numerical values over the areas on the map (if room)."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                        <br>
+                        <div id="map_data_labels_options_div" class="hidden side_nav_box">
+
+                            <label for="map_data_labels_values_multiselect">Select columns to read for data labels: <a
+                                    href="#" class="question_popup_anchor"
+                                    role="tooltip" aria-label="If nothing selected, data labels will come from the value that areas are colored by and will use the prefix and suffix selected above. Using the keyboard, you can hold control and use the arrow keys to get to the option you want to select, then use the space bar to select an option."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                            <select id='map_data_labels_values_multiselect' class="categories_dropdown multiselect"
+                                multiple></select>
+                            <br>
+                            <br>
+
+                            <label for="map_data_labels_font_size">Data labels font size: </label>
+                            <input id="map_data_labels_font_size" type="number" value="11" />
+                            <br>
+                            <br>
+
+                            <label for="map_data_labels_color">Data labels color: </label>
+                            <input id="map_data_labels_color" type="color" value="#ffffff" style="width: 30px;
+                            height: 30px;
+                            background-color: none;
+                            padding: 0px;" />
+                            <br>
+
+                            <input id="map_data_labels_text_outline_checkbox" type="checkbox" checked />
+                            <label for="map_data_labels_text_outline_checkbox"> Outline text?</label>
+
+
+                            <br>
+
+                            <input id="map_data_labels_allow_overlap_checkbox" type="checkbox" />
+                            <label for="map_data_labels_allow_overlap_checkbox"> Allow overlap <a href="#"
+                                    class="question_popup_anchor"
+                                    role="tooltip" aria-label="By default, if data labels overlap, some will be hidden."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                            <br>
+                            <p class="error">You can fine tune the labels' locations by dragging and dropping them on the map.</p>
+
+
+                        </div>
+                        <br>
+
+                        <h4>Tootltip</h4>
+                        <input type="checkbox" id="map_add_extra_info_to_tooltip_checkbox" class="toggle_checkbox"
+                            data-rel="map_add_extra_info_to_tooltip_div" /><label
+                            for="map_add_extra_info_to_tooltip_checkbox">Add extra data to the tooltips from columns <a
+                                href="#"
+                                role="tooltip" aria-label="This will add extra information from your data columns to your map mouseover tooltips. It's good practice to limit the extra information so that your map is easier to understand."
+                                class="question_popup_anchor"><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                        <br>
+                        <div id="map_add_extra_info_to_tooltip_div" class="hidden side_nav_box">
+                            <label for="map_add_extra_info_to_tooltip_multiselect">Select columns to read for extra
+                                data: <a
+                                href="#"
+                                role="tooltip" aria-label="Using the keyboard, you can hold control and use the arrow keys to get to the option you want to select, then use the space bar to select an option."
+                                class="question_popup_anchor"><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+                            <select id='map_add_extra_info_to_tooltip_multiselect'
+                                class="categories_dropdown multiselect" multiple></select>
+                            <br>
+
+
+                        </div>
+
+                        
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div id="map_maker_side_nav_export_div" class="side_nav_content export_map">
+                    <h2>Export Map</h2>
+
+                    <a class="side_nav_options_section_head" href="#">
+                        <h3 aria-label="Display"><i class="fas fa-video"> </i>Video Tutorials (+)</h3>
+                    </a>
+                    <div class="side_nav_options_section">
+
+                        <h4>Exporting your map</h4>
+                        <iframe width="450" height="223" src="https://www.youtube.com/embed/FZNiE52XkBE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            aria-label="Exporting your map"
+
+                            ></iframe>
+                    </div>
+
+
+                    <a class="side_nav_options_section_head" href="#">
+                        <h3 aria-label="Display"><i class="far fa-file-code"></i>Complete Export (+) </h3>
+                    </a>
+
+                    <div class="side_nav_options_section">
+
+                        <label for="export_map_textarea">Put this code it on your web page where you want the
+                            map
+                            to appear. If you don't specify a file name, one will be generated from the map title.<a href="#" class="question_popup_anchor"
+                                role="tooltip" aria-label='This text needs to be pasted inside a working HTML page, or uploaded in a Content Management System. For a complete working HTML page with the map, use the "Download as .html page" button below.'><i class="fa fa-question-circle" aria-hidden="true"></i></a></label><br>
+                       
+                        <textarea id="export_map_textarea" class="no_save behind" tabindex="-1" aria-hidden="true"></textarea>
+
+                        <button title="Download as .txt" id="download_export_map" class="download_text"
+                            data-rel-textarea="export_map_textarea" data-rel-filename="map_export_file_name_text">Download as .txt</button>
+                        <br>
+                        <button title="Download as .html" id="download_export_map_as_html_page" data-rel-filename="map_export_file_name_text">Download as complete .html
+                            page</button>
+                        <br>
+                        <label for="map_export_file_name_text">Complete export file name (without extension):</label><br>
+                        <textarea id="map_export_file_name_text" style="height: 20px;" placeholder="Auto generated"></textarea>
+                        <br>
+
+                       
+                        
+                    </div>
+
+
+
+                    <a class="side_nav_options_section_head" href="#">
+                        <h3 aria-label="Display"><i class="fas fa-code"></i>Export without supporting libraries (+) </h3>
+                    </a>
+
+                    <div class="side_nav_options_section">
+
+                        <label for="snippet_export_map_textarea">Put the HTML on your web page where you
+                            want the
+                            map to appear, and link to the JS as a separate file. There are multiple options for different workflows. You have the option to either copy or download the same code. <a href="#"
+                                class="question_popup_anchor"
+                                role="tooltip" aria-label='This text needs to be pasted inside a working HTML page, or uploaded in a Content Management System. This code snippet will only work if the supporting JavaScript libraries (below) are first linked to on the HTML page.'><i class="fa fa-question-circle" aria-hidden="true"></i></a></label><br>
+                        <br>
+
+
+                        
+                    <fieldset id="export_without_libraries_radios_fieldset">
+
+                        <legend>Choose an export type</legend>
+    
+                        <input type="radio" id="html_css_js_combined_radio" value="html_css_js_combined" name="export_without_libraries_radios" class="toggle_radio" data-rel="html_css_js_combined_div"  checked>
+                        <label for="html_css_js_combined_radio" >HTML, CSS and JS combined</label><br>
+
+                        <input type="radio" id="just_html_radio" value="just_html" name="export_without_libraries_radios" class="toggle_radio" data-rel="just_html_div" >
+                        <label for="just_html_radio" >Just the HTML (for Rhythmyx CMS)</label><br>
+
+                        <input type="radio" id="just_js_radio" value="just_js" name="export_without_libraries_radios" class="toggle_radio" data-rel="just_js_div" >
+                        <label for="just_js_radio" >Just the JS</label><br>
+
+                        <input type="radio" id="css_and_js_with_tags_radio" value="css_and_js_with_tags" name="export_without_libraries_radios" class="toggle_radio" data-rel="css_and_js_with_tags_div" >
+                        <label for="css_and_js_with_tags_radio" >CSS and JS with tags (for CMS direct entry)</label><br>
+
+
+                        <div id="html_css_js_combined_div">
+
+                            <h4>HTML, CSS and JS combined:</h4>
+                            <!-- <a href="#" title="Copy to clipboard" id="snippet_copy_export_code_button"
+                                class="copy_code_button" role="alert">Copy to clipboard<i class="fas right fa-copy"></i></a>
+                                 -->
+                            <textarea id="snippet_export_map_textarea" class="no_save behind" tabindex="-1" aria-hidden="true"></textarea>
+                            <button title="Download as .txt" id="snippet_download_export_map" class="download_text"
+                                data-rel-textarea="snippet_export_map_textarea" data-rel-filename="map_code_snippet_export_file_name_text">Download as .txt</button>
+
+                        </div>
+
+                        <div id="just_html_div" class="hidden">
+                            <h4>Just the HTML (for Rhythmyx CMS):</h4>
+                            <a href="#" title="Copy to clipboard" id="html_snippet_copy_export_code_button"
+                                class="copy_code_button" role="alert">Copy to clipboard<i class="fas right fa-copy"></i></a>
+    
+                            <textarea id="html_snippet_export_map_textarea" class="no_save" tabindex="-1" aria-hidden="true"></textarea>
+    
+                            <button title="Download as .txt" id="html_snippet_download_export_map" class="download_text"
+                                data-rel-textarea="html_snippet_export_map_textarea" data-rel-filename="map_code_snippet_export_file_name_text">Download as .txt</button>
+    
+                           
+                        </div>
+
+                        <div id="just_js_div" class="hidden">
+                            
+                            <h4>Just the JS: </h4>
+                            <!-- <a href="#" title="Copy to clipboard" id="js_snippet_copy_export_code_button"
+                                class="copy_code_button" role="alert">Copy to clipboard<i class="fas right fa-copy"></i></a> -->
+
+                            <textarea id="js_snippet_export_map_textarea" class="no_save behind" tabindex="-1" aria-hidden="true" data-extension=".js"></textarea>
+
+                            <button title="Download as .js" id="js_snippet_download_export_map" class="download_text"
+                                data-rel-textarea="js_snippet_export_map_textarea" data-rel-filename="map_code_snippet_export_file_name_text">Download as .js</button>
+
+                           
+                        </div>
+
+                        <div id="css_and_js_with_tags_div" class="hidden">
+                            
+                            <h4>CSS and JS with tags (for CMS direct entry): </h4>
+                            <!-- <a href="#" title="Copy to clipboard" id="js_css_snippet_copy_export_code_button"
+                                class="copy_code_button" role="alert">Copy to clipboard<i class="fas right fa-copy"></i></a> -->
+
+                            <textarea id="js_css_snippet_export_map_textarea" class="no_save behind" tabindex="-1" aria-hidden="true" data-extension=".txt"></textarea>
+
+                            <button title="Download as .txt" id="js_css_snippet_download_export_map" class="download_text"
+                                data-rel-textarea="js_css_snippet_export_map_textarea" data-rel-filename="map_code_snippet_export_file_name_text">Download as .txt</button>
+
+                           
+                        </div>
+
+                        <br>
+                        <label for="map_code_snippet_export_file_name_text">Code snippet export file name (without extension):</label><br>
+                        <textarea id="map_code_snippet_export_file_name_text" style="height: 20px;" placeholder="Auto generated"></textarea>
+                        <br>
+
+                        <label for="map_anchor_id_text">ID to link to map on a page:<a href="#"
+                            class="question_popup_anchor"
+                            role="tooltip" aria-label='This can be used to link to the specific area of the web page where your map will be located. For example: www.bls.gov#mapID will move the page down to "mapID".'><i class="fa fa-question-circle" aria-hidden="true"></i></a></label><br>
+                        <textarea id="map_anchor_id_text" style="height: 20px;" placeholder="Auto generated"></textarea>
+                        <p class="error">For IDs to work, they should start with a letter and shouldn't have any special characters or spaces.</p>
+                        <br>
+                        
+                    </fieldset>
+
+
+                      
+
+                        <h4>Supporting JavaScript Libraries: </h4>
+
+                        <p>The following script links need to be included on the HTML page before the previous code for the map to work. Some DOL/BLS pages will already have this included by default:</p>
+
+                        <h5>Externally sourced:</h5>
+                        <code style="font-size: 0.7rem;">
+
+                            &lt;script
+                            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"&gt;&lt;/script&gt;
+                            <br>
+                            &lt;script src="https://cdn.jsdelivr.net/g/filesaver.js"&gt;&lt;/script&gt;
+                            &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.6/proj4.js"&gt;
+                            &lt;/script&gt; <br>
+                            &lt;script src='https://code.highcharts.com/maps/9.2.0/highmaps.js'&gt;&lt;/script&gt; <br>
+                            &lt;script src='https://code.highcharts.com/maps/9.2.0/modules/data.js'&gt;&lt;/script&gt;
+                            <br>
+                            &lt;script
+                            src='https://code.highcharts.com/maps/9.2.0/modules/exporting.js'&gt;&lt;/script&gt;
+                            <br>
+                            &lt;script
+                            src='https://code.highcharts.com/maps/9.2.0/modules/offline-exporting.js'&gt;&lt;/script&gt;
+                            <br>
+
+                            &lt;script
+                            src='https://code.highcharts.com/9.2.0/modules/accessibility.js'&gt;&lt;/script&gt;
+                            <br>
+
+                            &lt;script
+                            src="https://code.highcharts.com/9.2.0/modules/pattern-fill.js"&gt;&lt;/script&gt;
+
+                        </code>
+                        <br>
+                        <h5>BLS sourced:</h5>
+                        <code style="font-size: 0.7rem;">
+                            &lt;script src="/javascripts/jquery-latest.js"&gt;&LT;/script&gt;
+
+                            &lt;script src="/javascripts/proj4.js"&gt; &LT;/script&gt;
+                    
+                            &lt;script src="/assets/highcharts/latest/highcharts.js"&gt; &LT;/script&gt;
+                    
+                            &lt;script src="/assets/highcharts/latest/modules/map.js"&gt;&LT;/script&gt;
+                    
+                            &lt;script src="/assets/highcharts/latest/modules/data.js"&gt;&LT;/script&gt;
+                    
+                            &lt;script src="/assets/highcharts/latest/modules/exporting.js"&gt;&LT;/script&gt;
+                    
+                            &lt;script src="/assets/highcharts/latest/modules/offline-exporting.js"&gt;&LT;/script&gt;
+                    
+                            &lt;script src="/assets/highcharts/latest/modules/accessibility.js"&gt;&LT;/script&gt;
+                    
+                            &lt;script src="/assets/highcharts/latest/modules/pattern-fill.js"&gt;&LT;/script&gt;
+                    
+                            &lt;script src="/javascripts/filesaver.js"&gt;&LT;/script&gt;
+                        </code>
+                        
+
+                    </div>
+
+
+
+
+                    <a class="side_nav_options_section_head" id="save_map_maker_status" href="#">
+                        <h3 aria-label="Display"><i class="fas fa-save"></i>Save map maker status (+)</h3>
+                    </a>
+                    <div class="side_nav_options_section">
+                        <label for="saved_status_textarea">Save this code to pick up where you left off. Upload it or
+                            paste it into the Import Data section to load the current settings. You have the option to either copy or download the same saved code.</label><br>
+                        <br>
+                        <a href="#" title="Copy to clipboard" id="copy_saved_status_button"
+                            class="copy_code_button" role="alert">Copy to clipboard<i class="fas right fa-copy"></i></a>
+
+                        <textarea id="saved_status_textarea" class="no_save behind"></textarea>
+
+                        <button title="Download as .json" id="download_saved_status" class="download_json" data-rel-filename="map_saved_status_file_name_text">Download as .json</button>
+                        <br>
+
+                        <br>
+                        <label for="map_saved_status_file_name_text">Saved status file name (without extension):</label><br>
+                        <textarea id="map_saved_status_file_name_text" style="height: 20px;" placeholder="Auto generated"></textarea>
+                        <br>
+
+                    </div>
+                    <p class="error">If you want to choose the location your file is downloaded to, you may need to adjust your browser settings. <a target="_blank" href="https://support.google.com/chrome/answer/95759?hl=en&co=GENIE.Platform%3DDesktop#zippy=%2Cchange-download-locations"> Download settings help</a></a></p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <div id="map_maker_main">
+
+            <div id="browser_warning">Warning - your browser is outdated. This app requires a modern browser to work
+                (e.g. Chrome, FireFox or Edge).</div>
+
+            <div id="loading_icon">Loading..</div>
+
+            <div id="map_options_top_bar">
+                <div id="map_size_inputs_div" style="float: left;">
+                    <label for="map_width_input">Width: </label>
+                    <input id="map_width_input" type="number" value="700" placeholder="100%" />
+                    <label for="map_height_input">Height: </label>
+                    <input id="map_height_input" type="number" value="470" placeholder="auto" />
+                    <a href="#" class="question_popup_anchor" role="tooltip" aria-label="Leave values empty to auto size map" style="left: -7px"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+                    <!-- <br>
+                    <a href="#" style="font-size: .7em; float: right; ">Show inches</a> -->
+                </div>
+
+
+                <div style="float: left; margin-left: 20px;">
+                    <input type="checkbox" id="map_centered_checkbox" class="localStorage" style="margin-left: 20px;">
+                    <label for="map_centered_checkbox">Center aligned </label>
+                </div>
+
+                <div style="float: left; margin-left: 40px;">
+                    <label for="map_templates_dropdown">Map template: <a href="#" class="question_popup_anchor"
+                            role="tooltip" aria-label="This will load a blank map template to color."><i class="fa fa-question-circle" aria-hidden="true"></i></a></label>
+
+                    <select id="map_templates_dropdown">
+                        <option data-type="usa" data-json="templates/us-states.json" value="us-states">U.S. States
+                        </option>
+
+                       
+
+                        <option data-type="usa-counties" data-json="templates/us-counties-fullnames.json"
+                            value="us-counties-fullnames">U.S. Counties 2018 with full names</option> 
+                            
+                        <option data-type="usa-counties" data-json="templates/us-county-2021-test.json"
+                            value="us_county_2021">U.S. Counties 2021 lines Hi Rez TEST</option>
+
+
+                        <option data-type="usa-puerto-rico" data-json="templates/us-with-puerto-rico.json"
+                            value="custom/us-with-puerto-rico">U.S. with Puerto Rico</option>
+                        
+                        <option data-type="usa-puerto-rico-virgin-islands" data-json="templates/us-with-puerto-rico-virgin-islands.json"
+                            value="custom/us-with-puerto-rico-virgin-islands">U.S. with P.R. and V.I.</option>
+
+                        <option data-type="usa-territories" data-json="templates/us-all-territories.json"
+                            value="custom/us-all-territories">U.S. with all territories</option>
+
+                        <option data-type="usa-puma" data-json="templates/us-puma.json"
+                            value="custom/usa-puma">U.S. with Public Use Microdata Areas</option>
+
+                     
+
+                        <!-- <option data-type="usa-metro-borders" data-json="templates/usa-metro-borders.json"
+                            value="usa-metro-borders">U.S. with metro area borders</option> -->
+
+                        <option data-type="world"
+                            data-json="https://code.highcharts.com/mapdata/custom/world-highres.geo.json"
+                            value="custom/world-highres">World</option>
+
+                        <option data-type="europe"
+                            data-json="https://code.highcharts.com/mapdata/custom/europe.geo.json"
+                            value="custom/europe">Europe</option>
+
+                    </select>
+                </div>
+
+
+
+
+            </div>
+
+            <div id="map_maker_map_outer_div">
+
+                <div id="map1_outer_div"
+                    style="margin: auto; width: fit-content; height: fit-content;  padding: 10px; background-color: #fff; border: 2px solid #112e51;"
+                    class="map_outer_div">
+
+                    <h3 id="map1_title"
+                        style="width: 100%; max-width: 600px; text-align: center; text-transform: none; color: #112e51; font-size: 1.2em; font-family: 'Merriweather', serif; font-weight: bold; font-style: normal;"
+                        contenteditable="true">
+                    </h3>
+                    <h4 id="map1_subtitle"
+                        style="width: 100%; max-width: 600px; text-align: center; text-transform: none; color: #112e51; font-size: 12px; font-family: 'Merriweather', serif; margin-top: -10px; margin-bottom: 20px;">
+                        </h3>
+
+                        <div id="map_maker_controls" style="clear: both; ">
+                            <div id="map1_categories_dropdown_div"
+                                style="display: none; margin-left: 0px; margin-bottom: 10px; max-width: 600px;">
+                                <label for="map1_categories_dropdown" id="map1_categories_dropdown_label"
+                                    style="margin-top: 1rem;"></label>
+                                <select id="map1_categories_dropdown" class="map_categories_dropdown" style="padding: 0px 0px 0px 5px;
+                                height: 26px;
+                                width: 50%;"></select>
+                            </div>
+
+                            <div id="map1_filter_dropdown_div"
+                                style="display: none; margin-left: 0px; margin-bottom: 10px; max-width: 600px;">
+                                <label for="map1_filter_dropdown" id="map1_filter_dropdown_label"
+                                    style="margin-top: 1rem; display: inline;"></label>
+                                <select id="map1_filter_dropdown" class="map_filter_dropdown" style="padding: 0px 0px 0px 5px;
+                                height: 26px;
+                                width: 50%;
+                                display: inline;
+                                line-height: 1.1;"></select>
+                            </div>
+
+                            <div id="map1_secondary_filter_dropdown_div"
+                                style="display: none; margin-left: 0px; margin-bottom: 10px; max-width: 600px;">
+                                <label for="map1_secondary_filter_dropdown" id="map1_secondary_filter_dropdown_label"
+                                    style="margin-top: 1rem; display: inline;"></label>
+                                <select id="map1_secondary_filter_dropdown" class="map_filter_dropdown" style="padding: 0px 0px 0px 5px;
+                                height: 26px;
+                                width: 50%;
+                                display: inline;
+                                line-height: 1.1;"></select>
+                            </div>
+
+
+                            <div id="map1_animation_controls_div" style="display: none; clear: both;
+                        width: 100%; height: 26px; margin-left: 0px;">
+                            </div>
+
+                        </div>
+
+
+                        <div id="map1_inner_div" style="width: fit-content; height: fit-content; margin: auto;"></div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <!-- 
+
+            <div id="drawing_toolbox">
+                <h3>Annotation Toolbox <a href="#" class="question_popup_anchor"
+                        role="tooltip" aria-label="These tools allow you to draw over and label your map." data-x_offset="-330"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+                </h3>
+                <button class="tool_button tool_type" data-type="line"><i class="fas fa-grip-lines"></i> Line <a
+                        href="#" class="question_popup_anchor"
+                        role="tooltip" aria-label="To draw a line, first click where you want it to start, then click where you want it to end. Hold shift while clicking to draw a horizontal or vertical line. Lines are colored by stroke."
+                        data-x_offset="-330"><i class="fa fa-question-circle" aria-hidden="true"></i></a></button>
+                <br>
+                <button class="tool_button tool_type" data-type="point"><i class="fas fa-circle"></i> Circle <a href="#"
+                        class="question_popup_anchor"
+                        role="tooltip" aria-label="Circles have an inner fill color and an outer stroke color, and can be sized and styled below."
+                        data-x_offset="-330"><i class="fa fa-question-circle" aria-hidden="true"></i></a></button>
+                <br>
+
+                <button class="tool_button tool_type" data-type="path"><i class="fas fa-draw-polygon"></i> Shape <a
+                        href="#" class="question_popup_anchor"
+                        role="tooltip" aria-label="To draw a shape, click points on the map. Once you click the first point again, the shape will complete. Shapes have an inner fill color and an outer stroke color, and can be styled below."
+                        data-x_offset="-330"><i class="fa fa-question-circle" aria-hidden="true"></i></a></button>
+                <br>
+
+
+                <button class="tool_button tool_type" data-type="text"><i class="fas fa-i-cursor"></i> Text</button>
+                <br>
+
+
+                <button class="tool_button tool_type" data-type="select" id="select_tool_button"><i
+                        class="fas fa-mouse-pointer"></i> Select <a href="#" class="question_popup_anchor"
+                        role="tooltip" aria-label="Select a drawn item to edit it. You can move an item's location with arrow keys (hold shift to nudge)."
+                        data-x_offset="-330"><i class="fa fa-question-circle" aria-hidden="true"></i></a></button>
+                <br>
+
+
+                <button class="tool_button tool_type" data-type="remove"> <i class="fas fa-trash"></i>
+                    Delete <a href="#" class="question_popup_anchor"
+                        role="tooltip" aria-label="After selecting this delete button, click on a drawn item to remove it."
+                        data-x_offset="-330"><i class="fa fa-question-circle" aria-hidden="true"></i></a></button>
+                <br>
+
+                <button id="undo_draw_button" class="tool_button"><i class="fas fa-undo"></i> Undo</button>
+                <br>
+
+
+                <div class="tool_box_div">
+                    <label for="tool_fill">Fill: </label><input id="tool_fill" type="color" value="#810909"
+                        class="drawing_input" data-drawing-rel="fill" />
+
+                </div>
+
+                <div class="tool_box_div">
+                    <label for="tool_stroke">Stroke: </label><input id="tool_stroke" type="color" value="#01003D"
+                        class="drawing_input" data-drawing-rel="stroke" />
+                </div>
+
+                <div class="tool_box_div">
+                    <label for="tool_fill_opacity">Opacity: </label><input id="tool_fill_opacity" type="number"
+                        value="1" step=".1" max="1" min="0" class="drawing_input" data-drawing-rel="fill-opacity" />
+
+                </div>
+
+                <div class="tool_box_div">
+                    <label for="tool_stroke-width">Weight: </label><input id="tool_stroke-width" type="number" value="3"
+                        class="drawing_input" data-drawing-rel="stroke-width" />
+
+                </div>
+                <div class="tool_box_div">
+                    <label for="tool_circle_radius">Circle size: </label><input id="tool_circle_radius" type="number"
+                        min="1" value="5" class="drawing_input" data-drawing-rel="r" />
+                </div>
+                <div class="tool_box_div">
+                    <label for="tool_text_font_size">Font size: </label><input id="tool_text_font_size" type="number"
+                        min="1" value="12" class="drawing_input" data-drawing-rel="font-size" data-suffix="px" />
+                </div>
+
+            </div> -->
+
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

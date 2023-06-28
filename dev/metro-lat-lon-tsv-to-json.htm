@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        //get tsv and convert to json
+        $(document).ready(function () {
+
+            $.get("metro-area-lat-lon.tsv", function (tsv) {
+
+                let tsv_arr = tsv.split("\r\n");
+                let headers = tsv_arr.shift().split("\t");
+
+                let metro_obj = {};
+
+                tsv_arr.forEach(function (e) {
+
+                    let metro_arr = e.split("\t");
+                    //    console.log(metro_arr);
+
+                    metro_arr.forEach(function (m, i) {
+
+                        if (i === 0) {
+                            if (metro_arr[0] !== "") {
+                                metro_obj[metro_arr[0]] = {};
+                            }
+                        } else { //i >1
+                            metro_obj[metro_arr[0]][headers[i].toLowerCase()] =
+                                metro_arr[i];
+                        }
+
+                    });
+
+                });
+
+                     console.log(JSON.stringify(metro_obj).replace(/\\"/g,""));
+
+
+            });
+
+        });
+
+
+        //look at json
+        $(document).ready(function () {
+
+            $.get("metro-lat-lon.json", function (obj) {
+            //    console.log(obj);
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <h1>Metro TSV to json converter</h1>
+    <p>See console for output</p>
+
+</body>
+
+</html>

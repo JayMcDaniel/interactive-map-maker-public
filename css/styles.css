@@ -1,0 +1,631 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0px;
+    /* transform: scale(0.9);
+    transform-origin: 0 0; */
+}
+
+::-webkit-scrollbar {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+#map_maker {
+    width: 100%;
+    height: 100%;
+}
+
+#map_maker a {
+    color: #112e51;
+}
+
+#map_maker a.question_popup_anchor, #map_options_top_bar a.question_popup_anchor{
+    color: #d91233;
+    cursor: default;
+    font-size: 90%;
+    position: relative;
+    top: -5px;
+}
+
+#question_popup_div {
+    width: 350px;
+    height: fit-content;
+    position: absolute;
+    z-index: 5000;
+    border: #112e51 solid 1px;
+    color: #d91233;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 6px;
+    display: none;
+}
+
+
+
+#save_progress_button {
+    font-size: 0.4em;
+    padding: 5px;
+    float: right;
+    border-radius: 5px;
+    background-color: #d91233;
+    color: white;
+
+}
+
+#map_maker a:hover,
+#map_maker a h3:hover {
+    color: #d91233;
+}
+
+#map_maker h2 {
+    /* font-size: 1.8em; */
+    margin-top: 0px;
+    color: #d91233;
+}
+
+#map_maker h3 {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: #112e51;
+}
+
+#map_maker h4 {
+    /* font-size: 1.2em; */
+    margin-bottom: 0.3em;
+}
+
+#map_maker h5 {
+    /* font-size: 1.0em; */
+    margin-bottom: 5px;
+}
+
+#map_maker_header {
+    /* width: 150%; */
+    height: fit-content;
+    margin: 0px;
+    padding: 0px;
+}
+
+#map_maker_header h1 {
+    margin: 0px;
+    padding: 10px;
+    padding-left: 20px;
+    background-color: #112e51;
+    color: white;
+    /* font-size: 2.5em; */
+}
+
+#map_maker_side_nav select {
+    /* font-size: 1.1em; */
+    background-color: #205493;
+    color: white;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    line-height: 1.5em;
+    width: 96%;
+}
+
+
+#map_maker_side_nav {
+    width: 33%;
+    height: 86%;
+    border-bottom: 2px solid #112e51;
+    /* height: fit-content; */
+    overflow-y: scroll;
+    background-color: #e1f3f8;
+    padding: 0px;
+    padding-bottom: 50px;
+    margin: 0px;
+    float: left;
+}
+
+
+#map_maker_side_nav_menu {
+    padding: 0px;
+    margin: 10px 20px 10px 20px;
+    border-bottom: 1px solid #112e51;
+    display: flex;
+    flex-direction: row;
+}
+
+#map_maker_side_nav_menu>div {
+    flex: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-right: 1px solid #112e51;
+    /* float: left; */
+}
+
+#map_maker_side_nav_menu>div:nth-child(4) {
+    border-right: 0px;
+}
+
+@media (max-width: 1200px) {
+    #map_maker_side_nav_menu {
+        display: block;
+        text-align: left;
+
+    }
+
+    #map_maker_side_nav_menu>div {
+        border-right: 0px;
+    }
+
+}
+
+
+#map_maker .side_nav_options_section {
+    margin-bottom: 20px;
+    border-bottom: 1px gray solid;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+.nav_menu_tab {
+    font-size: 110%;
+    color: #112e51;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.side_nav_box {
+    border: solid 1px #d91233;
+    padding: 10px 10px 20px 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.side_nav_box h4 {
+    margin-top: 5px;
+}
+
+.side_nav_tabs_ul {
+    padding-left: 0px;
+
+}
+
+.side_nav_tabs_ul li {
+    display: block;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+    user-select: none;
+}
+
+.side_nav_tabs_ul li.active {
+    color: #d91233;
+}
+
+.side_nav_tabs_ul li img {
+    width: 90px;
+    position: relative;
+    top: 25px;
+    margin-right: 10px;
+}
+
+.side_nav_tabs_ul li.active img {
+    border: 1px solid #d91233;
+}
+
+#geographic_li.active a:first-of-type, #geospatial_li.active a:first-of-type{
+    background-color: yellow;
+    border: solid 1px #d91133;
+    color: #d91133;
+    padding: 2px;
+}
+
+
+#map_maker_side_nav input[type="file"] {
+    /* font-size: 1.2em; */
+    margin-top: 5px;
+
+}
+
+
+#map_maker_side_nav input[type="number"] {
+    /* font-size: 1.4em; */
+    width: 40px;
+}
+
+
+
+#map_maker_side_nav textarea {
+    border-color: #112e51;
+}
+
+.nav_menu_tab.selected {
+    color: #d91233 !important;
+    text-decoration: underline;
+}
+
+
+.side_nav_content {
+    height: fit-content;
+    padding: 20px;
+    display: none;
+}
+
+.side_nav_content.selected {
+    display: block;
+}
+
+.side_nav_content textarea {
+    width: 93%;
+    height: 233px;
+    margin-bottom: 10px;
+    /* font-size: 130%; */
+}
+
+.side_nav_content textarea.small {
+    height: 40px;
+}
+
+#map_maker_side_nav_content label,
+#map_maker_side_nav_content p {
+    font-size: 0.8em;
+}
+
+#map_maker_side_nav_content input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-left: 0px;
+    position: relative;
+    top: 3px;
+    margin-right: 7px;
+}
+
+#map_maker_side_nav_content input[type="color"] {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 5px;
+}
+
+#template_geography_field_types_display_div {
+    font-size: 0.8em;
+    background: #fff;
+    height: 300px;
+    overflow-y: scroll;
+    display: none;
+}
+
+.highcharts-data-label{
+    cursor: pointer;
+}
+
+
+#template_geography_field_types_display_div table {
+    width: 100%;
+}
+
+
+
+.color_scheme {
+    width: 95%;
+    height: 15px;
+    cursor: pointer;
+    border: 1px solid #112e51;
+    margin-bottom: 5px;
+}
+
+.color_scheme.selected {
+    border: 3px solid #000000;
+    width: 99%;
+}
+
+#map_maker_main {
+    width: 67%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    float: left;
+    right: 0px;
+}
+
+#map1_outer_div {
+    margin: 2%;
+    margin-top: 1%;
+    /* transform: scale(1.1); */
+    transform-origin: 0 0;
+
+}
+
+
+
+#map_options_top_bar {
+    background-color: #e0f2f8;
+    height: 27px;
+    width: 98%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #112e51;
+    padding-right: 0px;
+}
+
+#map_size_inputs_div input {
+    width: 40px;
+    height: 25px;
+    margin-right: 10px;
+    border: 1px solid #112e51;
+
+}
+
+#clear_input_button {
+    float: right;
+    position: relative;
+    right: 5%;
+}
+
+#update_input_button {
+    float: left;
+}
+
+button {
+    padding: 5px;
+    margin: 5px;
+    margin-left: 0px;
+}
+
+#upload_loading {
+    display: none;
+}
+
+.float_left {
+    float: left;
+    margin-right: 40px;
+}
+
+.clear_float {
+    clear: both;
+}
+
+#browser_warning {
+    /* font-size: 1.5em; */
+    color: #ce1c00;
+    background-color: #ffffac;
+    padding: 20px;
+    display: none;
+}
+
+#loading_icon {
+    display: none;
+    position: absolute;
+    left: 30%;
+    top: 35%;
+    z-index: 500;
+    width: 70px;
+    height: 70px;
+    background-image: url("../images/loading-icon.gif");
+}
+
+.hidden {
+    display: none;
+}
+
+.behind {
+    /* width: 0px !important;
+    height: 0px !important;
+    position: fixed;
+    z-index: -10; */
+    display: none;
+}
+
+
+
+/*custom slider css*/
+
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    background: #112e51;
+
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 2px solid #112e51;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    bottom: 8px;
+    background: #ce1c00;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
+    cursor: grab;
+    margin-top: .1rem
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+    border: 1px solid #0096FF;
+    outline: 3px solid #0096FF;
+    outline-offset: 0.125rem;
+  }
+
+select:focus {
+    border: 1px solid #0096FF;
+    outline: 3px solid #0096FF;
+    outline-offset: 0.125rem;
+  }
+
+.color_scheme:focus {
+    border: 1px solid #0096FF;
+    outline: 3px solid #0096FF;
+    outline-offset: 0.125rem;
+}
+
+/* table css */
+
+.table_popup_div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    background-color: rgb(255,255,255);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+    z-index: 5000;
+}
+
+
+.close_popup{
+    font-size: 1.4em;
+    color: #d91233;
+    margin-bottom: 9px;
+    cursor: pointer;
+}
+
+.close_popup:focus,
+.close_popup:focus-visible {
+    outline: 2px solid rgba(0, 0, 255, 0.651) !important;
+}
+
+.legend_range_input_span {
+    margin-left: 5px;
+    display: none;
+}
+
+.legend_range_input {
+    width: 105px !important;
+}
+
+#map_colors_div > div{
+    margin-bottom: 10px;
+}
+
+a.data_link {
+    text-align: center;
+    display: block;
+}
+
+.fas,
+.far {
+    margin-right: 10px;
+    color: #ce1c00;
+}
+
+.fas.right,
+.far.right {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+.fa_secondary_color {
+    color: #112e51;
+}
+
+.fa_white {
+    color: #fff;
+}
+
+.data_link {
+    margin-bottom: 20px;
+}
+
+button.download_json{
+    margin-left: 15px;
+}
+
+/* annotation toolbox styles */
+
+#annotations_div,
+#annotations_svg {
+    height: 500px;
+    width: 600px;
+    position: absolute;
+    z-index: 500;
+}
+
+#drawing_toolbox {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 120px;
+    border-radius: 5px;
+    border: 2px solid #666;
+    padding: 10px;
+    color: #112e51;
+    background-color: #f7f7f7;
+    z-index: 800;
+}
+
+
+#drawing_toolbox button.active {
+    color: #ce1c00;
+    border: 2px solid #ce1c00;
+}
+
+#drawing_toolbox button.tool_button {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #666;
+    background-color: #fff;
+    cursor: pointer;
+    text-align: left;
+
+}
+
+#drawing_toolbox button.tool_button i {
+    color: #112e51;
+}
+
+#drawing_toolbox button.tool_button.active i {
+    color: #ce1c00;
+}
+
+
+.svg_div_overlay {
+    float: left;
+}
+
+#drawing_toolbox input {
+    width: 82%;
+    margin: auto;
+}
+
+#drawing_toolbox .tool_box_div {
+    margin-bottom: 10px;
+}
+
+#drawing_toolbox h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 0px 5px 0px;
+}
+
+.error {
+    color: #d91233;
+    background-color: yellow;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}

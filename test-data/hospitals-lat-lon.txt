@@ -1,0 +1,60 @@
+Place Name	Latitude	Longitude	value
+Swedish Hospital, Balard, Seattle, WA, the US	47.668243	-122.379852	1
+Martin Luther King Outpatient Center, LA, CA, the USA	33.923801	-118.2416	2
+El Camino Hospital, Mountain View, CA, USA	37.368431	-122.079506	3
+Johns Hopkins Hospital, Baltimore, MD, USA	39.296318	-76.592941	4
+Palomar Medical Center, Escondido, CA, USA	33.121456	-117.11972	5
+Mayo Clinic Cancer Center, Rochester, MN, USA	44.022705	-92.467369	6
+Cleveland Clinic, Cleveland, Ohio, US	41.503201	-81.621277	7
+Stanford Hospital & Clinics, Stanford, CA, USA	37.434498	-122.171501	8
+Massachusetts General Hospital, Boston, MS, USA	42.3624	-71.069206	9
+Mercy San Juan Medical Center, Carmichael, CA, USA	38.668037	-121.313622	10
+Ronald Reagan UCLA Medical Center, LA, CA, USA	34.066242	-118.445328	11
+University of Texas MD Anderson Cancer Center, Houston, TX, US	29.707998	-95.397522	12
+Houston Methodist Hospital, Houston, TX, USA	29.709541	-95.398605	13
+Legacy Salmon Creek Medical Center, Mount Vista, WA, USA	45.721867	-122.648132	14
+Hackensack University Medical Center, Hackensack, NJ, USA	40.883884	-74.055984	15
+University of Missouri Health System, University Hospital, Columbia, Missouri, USA	38.938431	-92.327881	16
+New York's Presbyterian Lower Manhattan Hospital, NYC, NY, USA	40.710255	-74.005058	17
+Jackson Memorial Hospital, Miami, FL, USA	25.791466	-80.212547	18
+Manhattan Gastroenterology, NYC, NY, USA	40.778259	-73.958092	19
+Stem Cell Therapy Hospital, NYC, NY, USA	40.601517	-73.961067	20
+Park Avenue Smiles, Yonkers, NYC, NY, USA	40.945873	-73.890671	21
+Cosmetic Dentistry Center, NYC, NY, USA	40.629234	-74.026077	22
+NYC Dental Implants Center, New York, USA	40.764275	-73.962799	23
+Envy Smile Dental Spa, Brooklyn, NYC, NY, USA	40.607059	-73.960144	24
+VIVA EVE, Forest Hills, NYC, NY, USA	40.734291	-73.849434	25
+Forest Hills Medical Services, Queens, NYC, NY, USA	40.73431	-73.84951	26
+Professional Gynecological Services, Brooklyn, NY, NY, USA	40.689747	-73.982346	27
+Manhattan Women's Health & Wellness, New York, NY, USA	40.741997	-73.986107	28
+Brooklyn Abortion Clinic, Brooklyn, NY, New York, USA	40.689743	-73.982368	29
+Brooklyn GYN Place, Brooklyn, NY, USA	40.692696	-73.993584	30
+Americas Holistic Doctor, NYC, NY, USA	40.742531	-73.985489	31
+La Bella Vita Wellness & Relaxation Center, Green Brook, NJ, USA	40.604092	-74.473358	32
+Parkview Community Hospital, Riverside, CA, USA	33.926914	-117.439392	33
+UC Physicians Medical Arts Building, Cincinnati, Ohio, USA	39.136597	-84.505058	34
+Nightingale Medical Center, Davis, CA, USA	38.548733	-121.759155	35
+Atlanta Center for Medical Research, Atlanta, GA, USA	33.739876	-84.512581	36
+Hands On Healing, Montgomery, AL, USA	32.338581	-86.196114	37
+Medical City, Plano, Texas, USA	33.021221	-96.766281	38
+Vita Dental Houston, Katy, Houston, USA	29.790632	-95.718979	39
+Interventional Physical Medicine & Rehabilitation, P.C. NY, USA	40.910172	-73.780045	40
+Synergy Spinecare & Rehabilitation Medicine, Teaneck, NJ, USA	40.873272	-74.012093	41
+NJS Physical Medicine & Rehabilitation, Brooklyn, NY, USA	40.641621	-73.956734	42
+DHD Medical, Brooklyn New York, USA	40.625568	-73.91832	43
+Workers Compensation Doctor, New York, NY, USA	40.652225	-74.006104	44
+Hartford HealthCare, Farmington, CT, USA	41.707874	-72.79837	45
+San Francisco General Hospital, San Francisco, CA, USA	37.755634	-122.403748	46
+Hillsborough Radiology Associates (HRA), Hillsborough Township, NJ, USA	40.508026	-74.635674	47
+Park Rose Animal Hospital, Roselle, IL, USA	41.980419	-88.063766	48
+UPMC Presbyterian Hospital, Pittsburgh, PA, USA	40.442532	-79.960175	49
+Baptist East Hospital, Memphis, TN, USA	35.2005	-89.788216	50
+Portsmouth Regional Hospital, Portsmouth, NH, USA	43.065041	-70.789078	51
+Claremore Indian Hospital, Claremore, OK, USA	36.316433	-95.629295	52
+Howard County General Hospital, Columbia, MD, USA	39.21455	-76.886368	53
+Wetzel County Hospital, New Martinsville, WV, USA	39.680668	-80.849915	54
+Mercy McHenry Medical Center, McHenry, IL, USA	42.317123	-88.274437	55
+St. Peter's Hospital, Albany, NY, USA	42.655693	-73.803856	56
+Old Woman's Hospital, Baton Rouge, Louisiana, USA	30.443605	-91.090599	57
+Tucson Medical Center, Tucson, Arizona, USA	32.253006	-110.880989	58
+St. Joseph Regional Health Center, Byran, Texas, USA	30.660294	-96.351074	59

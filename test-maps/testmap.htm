@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div id="map1604354699532_outer_div" style="width: fit-content; height: fit-content;">
+
+        <div id="map1604354699532_categories_dropdown_div" style="margin-left: 20px; margin-bottom: 10px;">
+            <label for="map1604354699532_categories_dropdown">Choose a category:</label>
+            <select id="map1604354699532_categories_dropdown" class="map_categories_dropdown">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Younger than 22</option>
+                <option>22 to 24</option>
+            </select>
+        </div>
+
+        <div id="map1604354699532_filter_dropdown_div" style="margin-left: 20px; margin-bottom: 10px;">
+            <label for="map1604354699532_filter_dropdown">Choose a filter:</label>
+            <select id="map1604354699532_filter_dropdown" class="map_filter_dropdown">
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+            </select>
+        </div>
+
+        <div id="map1604354699532_animation_controls_div" style="clear: both;"><button
+                id="map1604354699532_animation_button" class="animation_button"
+                style="float: left; margin-left: 20px; margin-right: 10px;">Play</button><input type="range"
+                id="map1604354699532_animation_slider" class="animation_slider" min="0" max="3" value="0"
+                style="float:left; width: 70%;">
+            <div id="map1604354699532_animation_display_text" class="animation_display_text"
+                style="float: left; font-size: 1.2em; position: relative; top: -5px;">2015</div>
+        </div>
+
+
+        <div id="map1604354699532_inner_div" style="width: fit-content; height: fit-content;"></div>
+    </div>
+
+    <script src='https://code.jquery.com/jquery-3.5.1.min.js'
+        integrity='sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=' crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.6/proj4.js"> </script>
+    <script src='https://code.highcharts.com/maps/highmaps.js'></script>
+    <script src='https://code.highcharts.com/maps/modules/data.js'></script>
+    <script src='https://code.highcharts.com/mapdata/countries/us/us-all.js'></script>
+    <script src="https://code.highcharts.com/mapdata/countries/us/us-all-all.js"></script>
+    <script src="https://code.highcharts.com/mapdata/custom/world-highres.js"></script>
+    <script src="https://code.highcharts.com/mapdata/custom/world-robinson-highres.js"></script>
+    <script src="https://code.highcharts.com/mapdata/custom/europe.js"></script>
+
+    <script>
+        function dataFramer($) {
+
+            /*converts a tab separated string table to a matrix (array of arrays) */
+            function TSVtoMatrix(input) {
+                let matrix = $.trim(input).split("\n");
+
+                for (let i = 0; i < matrix.length; i++) {
+                    matrix[i] = $.trim(matrix[i]).split("\t");
+                }
+                return matrix;
+
+            }
+
+            //returns a val or 0
+            function forceVal(val) {
+                if (typeof val === "number") {
+                    return val;
+                }
+                if (val == undefined) {
+                    return 0;
+                }
+                val = val.replace(/,/g, "").replace("$", "").replace("%", "");
+                return !isNaN(Number(val)) ? Number(val) : 0;
+            }
+
+            /*DataFrame class, returned with DF(string)*/
+            class DataFrame {
+                constructor(input) {
+
+                    if (Array.isArray(input)) {
+                        this.matrix = input;
+                    } else if (typeof input === "string") {
+                        this.matrix = TSVtoMatrix(input);
+                    } else {
+                        this.matrix = "Error: input needs to be a string or array";
+                    }
+
+                }
+
+                /*GET functions*/
+
+                getData() {
+                    return this.matrix;
+                }
+
+                //returns index number value of a column head
+                getColumnIndex(selected) {
+                    return typeof selected === "number" ? selected : this.matrix[0].indexOf(selected);
+                }
+
+                //returns array of column headers, or a single column header if index is passed
+                getColumnHeads(col_index, row_index = 0) {
+                    return col_index != undefined ? this.matrix[row_index][col_index] : this.matrix[row_index];
+                }
+
+                //returns a new DataFrame obj with an array of values from the specified column. accepts an index or a column name
+                getColumn(selected, header = false) {
+                    let index = this.getColumnIndex(selected);
+                    let column = index > -1 ? this.matrix.map(arr => arr[index]) :
+                    " Column index or name not found";
+                    return header ? DF(column) : DF(column.slice(1));
+                }
+
+                //returns a new DataFrame obj with only the columns specified. Accepts an array of column names
+                getColumns(selected_arr, header = false) {
+                    if (Array.isArray(selected_arr)) {
+                        var self = this;
+                        return DF(selected_arr.map(function (selected, i) {
+                            return self.getColumn(selected, header).matrix;
+                        }));
+                    } else {
+                        return "Error: DataFrame.getColumns() expects an array as the first argument";
+                    }
+                }
+
+                //removes a column, given an index or column header name
+                removeColumn(selected) {
+                    let index = this.getColumnIndex(selected);
+                    let new_matrix = [];
+                    for (let i = 0; i < this.matrix.length; i++) {
+                        new_matrix.push(this.matrix[i].slice(0, index).concat(this.matrix[i].slice(index + 1, this
+                            .matrix[i].length)))
+                    }
+
+                    return DF(new_matrix);
+                }
+
+                //returns a new DataFrame obj without the columns specified to be removed. Accepts an array of column names
+                removeColumns(selected_arr) {
+
+                    if (Array.isArray(selected_arr)) {
+
+                        let matrix_copy = $.extend(true, [], this.matrix);
+
+                        for (let i = 0; i < selected_arr.length; i++) {
+                            let index = this.getColumnIndex(selected_arr[i]);
+
+                            for (let j = 0; j < matrix_copy.length; j++) {
+                                matrix_copy[j][index] = "<REMOVE_CELL>";
+                            }
+                        }
+
+                        return DF(matrix_copy.map(function (arr) {
+                            return arr.filter(function (val) {
+                                return val != "<REMOVE_CELL>";
+                            });
+                        }));
+
+                    } else {
+                        return "Error: DataFrame.removeColumns() expects an array as the first argument";
+                    }
+                }
+
+                //Filters - returns only the rows where the value in the specified column is a match, or evaluates a function as a filter
+                filterByColumn(selected_column, filter) {
+                    let index = this.getColumnIndex(selected_column);
+
+                    if (typeof filter === "function") {
+                        return DF(this.matrix.filter(function (arr, i) {
+                            return i === 0 || filter(arr[index]);
+                        }));
+                    } else if (typeof filter === "string") {
+                        var string_re = new RegExp(filter, "i");
+                        return DF(this.matrix.filter(function (arr, i) {
+                            return i === 0 || arr[index].match(string_re);
+                        }));
+                    } else {
+                        return "DataFrame.filterByColumn expects a column name or index as the first argument, and either a string to match, or a function to filter with for the second argument"
+                    }
+
+                }
+
+                //returns an index number for a row (if a name is passed, it will return the first index found)
+                getRowIndex(selected) {
+                    return typeof selected === "number" ? selected : this.rowHeads().matrix.indexOf(selected);
+                }
+
+                //returns a new DataFrame obj with an array of row headers, or a single row header if index is passed
+                rowHeads(index) {
+                    return index != undefined ? this.matrix[index][0] : DF(this.matrix.map(arr => arr[0]));
+                }
+
+                //returns a new DataFrame obj with an array of values from the specified row. Accepts an index or a row name
+                getRow(selected) {
+                    let index = this.getRowIndex(selected);
+                    return index > -1 ? DF(this.matrix[index]) : "Row index or name not found";
+                }
+
+                //returns a new DataFrame obj with a matrix of selected rows. Accepts an array of indexes / rowNames, or from and a to index to go in a splice() 
+                getRows(selected_1, selected_2, has_headers = false) {
+
+                    let column_headers = has_headers === true ? matrix_copy.shift() : undefined;
+
+                    if (arguments.length === 0) {
+                        return DF(this.matrix.slice(1));
+                    }
+
+                    let new_matrix = [];
+                    if (Array.isArray(selected_1)) {
+                        let selected_arr = selected_1;
+
+                        for (let i = 0; i < selected_arr.length; i++) {
+                            if (typeof selected_arr[i] === "number") {
+                                new_matrix.push(this.matrix[selected_arr[i]]);
+                            } else {
+                                let these_rows = this.matrix.filter(function (arr) {
+                                    return arr[0] === selected_arr[i];
+                                });
+                                new_matrix.push(these_rows);
+                            }
+                        }
+                    }
+
+                    if (typeof selected_1 === "number") {
+                        new_matrix = this.matrix.slice(selected_1, selected_2);
+                    }
+
+                    if (column_headers) {
+                        new_matrix.unshift(column_headers);
+                    }
+
+                    return DF(new_matrix);
+
+                    //if invalid call, return an error message
+                    return "Error: Invalid argument. DataFrame.getRows() expects either an array as the first argument, or integer arguements (from, [,to]). Or you can pass 0 arguments to get all rows excluding the column heads";
+                }
+
+                //removes a row, given an index or row header name
+                removeRow(selected) {
+                    let index = this.getRowIndex(selected);
+                    let matrix_copy = $.extend(true, [], this.matrix);
+                    matrix_copy.splice(index, 1);
+                    return DF(matrix_copy);
+                }
+
+                //removes rows, given an arrary of indexes or row header names
+                removeRows(selected_arr) {
+
+                    if (Array.isArray(selected_arr)) {
+
+                        let matrix_copy = $.extend(true, [], this.matrix);
+
+                        for (let i = 0; i < selected_arr.length; i++) {
+                            let index = this.getRowIndex(selected_arr[i]);
+
+                            for (let j = 0; j < matrix_copy.length; j++) {
+                                delete matrix_copy[index];
+                            }
+                        }
+
+                        return DF(matrix_copy.filter(function (arr) {
+                            return arr != undefined;
+                        }));
+
+                    } else {
+                        return "Error: DataFrame.removeRows() expects an array as the first argument";
+                    }
+
+                }
+
+                //accepts options obj, with sort_order (accepts desc or <default>asc), sort_type as "alpha" or <default>"numeric" a sort_by as index <default>0 or column name, has_headers <default>true to keep column headers in place
+                sort(options) {
+
+                    let sort_order = options.sort_order || "asc";
+                    let sort_type = options.sort_type || "numeric";
+                    let has_headers = options.has_headers != undefined ? options.has_headers : true;
+                    let sort_by = options.sort_by;
+
+                    let sort_column_index = sort_by != undefined ? this.getColumnIndex(sort_by) : 0;
+
+                    let matrix_copy = $.extend(true, [], this.matrix);
+                    let column_headers = has_headers === true ? matrix_copy.shift() : undefined;
+
+                    matrix_copy.sort(function (a, b) {
+                        if (sort_type === "alpha") {
+                            return a[sort_column_index] - b[sort_column_index];
+                        } else {
+                            return Number(a[sort_column_index]) - Number(b[sort_column_index]);
+                        }
+                    })
+
+                    if (sort_order === "desc") {
+                        matrix_copy.reverse();
+                    }
+
+                    if (column_headers) {
+                        matrix_copy.unshift(column_headers);
+                    }
+
+                    return DF(matrix_copy);
+
+                }
+
+                /*math operations*/
+
+                //sums values from a selected column. If you want to sum a row, use .getRow() first then sum()
+                sum(selected_column, options) {
+
+                    let group_by = options.group_by;
+                    let decimals = options.decimals != undefined ? options.decimals : 1;
+                    let has_headers = options.has_headers != undefined ? options.has_headers : true;
+                    let return_headers = options.return_headers != undefined ? options.return_headers : true;
+
+                    let column_index = this.getColumnIndex(selected_column);
+
+                    if (group_by != undefined) {
+                        let group_by_index = this.getColumnIndex(group_by);
+
+                        let start_index = 0;
+                        let headers = null;
+                        if (has_headers) {
+                            start_index = 1;
+                            headers = [this.matrix[0][group_by_index], this.matrix[0][column_index]];
+                        }
+
+                        let group_sum = {}
+
+                        for (let i = start_index; i < this.matrix.length; i++) {
+                            let this_row = this.matrix[i];
+                            let this_group = this_row[group_by_index];
+                            let value = forceVal(this_row[column_index]);
+
+                            if (!group_sum[this_group]) {
+                                group_sum[this_group] = {
+                                    index: i,
+                                    value: value
+                                }
+                            } else {
+                                group_sum[this_group].value += value;
+                            }
+                        }
+
+                        //change obj back into matrix
+                        var new_matrix = []
+                        for (let key in group_sum) {
+                            let o = group_sum[key];
+                            new_matrix.push([o.index, key, o.value]);
+                        }
+                        new_matrix = new_matrix.sort(function (a, b) {
+                            return (a - b);
+                        }).map(function (arr) {
+                            return arr.slice(1); //removes the sorting index
+                        })
+
+                        if (headers && return_headers) {
+                            new_matrix.unshift(headers);
+                        }
+
+
+                        return DF(new_matrix);
+
+                    }
+
+                    //else if not grouped
+                    var arr = selected_column != undefined ? this.getColumn(selected_column).matrix : this.matrix
+                        .flat();
+                    var sum = arr.reduce(function (a, b) {
+                        return forceVal(a) + forceVal(b);
+                    });
+
+                    return Number(sum.toFixed(decimals));
+                }
+
+                //returns average of a selected column
+                avg(selected_column, decimals = 1) {
+                    return Number((this.sum(selected_column, decimals) / this.getColumn(selected_column).matrix
+                        .length).toFixed(decimals));
+                }
+
+                //Returns a new DF with a transposed matrix
+                transpose() {
+                    return DF(this.matrix[0].map((_, colIndex) => this.matrix.map(row => row[colIndex])));
+                }
+
+                //given a selected column, returns array of unique values
+                getUniques(selected_column) {
+                    var arr = selected_column != undefined ? this.getColumn(selected_column).matrix : this.matrix
+                        .flat();
+                    var uniques_arr = [...new Set(arr)];
+                    return DF(uniques_arr);
+                }
+
+            }
+
+            //function wrapper that returns a new DataFrame instance
+            window.DF = function (input) {
+                return new DataFrame(input);
+            }
+
+            //returns a new DataFrame object with its matrix made from a load from TSV url
+            DF.fromTSV = function (url) {
+                var result = null;
+                $.ajax({
+                    url: url,
+                    type: 'get',
+                    dataType: 'html',
+                    async: false,
+                    success: function (data) {
+                        result = data;
+                    }
+                });
+                return DF($.trim(result));
+            }
+
+        };
+        dataFramer(jQuery);
+
+
+        let map = {
+            "title": "",
+            "subtitle": "",
+            "credits_text": "Department of Labor",
+            "dataframe": {
+                "matrix": [
+                    ["State", "Date", "Male", "Female", "Younger than 22", "22 to 24", "25 to 34", "35 to 44",
+                        "45 to 54", "55 to 59", "60 to 64"
+                    ],
+                    ["AK", "2015", "20000", "40000", "2957", "2940", "11823", "9269", "6320", "3193", "2622"],
+                    ["AK", "2015", "30000", "50000", "2957", "2940", "11823", "9269", "6320", "3193", "2622"],
+                    ["AL", "2015", "81140", "109065", "18249", "17546", "52415", "40802", "30780", "12658",
+                        "8929"
+                    ],
+                    ["AR", "2015", "48104", "66009", "10731", "10423", "29689", "23598", "18611", "8452",
+                        "6355"],
+                    ["AZ", "2015", "102538", "117856", "11700", "19159", "61067", "43562", "39459", "19553",
+                        "14765"
+                    ],
+                    ["CA", "2015", "1023797", "1126741", "153032", "209369", "627491", "410748", "346524",
+                        "165119", "129678"
+                    ],
+                    ["CO", "2015", "119048", "134012", "18311", "21249", "78117", "50786", "38786", "18043",
+                        "14920"
+                    ],
+                    ["CT", "2015", "114758", "157057", "6028", "21080", "65085", "50567", "46876", "25128",
+                        "21912"
+                    ],
+                    ["DC", "2015", "33955", "38213", "2887", "5516", "22031", "15040", "12490", "5810", "4490"],
+                    ["DE", "2015", "21082", "26745", "2791", "3590", "13247", "10626", "8733", "4631", "3716"],
+                    ["FL", "2015", "228294", "303203", "22345", "35929", "133666", "106848", "95896", "46841",
+                        "35408"
+                    ],
+                    ["GA", "2015", "278168", "333536", "62208", "66860", "201351", "143178", "122337", "56091",
+                        "41442"
+                    ],
+                    ["HI", "2015", "56747", "71320", "6199", "8580", "30875", "26376", "23615", "11812",
+                        "10218"],
+                    ["IA", "2015", "74634", "100882", "12283", "14199", "43027", "37216", "30526", "15961",
+                        "13830"
+                    ],
+                    ["ID", "2015", "22345", "30430", "4232", "4192", "13147", "10501", "8695", "4520", "3501"],
+                    ["IL", "2015", "353185", "408140", "42150", "56266", "197950", "156304", "138513", "70055",
+                        "57200"
+                    ],
+                    ["IN", "2015", "126978", "126042", "15579", "18757", "64491", "54303", "48622", "23158",
+                        "17191"
+                    ],
+                    ["KS", "2015", "49939", "53926", "6593", "8611", "26339", "21439", "17778", "8929", "7336"],
+                    ["KY", "2015", "99890", "97813", "7546", "14211", "48994", "42196", "37833", "17600",
+                        "13658"
+                    ],
+                    ["LA", "2015", "143482", "174124", "36432", "30776", "88099", "65732", "46681", "20680",
+                        "15382"
+                    ],
+                    ["MA", "2015", "262084", "305792", "44472", "46082", "144087", "104642", "97329", "50106",
+                        "41090"
+                    ],
+                    ["MD", "2015", "94780", "127223", "16358", "19370", "57859", "41344", "35532", "18618",
+                        "15813"
+                    ],
+                    ["ME", "2015", "46206", "53683", "5445", "6549", "22407", "18836", "19265", "10412",
+                    "8191"],
+                    ["MI", "2015", "599713", "482772", "51235", "73070", "261478", "220434", "240387", "120090",
+                        "88230"
+                    ],
+                    ["MN", "2015", "179636", "232095", "27345", "35880", "108047", "84367", "65002", "34839",
+                        "30236"
+                    ],
+                    ["MO", "2015", "117375", "141824", "16379", "21482", "67821", "52651", "43800", "21893",
+                        "17966"
+                    ],
+                    ["MS", "2015", "102910", "127425", "17487", "20975", "63690", "50260", "39367", "15863",
+                        "11687"
+                    ],
+                    ["MT", "2015", "19480", "25195", "3574", "3692", "12424", "9227", "6676", "3581", "3009"],
+                    ["NC", "2015", "218007", "291341", "33977", "41754", "135307", "102633", "94781", "43713",
+                        "31727"
+                    ],
+                    ["ND", "2015", "16693", "14061", "1800", "2624", "8976", "6472", "4807", "2287", "1967"],
+                    ["NE", "2015", "26291", "34824", "5291", "5183", "16132", "12537", "9833", "4959", "4018"],
+                    ["NH", "2015", "44914", "64352", "7511", "7549", "24337", "20108", "18282", "10583",
+                    "9924"],
+                    ["NJ", "2015", "262198", "324334", "19741", "36659", "136181", "109971", "113247", "62339",
+                        "53806"
+                    ],
+                    ["NM", "2015", "47044", "52740", "9678", "9369", "27705", "19615", "15063", "7519", "5765"],
+                    ["NV", "2015", "167864", "174317", "20067", "22664", "83307", "69057", "68192", "33389",
+                        "24812"
+                    ],
+                    ["NY", "2015", "905367", "899773", "120013", "149440", "486209", "347646", "316600",
+                        "157314", "119923"
+                    ],
+                    ["OH", "2015", "300463", "320587", "32317", "46341", "160553", "127699", "118856", "58736",
+                        "46666"
+                    ],
+                    ["OK", "2015", "71909", "70450", "8033", "10103", "35851", "33999", "27186", "11833",
+                        "8817"],
+                    ["OR", "2015", "128713", "160689", "5123", "18818", "77401", "66230", "51600", "23395",
+                        "19628"
+                    ],
+                    ["PA", "2015", "435876", "470770", "60027", "64051", "219450", "170487", "163634", "87067",
+                        "72576"
+                    ],
+                    ["PR", "2015", "118561", "105039", "13624", "18767", "58213", "55430", "44516", "15769",
+                        "9386"
+                    ],
+                    ["RI", "2015", "36318", "51646", "7530", "7412", "22411", "16336", "13811", "7445", "6161"],
+                    ["SC", "2015", "107009", "135031", "16305", "19370", "67027", "50458", "42529", "19808",
+                        "14404"
+                    ],
+                    ["SD", "2015", "8704", "12406", "1508", "1727", "5068", "4243", "3153", "1777", "1701"],
+                    ["TN", "2015", "146916", "162985", "39904", "27906", "84316", "62056", "51679", "23642",
+                        "16752"
+                    ],
+                    ["TX", "2015", "615037", "637562", "104371", "116267", "343087", "253843", "213137",
+                        "94569", "70505"
+                    ],
+                    ["UT", "2015", "47228", "50957", "9072", "9466", "27880", "20335", "14975", "6756", "5430"],
+                    ["VA", "2015", "191455", "258197", "33615", "40734", "119050", "87851", "75520", "36587",
+                        "29080"
+                    ],
+                    ["VI", "2015", "734", "985", "45", "83", "412", "376", "343", "168", "143"],
+                    ["VT", "2015", "24369", "31914", "2602", "4046", "14313", "11399", "9255", "5119", "4650"],
+                    ["WA", "2015", "228287", "241840", "28810", "36790", "130996", "99807", "83086", "39213",
+                        "30331"
+                    ],
+                    ["WI", "2015", "124247", "166750", "11703", "21368", "69606", "58397", "49577", "28325",
+                        "24715"
+                    ],
+                    ["WV", "2015", "45646", "47433", "7655", "7999", "22829", "19440", "16367", "7133", "5670"],
+                    ["WY", "2015", "8221", "6158", "666", "912", "3968", "3228", "2343", "1259", "1082"],
+                    ["AK", "2016", "24686.4", "24278.4", "3548.4", "3528", "14187.6", "11122.8", "7584",
+                        "3831.6", "3146.4"
+                    ],
+                    ["AL", "2016", "97368", "130878", "21898.8", "21055.2", "62898", "48962.4", "36936",
+                        "15189.6", "10714.8"
+                    ],
+                    ["AR", "2016", "57724.8", "79210.8", "12877.2", "12507.6", "35626.8", "28317.6", "22333.2",
+                        "10142.4", "7626"
+                    ],
+                    ["AZ", "2016", "123045.6", "141427.2", "14040", "22990.8", "73280.4", "52274.4", "47350.8",
+                        "23463.6", "17718"
+                    ],
+                    ["CA", "2016", "1228556.4", "1352089.2", "183638.4", "251242.8", "752989.2", "492897.6",
+                        "415828.8", "198142.8", "155613.6"
+                    ],
+                    ["CO", "2016", "142857.6", "160814.4", "21973.2", "25498.8", "93740.4", "60943.2",
+                        "46543.2", "21651.6", "17904"
+                    ],
+                    ["CT", "2016", "137709.6", "188468.4", "7233.6", "25296", "78102", "60680.4", "56251.2",
+                        "30153.6", "26294.4"
+                    ],
+                    ["DC", "2016", "40746", "45855.6", "3464.4", "6619.2", "26437.2", "18048", "14988", "6972",
+                        "5388"
+                    ],
+                    ["DE", "2016", "25298.4", "32094", "3349.2", "4308", "15896.4", "12751.2", "10479.6",
+                        "5557.2", "4459.2"
+                    ],
+                    ["FL", "2016", "273952.8", "363843.6", "26814", "43114.8", "160399.2", "128217.6",
+                        "115075.2", "56209.2", "42489.6"
+                    ],
+                    ["GA", "2016", "333801.6", "400243.2", "74649.6", "80232", "241621.2", "171813.6",
+                        "146804.4", "67309.2", "49730.4"
+                    ],
+                    ["HI", "2016", "68096.4", "85584", "7438.8", "10296", "37050", "31651.2", "28338",
+                        "14174.4", "12261.6"
+                    ],
+                    ["IA", "2016", "89560.8", "121058.4", "14739.6", "17038.8", "51632.4", "44659.2", "36631.2",
+                        "19153.2", "16596"
+                    ],
+                    ["ID", "2016", "26814", "36516", "5078.4", "5030.4", "15776.4", "12601.2", "10434", "5424",
+                        "4201.2"
+                    ],
+                    ["IL", "2016", "423822", "489768", "50580", "67519.2", "237540", "187564.8", "166215.6",
+                        "84066", "68640"
+                    ],
+                    ["IN", "2016", "152373.6", "151250.4", "18694.8", "22508.4", "77389.2", "65163.6",
+                        "58346.4", "27789.6", "20629.2"
+                    ],
+                    ["KS", "2016", "59926.8", "64711.2", "7911.6", "10333.2", "31606.8", "25726.8", "21333.6",
+                        "10714.8", "8803.2"
+                    ],
+                    ["KY", "2016", "119868", "117375.6", "9055.2", "17053.2", "58792.8", "50635.2", "45399.6",
+                        "21120", "16389.6"
+                    ],
+                    ["LA", "2016", "172178.4", "208948.8", "43718.4", "36931.2", "105718.8", "78878.4",
+                        "56017.2", "24816", "18458.4"
+                    ],
+                    ["MA", "2016", "314500.8", "366950.4", "53366.4", "55298.4", "172904.4", "125570.4",
+                        "116794.8", "60127.2", "49308"
+                    ],
+                    ["MD", "2016", "113736", "152667.6", "19629.6", "23244", "69430.8", "49612.8", "42638.4",
+                        "22341.6", "18975.6"
+                    ],
+                    ["ME", "2016", "55447.2", "64419.6", "6534", "7858.8", "26888.4", "22603.2", "23118",
+                        "12494.4", "9829.2"
+                    ],
+                    ["MI", "2016", "719655.6", "579326.4", "61482", "87684", "313773.6", "264520.8", "288464.4",
+                        "144108", "105876"
+                    ],
+                    ["MN", "2016", "215563.2", "278514", "32814", "43056", "129656.4", "101240.4", "78002.4",
+                        "41806.8", "36283.2"
+                    ],
+                    ["MO", "2016", "140850", "170188.8", "19654.8", "25778.4", "81385.2", "63181.2", "52560",
+                        "26271.6", "21559.2"
+                    ],
+                    ["MS", "2016", "123492", "152910", "20984.4", "25170", "76428", "60312", "47240.4",
+                        "19035.6", "14024.4"
+                    ],
+                    ["MT", "2016", "23376", "30234", "4288.8", "4430.4", "14908.8", "11072.4", "8011.2",
+                        "4297.2", "3610.8"
+                    ],
+                    ["NC", "2016", "261608.4", "349609.2", "40772.4", "50104.8", "162368.4", "123159.6",
+                        "113737.2", "52455.6", "38072.4"
+                    ],
+                    ["ND", "2016", "20031.6", "16873.2", "2160", "3148.8", "10771.2", "7766.4", "5768.4",
+                        "2744.4", "2360.4"
+                    ],
+                    ["NE", "2016", "31549.2", "41788.8", "6349.2", "6219.6", "19358.4", "15044.4", "11799.6",
+                        "5950.8", "4821.6"
+                    ],
+                    ["NH", "2016", "53896.8", "77222.4", "9013.2", "9058.8", "29204.4", "24129.6", "21938.4",
+                        "12699.6", "11908.8"
+                    ],
+                    ["NJ", "2016", "314637.6", "389200.8", "23689.2", "43990.8", "163417.2", "131965.2",
+                        "135896.4", "74806.8", "64567.2"
+                    ],
+                    ["NM", "2016", "56452.8", "63288", "11613.6", "11242.8", "33246", "23538", "18075.6",
+                        "9022.8", "6918"
+                    ],
+                    ["NV", "2016", "201436.8", "209180.4", "24080.4", "27196.8", "99968.4", "82868.4",
+                        "81830.4", "40066.8", "29774.4"
+                    ],
+                    ["NY", "2016", "1086440.4", "1079727.6", "144015.6", "179328", "583450.8", "417175.2",
+                        "379920", "188776.8", "143907.6"
+                    ],
+                    ["OH", "2016", "360555.6", "384704.4", "38780.4", "55609.2", "192663.6", "153238.8",
+                        "142627.2", "70483.2", "55999.2"
+                    ],
+                    ["OK", "2016", "86290.8", "84540", "9639.6", "12123.6", "43021.2", "40798.8", "32623.2",
+                        "14199.6", "10580.4"
+                    ],
+                    ["OR", "2016", "154455.6", "192826.8", "6147.6", "22581.6", "92881.2", "79476", "61920",
+                        "28074", "23553.6"
+                    ],
+                    ["PA", "2016", "523051.2", "564924", "72032.4", "76861.2", "263340", "204584.4", "196360.8",
+                        "104480.4", "87091.2"
+                    ],
+                    ["PR", "2016", "142273.2", "126046.8", "16348.8", "22520.4", "69855.6", "66516", "53419.2",
+                        "18922.8", "11263.2"
+                    ],
+                    ["RI", "2016", "43581.6", "61975.2", "9036", "8894.4", "26893.2", "19603.2", "16573.2",
+                        "8934", "7393.2"
+                    ],
+                    ["SC", "2016", "128410.8", "162037.2", "19566", "23244", "80432.4", "60549.6", "51034.8",
+                        "23769.6", "17284.8"
+                    ],
+                    ["SD", "2016", "10444.8", "14887.2", "1809.6", "2072.4", "6081.6", "5091.6", "3783.6",
+                        "2132.4", "2041.2"
+                    ],
+                    ["TN", "2016", "176299.2", "195582", "47884.8", "33487.2", "101179.2", "74467.2", "62014.8",
+                        "28370.4", "20102.4"
+                    ],
+                    ["TX", "2016", "738044.4", "765074.4", "125245.2", "139520.4", "411704.4", "304611.6",
+                        "255764.4", "113482.8", "84606"
+                    ],
+                    ["UT", "2016", "56673.6", "61148.4", "10886.4", "11359.2", "33456", "24402", "17970",
+                        "8107.2", "6516"
+                    ],
+                    ["VA", "2016", "229746", "309836.4", "40338", "48880.8", "142860", "105421.2", "90624",
+                        "43904.4", "34896"
+                    ],
+                    ["VI", "2016", "880.8", "1182", "54", "99.6", "494.4", "451.2", "411.6", "201.6", "171.6"],
+                    ["VT", "2016", "29242.8", "38296.8", "3122.4", "4855.2", "17175.6", "13678.8", "11106",
+                        "6142.8", "5580"
+                    ],
+                    ["WA", "2016", "273944.4", "290208", "34572", "44148", "157195.2", "119768.4", "99703.2",
+                        "47055.6", "36397.2"
+                    ],
+                    ["WI", "2016", "149096.4", "200100", "14043.6", "25641.6", "83527.2", "70076.4", "59492.4",
+                        "33990", "29658"
+                    ],
+                    ["WV", "2016", "54775.2", "56919.6", "9186", "9598.8", "27394.8", "23328", "19640.4",
+                        "8559.6", "6804"
+                    ],
+                    ["WY", "2016", "9865.2", "7389.6", "799.2", "1094.4", "4761.6", "3873.6", "2811.6",
+                        "1510.8", "1298.4"
+                    ],
+                    ["AK", "2017", "29623.68", "29134.08", "4258.08", "4233.6", "17025.12", "13347.36",
+                        "9100.8", "4597.92", "3775.68"
+                    ],
+                    ["AL", "2017", "116841.6", "157053.6", "26278.56", "25266.24", "75477.6", "58754.88",
+                        "44323.2", "18227.52", "12857.76"
+                    ],
+                    ["AR", "2017", "69269.76", "95052.96", "15452.64", "15009.12", "42752.16", "33981.12",
+                        "26799.84", "12170.88", "9151.2"
+                    ],
+                    ["AZ", "2017", "147654.72", "169712.64", "16848", "27588.96", "87936.48", "62729.28",
+                        "56820.96", "28156.32", "21261.6"
+                    ],
+                    ["CA", "2017", "1474267.68", "1622507.04", "220366.08", "301491.36", "903587.04",
+                        "591477.12", "498994.56", "237771.36", "186736.32"
+                    ],
+                    ["CO", "2017", "171429.12", "192977.28", "26367.84", "30598.56", "112488.48", "73131.84",
+                        "55851.84", "25981.92", "21484.8"
+                    ],
+                    ["CT", "2017", "165251.52", "226162.08", "8680.32", "30355.2", "93722.4", "72816.48",
+                        "67501.44", "36184.32", "31553.28"
+                    ],
+                    ["DC", "2017", "48895.2", "55026.72", "4157.28", "7943.04", "31724.64", "21657.6",
+                        "17985.6", "8366.4", "6465.6"
+                    ],
+                    ["DE", "2017", "30358.08", "38512.8", "4019.04", "5169.6", "19075.68", "15301.44",
+                        "12575.52", "6668.64", "5351.04"
+                    ],
+                    ["FL", "2017", "328743.36", "436612.32", "32176.8", "51737.76", "192479.04", "153861.12",
+                        "138090.24", "67451.04", "50987.52"
+                    ],
+                    ["GA", "2017", "400561.92", "480291.84", "89579.52", "96278.4", "289945.44", "206176.32",
+                        "176165.28", "80771.04", "59676.48"
+                    ],
+                    ["HI", "2017", "81715.68", "102700.8", "8926.56", "12355.2", "44460", "37981.44", "34005.6",
+                        "17009.28", "14713.92"
+                    ],
+                    ["IA", "2017", "107472.96", "145270.08", "17687.52", "20446.56", "61958.88", "53591.04",
+                        "43957.44", "22983.84", "19915.2"
+                    ],
+                    ["ID", "2017", "32176.8", "43819.2", "6094.08", "6036.48", "18931.68", "15121.44",
+                        "12520.8", "6508.8", "5041.44"
+                    ],
+                    ["IL", "2017", "508586.4", "587721.6", "60696", "81023.04", "285048", "225077.76",
+                        "199458.72", "100879.2", "82368"
+                    ],
+                    ["IN", "2017", "182848.32", "181500.48", "22433.76", "27010.08", "92867.04", "78196.32",
+                        "70015.68", "33347.52", "24755.04"
+                    ],
+                    ["KS", "2017", "71912.16", "77653.44", "9493.92", "12399.84", "37928.16", "30872.16",
+                        "25600.32", "12857.76", "10563.84"
+                    ],
+                    ["KY", "2017", "143841.6", "140850.72", "10866.24", "20463.84", "70551.36", "60762.24",
+                        "54479.52", "25344", "19667.52"
+                    ],
+                    ["LA", "2017", "206614.08", "250738.56", "52462.08", "44317.44", "126862.56", "94654.08",
+                        "67220.64", "29779.2", "22150.08"
+                    ],
+                    ["MA", "2017", "377400.96", "440340.48", "64039.68", "66358.08", "207485.28", "150684.48",
+                        "140153.76", "72152.64", "59169.6"
+                    ],
+                    ["MD", "2017", "136483.2", "183201.12", "23555.52", "27892.8", "83316.96", "59535.36",
+                        "51166.08", "26809.92", "22770.72"
+                    ],
+                    ["ME", "2017", "66536.64", "77303.52", "7840.8", "9430.56", "32266.08", "27123.84",
+                        "27741.6", "14993.28", "11795.04"
+                    ],
+                    ["MI", "2017", "863586.72", "695191.68", "73778.4", "105220.8", "376528.32", "317424.96",
+                        "346157.28", "172929.6", "127051.2"
+                    ],
+                    ["MN", "2017", "258675.84", "334216.8", "39376.8", "51667.2", "155587.68", "121488.48",
+                        "93602.88", "50168.16", "43539.84"
+                    ],
+                    ["MO", "2017", "169020", "204226.56", "23585.76", "30934.08", "97662.24", "75817.44",
+                        "63072", "31525.92", "25871.04"
+                    ],
+                    ["MS", "2017", "148190.4", "183492", "25181.28", "30204", "91713.6", "72374.4", "56688.48",
+                        "22842.72", "16829.28"
+                    ],
+                    ["MT", "2017", "28051.2", "36280.8", "5146.56", "5316.48", "17890.56", "13286.88",
+                        "9613.44", "5156.64", "4332.96"
+                    ],
+                    ["NC", "2017", "313930.08", "419531.04", "48926.88", "60125.76", "194842.08", "147791.52",
+                        "136484.64", "62946.72", "45686.88"
+                    ],
+                    ["ND", "2017", "24037.92", "20247.84", "2592", "3778.56", "12925.44", "9319.68", "6922.08",
+                        "3293.28", "2832.48"
+                    ],
+                    ["NE", "2017", "37859.04", "50146.56", "7619.04", "7463.52", "23230.08", "18053.28",
+                        "14159.52", "7140.96", "5785.92"
+                    ],
+                    ["NH", "2017", "64676.16", "92666.88", "10815.84", "10870.56", "35045.28", "28955.52",
+                        "26326.08", "15239.52", "14290.56"
+                    ],
+                    ["NJ", "2017", "377565.12", "467040.96", "28427.04", "52788.96", "196100.64", "158358.24",
+                        "163075.68", "89768.16", "77480.64"
+                    ],
+                    ["NM", "2017", "67743.36", "75945.6", "13936.32", "13491.36", "39895.2", "28245.6",
+                        "21690.72", "10827.36", "8301.6"
+                    ],
+                    ["NV", "2017", "241724.16", "251016.48", "28896.48", "32636.16", "119962.08", "99442.08",
+                        "98196.48", "48080.16", "35729.28"
+                    ],
+                    ["NY", "2017", "1303728.48", "1295673.12", "172818.72", "215193.6", "700140.96",
+                        "500610.24", "455904", "226532.16", "172689.12"
+                    ],
+                    ["OH", "2017", "432666.72", "461645.28", "46536.48", "66731.04", "231196.32", "183886.56",
+                        "171152.64", "84579.84", "67199.04"
+                    ],
+                    ["OK", "2017", "103548.96", "101448", "11567.52", "14548.32", "51625.44", "48958.56",
+                        "39147.84", "17039.52", "12696.48"
+                    ],
+                    ["OR", "2017", "185346.72", "231392.16", "7377.12", "27097.92", "111457.44", "95371.2",
+                        "74304", "33688.8", "28264.32"
+                    ],
+                    ["PA", "2017", "627661.44", "677908.8", "86438.88", "92233.44", "316008", "245501.28",
+                        "235632.96", "125376.48", "104509.44"
+                    ],
+                    ["PR", "2017", "170727.84", "151256.16", "19618.56", "27024.48", "83826.72", "79819.2",
+                        "64103.04", "22707.36", "13515.84"
+                    ],
+                    ["RI", "2017", "52297.92", "74370.24", "10843.2", "10673.28", "32271.84", "23523.84",
+                        "19887.84", "10720.8", "8871.84"
+                    ],
+                    ["SC", "2017", "154092.96", "194444.64", "23479.2", "27892.8", "96518.88", "72659.52",
+                        "61241.76", "28523.52", "20741.76"
+                    ],
+                    ["SD", "2017", "12533.76", "17864.64", "2171.52", "2486.88", "7297.92", "6109.92",
+                        "4540.32", "2558.88", "2449.44"
+                    ],
+                    ["TN", "2017", "211559.04", "234698.4", "57461.76", "40184.64", "121415.04", "89360.64",
+                        "74417.76", "34044.48", "24122.88"
+                    ],
+                    ["TX", "2017", "885653.28", "918089.28", "150294.24", "167424.48", "494045.28", "365533.92",
+                        "306917.28", "136179.36", "101527.2"
+                    ],
+                    ["UT", "2017", "68008.32", "73378.08", "13063.68", "13631.04", "40147.2", "29282.4",
+                        "21564", "9728.64", "7819.2"
+                    ],
+                    ["VA", "2017", "275695.2", "371803.68", "48405.6", "58656.96", "171432", "126505.44",
+                        "108748.8", "52685.28", "41875.2"
+                    ],
+                    ["VI", "2017", "1056.96", "1418.4", "64.8", "119.52", "593.28", "541.44", "493.92",
+                        "241.92", "205.92"
+                    ],
+                    ["VT", "2017", "35091.36", "45956.16", "3746.88", "5826.24", "20610.72", "16414.56",
+                        "13327.2", "7371.36", "6696"
+                    ],
+                    ["WA", "2017", "328733.28", "348249.6", "41486.4", "52977.6", "188634.24", "143722.08",
+                        "119643.84", "56466.72", "43676.64"
+                    ],
+                    ["WI", "2017", "178915.68", "240120", "16852.32", "30769.92", "100232.64", "84091.68",
+                        "71390.88", "40788", "35589.6"
+                    ],
+                    ["WV", "2017", "65730.24", "68303.52", "11023.2", "11518.56", "32873.76", "27993.6",
+                        "23568.48", "10271.52", "8164.8"
+                    ],
+                    ["WY", "2017", "11838.24", "8867.52", "959.04", "1313.28", "5713.92", "4648.32", "3373.92",
+                        "1812.96", "1558.08"
+                    ],
+                    ["AK", "2018", "361408.896", "355435.776", "51948.576", "51649.92", "207706.464",
+                        "162837.792", "111029.76", "56094.624", "46063.296"
+                    ],
+                    ["AL", "2018", "1425467.52", "1916053.92", "320598.432", "308248.128", "920826.72",
+                        "716809.536", "540743.04", "222375.744", "156864.672"
+                    ],
+                    ["AR", "2018", "845091.072", "1159646.112", "188522.208", "183111.264", "521576.352",
+                        "414569.664", "326958.048", "148484.736", "111644.64"
+                    ],
+                    ["AZ", "2018", "1801387.584", "2070494.208", "205545.6", "336585.312", "1072825.056",
+                        "765297.216", "693215.712", "343507.104", "259391.52"
+                    ],
+                    ["CA", "2018", "17986065.7", "19794585.89", "2688466.176", "3678194.592", "11023761.89",
+                        "7216020.864", "6087733.632", "2900810.592", "2278183.104"
+                    ],
+                    ["CO", "2018", "2091435.264", "2354322.816", "321687.648", "373302.432", "1372359.456",
+                        "892208.448", "681392.448", "316979.424", "262114.56"
+                    ],
+                    ["CT", "2018", "2016068.544", "2759177.376", "105899.904", "370333.44", "1143413.28",
+                        "888361.056", "823517.568", "441448.704", "384950.016"
+                    ],
+                    ["DC", "2018", "596521.44", "671325.984", "50718.816", "96905.088", "387040.608",
+                        "264222.72", "219424.32", "102070.08", "78880.32"
+                    ],
+                    ["DE", "2018", "370368.576", "469856.16", "49032.288", "63069.12", "232723.296",
+                        "186677.568", "153421.344", "81357.408", "65282.688"
+                    ],
+                    ["FL", "2018", "4010668.992", "5326670.304", "392556.96", "631200.672", "2348244.288",
+                        "1877105.664", "1684700.928", "822902.688", "622047.744"
+                    ],
+                    ["GA", "2018", "4886855.424", "5859560.448", "1092870.144", "1174596.48", "3537334.368",
+                        "2515351.104", "2149216.416", "985406.688", "728053.056"
+                    ],
+                    ["HI", "2018", "996931.296", "1252949.76", "108904.032", "150733.44", "542412",
+                        "463373.568", "414868.32", "207513.216", "179509.824"
+                    ],
+                    ["IA", "2018", "1311170.112", "1772294.976", "215787.744", "249448.032", "755898.336",
+                        "653810.688", "536280.768", "280402.848", "242965.44"
+                    ],
+                    ["ID", "2018", "392556.96", "534594.24", "74347.776", "73645.056", "230966.496",
+                        "184481.568", "152753.76", "79407.36", "61505.568"
+                    ],
+                    ["IL", "2018", "6204754.08", "7170203.52", "740491.2", "988481.088", "3477585.6",
+                        "2745948.672", "2433396.384", "1230726.24", "1004889.6"
+                    ],
+                    ["IN", "2018", "2230749.504", "2214305.856", "273691.872", "329522.976", "1132977.888",
+                        "953995.104", "854191.296", "406839.744", "302011.488"
+                    ],
+                    ["KS", "2018", "877328.352", "947371.968", "115825.824", "151278.048", "462723.552",
+                        "376640.352", "312323.904", "156864.672", "128878.848"
+                    ],
+                    ["KY", "2018", "1754867.52", "1718378.784", "132568.128", "249658.848", "860726.592",
+                        "741299.328", "664650.144", "309196.8", "239943.744"
+                    ],
+                    ["LA", "2018", "2520691.776", "3059010.432", "640037.376", "540672.768", "1547723.232",
+                        "1154779.776", "820091.808", "363306.24", "270230.976"
+                    ],
+                    ["MA", "2018", "4604291.712", "5372153.856", "781284.096", "809568.576", "2531320.416",
+                        "1838350.656", "1709875.872", "880262.208", "721869.12"
+                    ],
+                    ["MD", "2018", "1665095.04", "2235053.664", "287377.344", "340292.16", "1016466.912",
+                        "726331.392", "624226.176", "327081.024", "277802.784"
+                    ],
+                    ["ME", "2018", "811747.008", "943102.944", "95657.76", "115052.832", "393646.176",
+                        "330910.848", "338447.52", "182918.016", "143899.488"
+                    ],
+                    ["MI", "2018", "10535757.98", "8481338.496", "900096.48", "1283693.76", "4593645.504",
+                        "3872584.512", "4223118.816", "2109741.12", "1550024.64"
+                    ],
+                    ["MN", "2018", "3155845.248", "4077444.96", "480396.96", "630339.84", "1898169.696",
+                        "1482159.456", "1141955.136", "612051.552", "531186.048"
+                    ],
+                    ["MO", "2018", "2062044", "2491564.032", "287746.272", "377395.776", "1191479.328",
+                        "924972.768", "769478.4", "384616.224", "315626.688"
+                    ],
+                    ["MS", "2018", "1807922.88", "2238602.4", "307211.616", "368488.8", "1118905.92",
+                        "882967.68", "691599.456", "278681.184", "205317.216"
+                    ],
+                    ["MT", "2018", "342224.64", "442625.76", "62788.032", "64861.056", "218264.832",
+                        "162099.936", "117283.968", "62911.008", "52862.112"
+                    ],
+                    ["NC", "2018", "3829946.976", "5118278.688", "596907.936", "733534.272", "2377073.376",
+                        "1803056.544", "1665112.608", "767949.984", "557379.936"
+                    ],
+                    ["ND", "2018", "293262.624", "247023.648", "31622.4", "46098.432", "157690.368",
+                        "113700.096", "84449.376", "40178.016", "34556.256"
+                    ],
+                    ["NE", "2018", "461880.288", "611788.032", "92952.288", "91054.944", "283406.976",
+                        "220250.016", "172746.144", "87119.712", "70588.224"
+                    ],
+                    ["NH", "2018", "789049.152", "1130535.936", "131953.248", "132620.832", "427552.416",
+                        "353257.344", "321178.176", "185922.144", "174344.832"
+                    ],
+                    ["NJ", "2018", "4606294.464", "5697899.712", "346809.888", "644025.312", "2392427.808",
+                        "1931970.528", "1989523.296", "1095171.552", "945263.808"
+                    ],
+                    ["NM", "2018", "826468.992", "926536.32", "170023.104", "164594.592", "486721.44",
+                        "344596.32", "264626.784", "132093.792", "101279.52"
+                    ],
+                    ["NV", "2018", "2949034.752", "3062401.056", "352537.056", "398161.152", "1463537.376",
+                        "1213193.376", "1197997.056", "586577.952", "435897.216"
+                    ],
+                    ["NY", "2018", "15905487.46", "15807212.06", "2108388.384", "2625361.92", "8541719.712",
+                        "6107444.928", "5562028.8", "2763692.352", "2106807.264"
+                    ],
+                    ["OH", "2018", "5278533.984", "5632072.416", "567745.056", "814118.688", "2820595.104",
+                        "2243416.032", "2088062.208", "1031874.048", "819828.288"
+                    ],
+                    ["OK", "2018", "1263297.312", "1237665.6", "141123.744", "177489.504", "629830.368",
+                        "597294.432", "477603.648", "207882.144", "154897.056"
+                    ],
+                    ["OR", "2018", "2261229.984", "2822984.352", "90000.864", "330594.624", "1359780.768",
+                        "1163528.64", "906508.8", "411003.36", "344824.704"
+                    ],
+                    ["PA", "2018", "7657469.568", "8270487.36", "1054554.336", "1125247.968", "3855297.6",
+                        "2995115.616", "2874722.112", "1529593.056", "1275015.168"
+                    ],
+                    ["PR", "2018", "2082879.648", "1845325.152", "239346.432", "329698.656", "1022685.984",
+                        "973794.24", "782057.088", "277029.792", "164893.248"
+                    ],
+                    ["RI", "2018", "638034.624", "907316.928", "132287.04", "130214.016", "393716.448",
+                        "286990.848", "242631.648", "130793.76", "108236.448"
+                    ],
+                    ["SC", "2018", "1879934.112", "2372224.608", "286446.24", "340292.16", "1177530.336",
+                        "886446.144", "747149.472", "347986.944", "253049.472"
+                    ],
+                    ["SD", "2018", "152911.872", "217948.608", "26492.544", "30339.936", "89034.624",
+                        "74541.024", "55391.904", "31218.336", "29883.168"
+                    ],
+                    ["TN", "2018", "2581020.288", "2863320.48", "701033.472", "490252.608", "1481263.488",
+                        "1090199.808", "907896.672", "415342.656", "294299.136"
+                    ],
+                    ["TX", "2018", "10804970.02", "11200689.22", "1833589.728", "2042578.656", "6027352.416",
+                        "4459513.824", "3744390.816", "1661388.192", "1238631.84"
+                    ],
+                    ["UT", "2018", "829701.504", "895212.576", "159376.896", "166298.688", "489795.84",
+                        "357245.28", "263080.8", "118689.408", "95394.24"
+                    ],
+                    ["VA", "2018", "3363481.44", "4536004.896", "590548.32", "715614.912", "2091470.4",
+                        "1543366.368", "1326735.36", "642760.416", "510877.44"
+                    ],
+                    ["VI", "2018", "12894.912", "17304.48", "790.56", "1458.144", "7238.016", "6605.568",
+                        "6025.824", "2951.424", "2512.224"
+                    ],
+                    ["VT", "2018", "428114.592", "560665.152", "45711.936", "71080.128", "251450.784",
+                        "200257.632", "162591.84", "89930.592", "81691.2"
+                    ],
+                    ["WA", "2018", "4010546.016", "4248645.12", "506134.08", "646326.72", "2301337.728",
+                        "1753409.376", "1459654.848", "688893.984", "532855.008"
+                    ],
+                    ["WI", "2018", "2182771.296", "2929464", "205598.304", "375393.024", "1222838.208",
+                        "1025918.496", "870968.736", "497613.6", "434193.12"
+                    ],
+                    ["WV", "2018", "801908.928", "833302.944", "134483.04", "140526.432", "401059.872",
+                        "341521.92", "287535.456", "125312.544", "99610.56"
+                    ],
+                    ["WY", "2018", "144426.528", "108183.744", "11700.288", "16022.016", "69709.824",
+                        "56709.504", "41161.824", "22118.112", "19008.576"
+                    ]
+                ]
+            },
+            "render_id": "map1604354699532",
+            "map_template": "countries/us/us-all",
+            "width": "800",
+            "height": "600",
+            "colors_start": "#3060cf",
+            "colors_end": "#c4463a",
+            "color_map_by": "Male",
+            "logarithmic_scale": null,
+            "legend": {
+                "layout": "horizontal",
+                "vertical_align": "top",
+                "horizontal_align": "center",
+                "min": 734,
+                "max": 1023797
+            },
+            "tooltip_prefix": "",
+            "tooltip_suffix": "",
+            "data_labels_enabled": false,
+            "join_map_areas_by": "State",
+            "join_map_areas_to": "postal-code",
+            "longitude_category": "",
+            "latitude_category": "",
+            "categories_dropdown_enabled": true,
+            "categories_dropdown_options": ["Male", "Female", "Younger than 22", "22 to 24"],
+            "animate_map_by": "Date",
+            "filter_by_category": "Date",
+            "filter_by_selected": "2015",
+            "filter_by_method": "sum",
+            "categories_dropdown_initialized": false,
+            "filter_dropdown_initialized": false,
+            "animation_controls_initialized": false,
+            "animation_dates": ["2015", "2016", "2017", "2018"],
+            "current_date": "2015",
+            "filter_options": ["2015", "2016", "2017", "2018"]
+        };
+        map.dataframe = DF(map.dataframe.matrix);
+
+        function colorMap(map) {
+
+            //console.log("coloring map", map);
+
+            Highcharts.setOptions({
+                lang: {
+                    thousandsSep: ','
+                }
+            });
+
+            //adds a countDecimals function to be used in label formatters
+            if (!Number.prototype.countDecimals) {
+                Number.prototype.countDecimals = function () {
+                    if (Math.floor(this.valueOf()) === this.valueOf()) return 0;
+                    return this.toString().split(".")[1].length || 0;
+                }
+            }
+
+
+            /* returns the current (selected or specific time) data from the dataframe to show in map. Returns array / expects map */
+            function getSelectedData(map, series_type) {
+
+                //takes a number, and if it's a US map, returns a negative num (called for longitudes)
+                function absNegative(val, map_template) {
+                    if (map_template.match("us-")) {
+                        val = Math.abs(val) * -1;
+                    }
+                    return val;
+                }
+
+                let dataframe = map.dataframe;
+
+                //if map is animated
+                if (map.animate_map_by != "") {
+                    dataframe = dataframe.filterByColumn(map.animate_map_by, map.current_date);
+                }
+
+                //if map is filtered by the filter dropdown
+                if (map.filter_by_selected != "") {
+                    dataframe = dataframe.filterByColumn(map.filter_by_category, map.filter_by_selected);
+
+                    if (map.filter_by_method === "sum") {
+                        dataframe = dataframe.sum(map.color_map_by, {
+                            group_by: map.join_map_areas_by
+                        });
+                    }
+
+                    if (map.filter_by_method === "average") {
+                        dataframe = dataframe.avg(map.color_map_by, {
+                            group_by: map.join_map_areas_by
+                        });
+                    }
+
+
+                }
+
+
+
+                //get longitude and get latitude functions (called in next loop for points on a map (mapbubble))
+                let latitudes, longitudes;
+                if (series_type === "mapbubble") {
+                    latitudes = dataframe.getColumn(map.latitude_category).matrix;
+                    longitudes = dataframe.getColumn(map.longitude_category).matrix;
+                }
+
+                function getLon(val) {
+                    if (isNaN(Number(val))) {
+                        return -105.001; //mid US
+                    } else {
+                        return absNegative(Number(val), map.map_template);
+                    }
+                }
+
+                function getLat(val) {
+                    if (isNaN(Number(val))) {
+                        return 38.001; //mid US
+                    } else {
+                        return Number(val);
+                    }
+                }
+
+
+                //create series data array to be used in colorMap()
+                let areas = dataframe.getColumn(map.join_map_areas_by).matrix;
+                let values = dataframe.getColumn(map.color_map_by).matrix;
+
+                let selected_data = [];
+                for (let i = 0; i < areas.length; i++) {
+
+                    selected_data.push({
+                        area: areas[i],
+                        value: isNaN(Number(values[i])) ? null : Number(values[i]),
+                        lon: longitudes ? getLon(longitudes[i]) : null,
+                        lat: latitudes ? getLat(latitudes[i]) : null,
+                        get z() {
+                            if (this.lon === -105.001 || this.lat ===
+                                38.001) { //checks for the set number if lat or lon wasn't found - this is done because highcharts will zoom out a bunch if lat or lon are simply set to null.
+                                return null;
+                            } else {
+                                return isNaN(Number(values[i])) ? 1 : Number(values[i]);
+                            }
+                        }
+                    });
+                }
+
+                return selected_data;
+
+            }
+
+
+
+            /* map dropdown binder - called below in categories and filter dropdown functions */
+            function bindMapDropDown(map, dropdown) {
+
+                $(dropdown).unbind().change(function () {
+
+                    let selected = $(this).val();
+
+                    if ($(this).hasClass("map_filter_dropdown")) {
+                        map.filter_by_selected = selected;
+                    } else {
+                        map.color_map_by = selected;
+                    }
+
+                    map.legend.max = undefined;
+                    map.legend.min = undefined;
+                    if (map.animation_controls_initialized) { // if map is animated reset to start
+                        $(`#${map.render_id}_animation_slider`).val(0).trigger("input");
+                    } else {
+                        colorMap(map);
+                    }
+
+                }).change();
+            }
+
+
+            /* controls the categories dropdown inside the map if enabled */
+            let categoriesDropDownInit = (function (map) {
+
+
+                if (map.categories_dropdown_enabled && !map.categories_dropdown_initialized) {
+                    map.categories_dropdown_initialized = true;
+                    let dropdown = $("#" + map.render_id + "_categories_dropdown");
+                    bindMapDropDown(map, dropdown);
+                }
+
+            })(map);
+
+
+
+            /*controls the filter dropdown inside the map if enabled */
+            let filterDropDownInit = (function (map) {
+
+                if (map.filter_by_category != "" && !map.filter_dropdown_initialized) {
+                    map.filter_dropdown_initialized = true;
+                    let dropdown = $("#" + map.render_id + "_filter_dropdown");
+                    bindMapDropDown(map, dropdown);
+                }
+
+            })(map);
+
+
+
+            /*controls the animation if enabled */
+            function animationControlsInit(map) {
+
+                map.animation_controls_initialized = true;
+                let animation_slider = $(`#${map.render_id}_animation_slider`);
+                let animation_display_text = $(`#${map.render_id}_animation_display_text`);
+                let animation_button = $(`#${map.render_id}_animation_button`);
+
+                animation_slider.on("input", function () {
+                    map.current_date = map.animation_dates[animation_slider.val()];
+                    animation_display_text.text(map.current_date);
+                    colorMap(map);
+                });
+
+                let playing; //to be setTimeOut function
+                let is_playing = false;
+
+
+                function stop(params) {
+                    is_playing = false;
+                    animation_button.text("Play");
+                    clearInterval(playing);
+                }
+
+                function play() {
+                    is_playing = true;
+                    animation_button.text("Pause");
+
+                    //reset if slider is at the end when it starts
+                    if (animation_slider.val() == animation_slider.attr("max")) {
+                        animation_slider.val(0).trigger("input");
+                    }
+
+                    playing = setInterval(function () {
+                        let new_val = Number(animation_slider.val()) + 1;
+                        if (new_val > animation_slider.attr("max")) {
+                            stop();
+                        } else {
+                            animation_slider.val(new_val).trigger("input");
+                        }
+                    }, 700);
+
+
+                }
+
+                animation_button.click(function () {
+                    if (is_playing) {
+                        stop();
+                    } else {
+                        play();
+                    }
+                });
+
+            }
+
+            if (map.animate_map_by != "" && !map.animation_controls_initialized) {
+                animationControlsInit(map);
+            }
+
+
+
+            // Instantiate the map
+            Highcharts.mapChart(`${map.render_id}_inner_div`, {
+
+                chart: {
+                    map: map.map_template,
+                    borderWidth: 0,
+                    width: map.width,
+                    height: map.height
+                },
+
+                title: {
+                    text: map.title
+                },
+                subtitle: {
+                    text: map.subtitle
+                },
+
+                legend: {
+                    layout: map.legend.layout,
+                    verticalAlign: map.legend.vertical_align,
+                    align: map.legend.horizontal_align,
+                    borderWidth: 0,
+                    backgroundColor: "none",
+                    floating: false,
+
+                },
+
+                mapNavigation: {
+                    enabled: true
+                },
+
+                colorAxis: {
+                    min: map.animation_controls_initialized ? map.legend.min : undefined,
+                    max: map.animation_controls_initialized ? map.legend.max : undefined,
+                    minColor: map.colors_start,
+                    maxColor: map.colors_end,
+                    type: map.logarithmic_scale
+                },
+
+                series: [{
+                        animation: false,
+                        data: getSelectedData(map),
+                        joinBy: [map.join_map_areas_to, 'area'],
+                        dataLabels: {
+                            enabled: map.data_labels_enabled,
+                            color: '#FFFFFF',
+                            /*    format: map.tooltip_prefix + '{point.name}<br> {point.value:,f}' + map.tooltip_suffix, */
+                            formatter: function () {
+                                var decimals = this.point.value.countDecimals();
+                                var val = this.point.value != undefined ? Highcharts.numberFormat(this
+                                    .point.value, decimals) + map.tooltip_suffix : "";
+                                return map.tooltip_prefix + this.point[map.join_map_areas_to] + "<br>" +
+                                    val;
+                            }
+
+
+                        },
+                        name: map.color_map_by,
+                        tooltip: {
+                            pointFormat: '{point.area}: {point.value}',
+                            tooltip_prefix: map.tooltip_prefix,
+                            tooltip_suffix: map.tooltip_suffix
+                        }
+                    },
+                    {
+                        type: 'mapbubble',
+                        name: '',
+                        dataLabels: {
+                            enabled: map.data_labels_enabled,
+
+                        },
+                        data: getSelectedData(map, "mapbubble"),
+                        maxSize: 5,
+                        minSize: 5,
+                        tooltip: {
+                            pointFormat: '{point.area}: {point.value}  {point.lat} | {point.lon}',
+                            tooltip_prefix: map.tooltip_prefix,
+                            tooltip_suffix: map.tooltip_suffix
+                        }
+                        // color: H.getOptions().colors[0]
+                    }
+                ],
+
+                credits: {
+                    text: map.credits_text,
+                    style: {
+                        fontSize: "12px",
+                        color: "#000"
+                    }
+                }
+            }, function (chart) { //map callback (called after map loads)
+                map.legend.max = map.legend.max || chart.colorAxis[0].dataMax;
+                map.legend.min = map.legend.min || chart.colorAxis[0].dataMin;
+
+            });
+
+        }
+
+        $(document).ready(function () {
+            colorMap(map);
+        });
+    </script>
+
+
+</body>
+
+</html>
